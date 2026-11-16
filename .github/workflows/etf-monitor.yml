@@ -1,0 +1,49 @@
+name: ETF 日报
+
+on:
+  schedule:            # GitHub 用 UTC 时间；高峰期可能晚 5~20 分钟触发
+    - cron: "45 3 * * 1-5"    # 北京时间 11:45 午盘
+    - cron: "45 7 * * 1-5"    # 北京时间 15:45 收盘
+    # - cron: "50 6 * * 1-5"  # 可选：北京时间 14:50 尾盘（想在收盘前下单就打开这行）
+  workflow_dispatch:
+    inputs:
+      session:
+        description: "auto / noon / tail / close"
+        default: "auto"
+      force:
+        description: "非交易日也生成（填 yes）"
+        default: "no"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: etf-monitor
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: 生成报告
+        env:
+          TZ: Asia/Shanghai
+          FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
+          REPORT_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+        run: |
+          python -m etf_monitor --size 30 --out docs \
+            --session "${{ github.event.inputs.session || 'auto' }}" \
+            ${{ github.event.inputs.force == 'yes' && '--force' || '' }}
+      - name: 提交并发布（GitHub Pages 读取 docs 目录）
+        run: |
+          git config user.name "etf-monitor-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add docs
+          git diff --cached --quiet || (git commit -m "report: $(TZ=Asia/Shanghai date '+%F %H:%M')" && git push)
