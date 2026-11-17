@@ -78,13 +78,13 @@ th{font-weight:600;color:var(--mute);font-size:11px;position:sticky;top:0;backgr
 th button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer;text-decoration:underline dotted;text-underline-offset:3px}
 th button[aria-pressed="true"]{color:var(--ink);text-decoration:underline}
 tr:last-child td{border-bottom:0}
-td a{color:inherit;text-decoration:none}
+td a{color:inherit;text-decoration:none;display:block;line-height:1.25}
 td.sg{border-left:3px solid transparent} td.sg.left{border-left-color:var(--left)} td.sg.right{border-left-color:var(--up)} td.sg.sell{border-left-color:var(--warn)}
 td b.hot{font-weight:700}
 .tiles2{display:grid;grid-template-columns:repeat(auto-fill,minmax(165px,1fr));gap:8px}
 .mt{background:var(--card);border-radius:8px;padding:8px 10px;display:flex;flex-direction:column;gap:3px;min-width:0;scroll-margin-top:52px}
 .mt .t{display:flex;justify-content:space-between;gap:6px;font-size:13px;align-items:baseline}
-.mt .t b{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mt .t b{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height:1.25}
 .mt svg{width:100%;height:46px;display:block}
 .mt .s{font-size:11.5px;color:var(--mute);line-height:1.45}
 .plan{background:var(--soft);border-radius:6px;padding:7px 10px;font-size:13px;display:flex;flex-direction:column;gap:1px}
@@ -95,14 +95,16 @@ td b.hot{font-weight:700}
 .chips{display:flex;gap:4px;flex-wrap:wrap}
 .empty{background:var(--card);border-radius:8px;padding:12px 14px;color:var(--mute);font-size:13.5px}
 .rsi{background:var(--card);border-radius:8px;padding:10px 14px 12px}
-.rsi .row{display:grid;grid-template-columns:92px 1fr 40px;gap:8px;align-items:center;height:24px;font-size:13px}
-.rsi .row .n{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rsi .row{display:grid;grid-template-columns:96px 1fr 40px;gap:8px;align-items:center;min-height:32px;font-size:13px}
+.rsi .row .n{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height:1.2}
+.cd{display:block;font-family:var(--num);font-size:11px;color:var(--mute);font-weight:400}
+.ci{font-family:var(--num);font-size:11.5px;color:var(--mute);font-weight:400;margin-left:3px}
 .track{position:relative;height:10px;border-radius:2px;background:linear-gradient(90deg,
   color-mix(in srgb,var(--left) 55%,transparent) 0 10%,color-mix(in srgb,var(--left) 35%,transparent) 10% 20%,
   color-mix(in srgb,var(--left) 18%,transparent) 20% 30%,var(--soft) 30% 70%,
   color-mix(in srgb,var(--warn) 22%,transparent) 70% 80%,color-mix(in srgb,var(--warn) 45%,transparent) 80% 100%)}
 .track i{position:absolute;top:-3px;width:10px;height:16px;margin-left:-5px;border-radius:3px;background:var(--ink);border:2px solid var(--card)}
-.axis{display:grid;grid-template-columns:92px 1fr 40px;gap:8px;font-size:11px;color:var(--mute)}
+.axis{display:grid;grid-template-columns:96px 1fr 40px;gap:8px;font-size:11px;color:var(--mute)}
 .axis div{position:relative;height:16px}
 .axis span{position:absolute;transform:translateX(-50%)}
 .etf{background:var(--card);border-radius:8px;padding:12px 14px;display:flex;flex-direction:column;gap:8px}
@@ -274,7 +276,7 @@ def sell_row(r):
     chips = "".join(f'<span class="chip sell">{E(s["title"])}</span>'
                     + ('<span class="chip new">新</span>' if s.get("fresh") else "") for s in r["sell"])
     why = "；".join(s["why"] for s in r["sell"])
-    return (f'<div class="li"><div><b>{E(r["name"])}</b> <span class="chips" style="display:inline-flex">{chips}</span></div>'
+    return (f'<div class="li"><div><b>{E(r["name"])}</b><span class="ci">{r["code"]}</span> <span class="chips" style="display:inline-flex">{chips}</span></div>'
             f'<div class="num">{r["close"]} {pct(r["chg"], 2)}</div>'
             f'<div class="why">{E(why)} · 止盈线 {r["chandelier"]}</div></div>')
 
@@ -294,7 +296,7 @@ def ov_row(r, i):
     macd_key = (2 if m["above"] else 0) + (1 if m["golden"] else 0)
     return (f'<tr data-ord="{i}" data-rsi="{rsi}" data-ma="{ma_n}" data-vr="{vr}" data-macd="{macd_key}" '
             f'data-ath="{r["dd_ath"]}" data-d60="{r["dd_60"]}">'
-            f'<td class="sg {kind}"><a href="#e{r["code"]}">{E(r["name"].replace("ETF", ""))}</a></td>'
+            f'<td class="sg {kind}"><a href="#e{r["code"]}">{E(r["name"].replace("ETF", ""))}<span class="cd">{r["code"]}</span></a></td>'
             f'<td class="num {rcls}"><b>{rsi:.1f}</b></td><td>{arrows}</td><td class="num">{vr_html}</td>'
             f'<td class="num">{mk}</td><td class="num">{r["dd_ath"]:.0f}%</td><td class="num">{r["dd_60"]:.0f}%</td></tr>')
 
@@ -310,7 +312,7 @@ def ma_tile(r):
     m = r["macd"]
     tags = (["高波动"] if r["high_vol"] else []) + [FLAG_CN[f] for f in r["flags"] if f != "t0"]
     tag_html = f'<div class="s">{E(" · ".join(tags))}</div>' if tags else ""
-    return (f'<article class="mt" id="e{r["code"]}"><div class="t"><b>{E(r["name"])}</b>{pct(r["chg"], 2)}</div>'
+    return (f'<article class="mt" id="e{r["code"]}"><div class="t"><b>{E(r["name"])}<span class="cd">{r["code"]}</span></b>{pct(r["chg"], 2)}</div>'
             f'{spark(r["spark"])}'
             f'<div class="s"><b style="color:var(--ink)">{E(r["pattern"])}</b>{year}</div>'
             f'<div class="s">{ma_txt} · MACD {E(m["cross"])}</div>'
@@ -333,7 +335,7 @@ def render(res: dict, info: dict) -> str:
     watch = [r for r in rows if r["watch"]]
 
     def names(lst, k=3):
-        ns = [(x[0] if isinstance(x, tuple) else x)["name"].replace("ETF", "") for x in lst[:k]]
+        ns = [f'{y["name"].replace("ETF", "")}({y["code"]})' for y in (x[0] if isinstance(x, tuple) else x for x in lst[:k])]
         return "、".join(ns) + ("等" if len(lst) > k else "")
 
     if not left and not right and not sell:
@@ -386,13 +388,13 @@ def render(res: dict, info: dict) -> str:
              else '<div class="empty">今天没有超买或破位的标的。</div>')
     if watch:
         h.append(f'<details><summary>观察名单 {len(watch)} 只：快到信号边上，或趋势延续中</summary><ul>'
-                 + "".join(f'<li><b>{E(r["name"])}</b>：{E("；".join(r["watch"]))}</li>' for r in watch) + "</ul></details>")
+                 + "".join(f'<li><b>{E(r["name"])}</b><span class="ci">{r["code"]}</span>：{E("；".join(r["watch"]))}</li>' for r in watch) + "</ul></details>")
     rv = res["review"]
     if rv:
         wins = sum(1 for x in rv if x["ret"] > 0)
         avg = sum(x["ret"] for x in rv) / len(rv)
         h.append(f'<details><summary>近 {C.REVIEW_DAYS} 日信号回顾：共 {len(rv)} 次，至今上涨 {wins} 次，平均 {avg:+.1f}%</summary><ul>'
-                 + "".join(f'<li><span class="num">{x["date"]}</span> {E(x["name"])} {E(x["title"])}，'
+                 + "".join(f'<li><span class="num">{x["date"]}</span> {E(x["name"])}<span class="ci">{x["code"]}</span> {E(x["title"])}，'
                            f'{x["days"]} 天后 {pct(x["ret"])}</li>' for x in rv[:30]) + "</ul></details>")
     h.append("</section>")
 
@@ -417,7 +419,7 @@ def render(res: dict, info: dict) -> str:
         f'<span style="left:{v}%">{v}</span>' for v in (10, 20, 30, 50, 70, 80)) + "</div><div></div></div>")
     for r in sorted(rows, key=lambda x: x["rsi"]):
         cls = "down" if r["rsi"] < 30 else "up" if r["rsi"] >= 70 else ""
-        h.append(f'<div class="row"><span class="n">{E(r["name"].replace("ETF", ""))}</span>'
+        h.append(f'<div class="row"><span class="n">{E(r["name"].replace("ETF", ""))}<span class="cd">{r["code"]}</span></span>'
                  f'<div class="track" title="{E(r["name"])} RSI14 {r["rsi"]}"><i style="left:{min(max(r["rsi"], 1), 99)}%"></i></div>'
                  f'<span class="num {cls}" style="text-align:right;font-weight:600">{r["rsi"]:.1f}</span></div>')
     h.append("</div></section>")
@@ -453,9 +455,9 @@ def text_summary(res: dict, info: dict, url: str = "") -> str:
     L = [(r, s) for r in rows for s in r["buy"] if s["kind"] == "left"]
     R = [(r, s) for r in rows for s in r["buy"] if s["kind"] == "right"]
     S = [r for r in rows if r["sell"]]
-    lines.append("左侧低吸：" + ("、".join(f"{r['name']}(RSI {r['rsi']:.0f})" for r, _ in L) or "无"))
-    lines.append("右侧启动：" + ("、".join(f"{r['name']}(量比 {r['vol_ratio']:.1f})" for r, _ in R) or "无"))
-    lines.append("高抛提示：" + ("、".join(f"{r['name']}({'/'.join(x['title'] for x in r['sell'])})" for r in S) or "无"))
+    lines.append("左侧低吸：" + ("、".join(f"{r['name']}{r['code']}(RSI {r['rsi']:.0f})" for r, _ in L) or "无"))
+    lines.append("右侧启动：" + ("、".join(f"{r['name']}{r['code']}(量比 {r['vol_ratio']:.1f})" for r, _ in R) or "无"))
+    lines.append("高抛提示：" + ("、".join(f"{r['name']}{r['code']}({'/'.join(x['title'] for x in r['sell'])})" for r in S) or "无"))
     if url:
         lines.append(url)
     return "\n".join(lines)

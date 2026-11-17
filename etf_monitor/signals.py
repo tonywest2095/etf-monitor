@@ -189,7 +189,7 @@ def build(pool, frames: dict, sources: dict, bench: pd.DataFrame | None, prev_st
             twins = [(o["code"], corr.loc[r["code"], o["code"]]) for o in cands
                      if o is not r and corr.loc[r["code"], o["code"]] >= C.CORR_HIGH]
             sig = next(s for s in r["buy"] if s["kind"] == kind)
-            sig["twins"] = [f"{name[c]}({v:.2f})" for c, v in twins]
+            sig["twins"] = [f"{name[c]}{c}(相关{v:.2f})" for c, v in twins]
 
     # 与上一次报告对比，标出新出现的信号
     cur_state = {r["code"]: sorted({s["title"] for s in r["buy"]} | {s["title"] for s in r["sell"]})
@@ -204,7 +204,7 @@ def build(pool, frames: dict, sources: dict, bench: pd.DataFrame | None, prev_st
         for code, old in prev_state.items():
             for t in set(old) - set(cur_state.get(code, [])):
                 if code in name:
-                    gone.append(f"{name[code]}·{t}")
+                    gone.append(f"{name[code]}({code})·{t}")
 
     review = []
     cols = [("trg_right", "右侧·放量拉升")] + [(f"trg_l{lv}", f"左侧·RSI破{lv}") for lv in C.RSI_LEVELS]
@@ -214,7 +214,7 @@ def build(pool, frames: dict, sources: dict, bench: pd.DataFrame | None, prev_st
         for col, title in cols:
             for dt in win.index[win[col]]:
                 p0 = float(f.loc[dt, "close"])
-                review.append(dict(date=dt.strftime("%m-%d"), name=r["name"], title=title,
+                review.append(dict(date=dt.strftime("%m-%d"), name=r["name"], code=r["code"], title=title,
                                    kind="right" if col == "trg_right" else "left",
                                    ret=_f((f["close"].iloc[-1] / p0 - 1) * 100, 1),
                                    days=int(len(f) - 1 - f.index.get_loc(dt))))
@@ -222,4 +222,5 @@ def build(pool, frames: dict, sources: dict, bench: pd.DataFrame | None, prev_st
     by_rs = sorted(rows, key=lambda x: x["rs_rank"])
     return dict(rows=rows, temp=temperature(rows, frames), state=cur_state, gone=gone,
                 bench_ret=_f(b, 1), review=review,
-                strong=[x["name"] for x in by_rs[:3]], weak=[x["name"] for x in by_rs[-3:][::-1]])
+                strong=[f'{x["name"]}({x["code"]})' for x in by_rs[:3]],
+                weak=[f'{x["name"]}({x["code"]})' for x in by_rs[-3:][::-1]])
