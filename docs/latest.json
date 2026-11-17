@@ -1,8 +1,8 @@
 {
  "info": {
-  "session": "close",
+  "session": "noon",
   "date": "2026-11-17",
-  "generated": "2026-11-17 16:41",
+  "generated": "2026-11-18 00:31",
   "demo": false,
   "problems": []
  },
@@ -211,7 +211,7 @@
      },
      "is_new": true,
      "twins": [],
-     "fresh": true
+     "fresh": false
     }
    ],
    "sell": [],
@@ -963,7 +963,7 @@
      },
      "is_new": false,
      "twins": [],
-     "fresh": true
+     "fresh": false
     }
    ],
    "sell": [],
