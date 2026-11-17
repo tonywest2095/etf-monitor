@@ -83,6 +83,7 @@ def enrich(df: pd.DataFrame, vol_scale: float = 1.0) -> pd.DataFrame:
     for lv in C.RSI_LEVELS:
         below = d["rsi"] < lv
         d[f"trg_l{lv}"] = below & ~below.shift(1, fill_value=False)
+        d[f"l{lv}_days"] = streak(below)          # 连续低于该档的天数（模拟盘开户日补单用）
     return d
 
 

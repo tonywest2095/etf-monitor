@@ -8,7 +8,7 @@ import sys
 from pathlib import Path
 
 from . import config as C
-from . import data, indicators, report, signals
+from . import data, indicators, report, signals, sim
 
 
 def _js(o):
@@ -139,6 +139,15 @@ def main(argv=None) -> int:
                                          ensure_ascii=False), encoding="utf-8")
 
     summary = report.text_summary(res, info, os.environ.get("REPORT_URL", ""))
+    if not a.demo:
+        # 模拟盘：用同一份行情自动下单、记账，生成 docs/sim.html
+        try:
+            sm = sim.run_live(out, pool, {c: frames[c] for c in frames}, session, str(latest), info["generated"])
+            if sm and sm["equity"] is not None:
+                summary += (f"\n模拟盘：总资产 {sm['equity']:,.0f}（{sm['ret']:+.2f}%，沪深300 "
+                            f"{(sm['bench'] or 0):+.2f}%），持仓 {sm['n_pos']} 只，待成交 {sm['n_pending']} 笔")
+        except Exception as e:  # noqa: BLE001  模拟盘出错不影响日报
+            print(f"[warn] 模拟盘运行失败: {e}")
     print(summary)
     if not a.demo:
         notify(summary)

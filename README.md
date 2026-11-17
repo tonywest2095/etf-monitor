@@ -79,7 +79,18 @@ Windows 用"任务计划程序"建两个每日任务，程序填 `python`，参�
 - 机械信号本身期望收益有限，报告定位是"候选名单 + 纪律"，最后一步人工复核不能省。
 - 本工具只做信息整理，不构成投资建议。
 
-## 7. 目录
+## 7. 模拟盘（docs/sim.html）
+
+日报每次运行后，模拟盘用同一份行情自动下单、记账，看板地址 `https://<用户名>.github.io/etf-monitor/sim.html`。
+
+- 初始资金 10 万，单只最多 50%（`config.py` 的「模拟盘」一节可改）。
+- 收盘那次按日报信号决策，订单在下一交易日开盘价成交；午盘那次补记成交并按午盘价更新市值。
+- 含滑点 0.05% + 手续费万3；开盘涨停买不进、跌停卖不出。
+- 看板：总资产 / 收益 / 跑赢沪深300 / 回撤 / 仓位、净值曲线（对比沪深300和池子等权持有）、持仓、待成交、成交记录、按信号分组的胜率与盈亏比。
+- 同一套规则的近 2 年历史回测附在页面底部，每天收盘重算。
+- 账户数据在 `docs/sim/state.json`；想重新开户，删掉 `docs/sim/` 目录即可，下次收盘自动重开。
+
+## 8. 目录
 
 ```
 etf_monitor/config.py      池子与全部参数
@@ -87,6 +98,7 @@ etf_monitor/data.py        三数据源 + 缓存 + 演示数据
 etf_monitor/indicators.py  RSI / MA / MACD / ATR / 回撤 / 量比
 etf_monitor/signals.py     信号、仓位、市场温度、相关性、信号回顾
 etf_monitor/report.py      HTML 报告与术语表
+etf_monitor/sim.py         模拟盘：自动下单、记账、回测、收益看板
 etf_monitor/pool_audit.py  池子复核
 tests/                     单元测试
 .github/workflows/         定时任务

@@ -352,7 +352,8 @@ def render(res: dict, info: dict) -> str:
     srcs = sorted({SOURCE_CN.get(r["source"], r["source"]) for r in rows})
     h = [f'<header class="head"><h1>{title}</h1>'
          f'<div class="meta"><span class="badge {scls}">{sn}</span><span>行情日 {info["date"]}</span>'
-         f'<span>生成于 {info["generated"][-5:]}</span><span>{len(rows)} 只 · {E("、".join(srcs))}</span></div></header>']
+         f'<span>生成于 {info["generated"][-5:]}</span><span>{len(rows)} 只 · {E("、".join(srcs))}</span>'
+         f'<a href="sim.html">模拟盘收益 →</a></div></header>']
     if info.get("demo"):
         h.append('<div class="banner"><b>演示数据。</b>本页价格与信号由程序模拟生成，只用来展示版面，不是真实行情，不能据此交易。</div>')
     if session != "close":
@@ -373,7 +374,7 @@ def render(res: dict, info: dict) -> str:
         sub.append("较上一期消失的信号：" + "、".join(res["gone"][:6]) + "。")
     h.append('<div class="sub">' + "".join(f"<div>{E(x)}</div>" for x in sub) + "</div>")
     h.append('<nav><a href="#left">左侧</a><a href="#right">右侧</a><a href="#sell">高抛</a>'
-             '<a href="#ov">总览表</a><a href="#rsi">RSI排行</a><a href="#ma">均线图</a><a href="#gloss">术语</a></nav>')
+             '<a href="#ov">总览表</a><a href="#rsi">RSI排行</a><a href="#ma">均线图</a><a href="#gloss">术语</a><a href="sim.html">模拟盘 →</a></nav>')
 
     h.append('<section id="left"><h2>左侧低吸 <small>RSI14 跌破 30 / 20 / 10，博反抽</small></h2>')
     h.append('<div class="grid">' + "".join(opp_card(r, s) for r, s in left) + "</div>" if left
