@@ -88,3 +88,8 @@ def test_pool_tiers():
     assert len(C.pool_for(10)) == 10 and len(C.pool_for(20)) == 20 and len(C.pool_for(30)) == 30
     codes = [p["code"] for p in C.POOL]
     assert len(set(codes)) == len(codes) and all(len(c) == 6 for c in codes)
+
+
+def test_vol_share_monotonic():
+    xs = [C.vol_share(h * 60 + m) for h, m in [(9, 45), (10, 30), (11, 30), (12, 30), (13, 30), (14, 50), (15, 0)]]
+    assert xs == sorted(xs) and abs(xs[2] - 0.56) < 1e-9 and xs[-1] == 1.0

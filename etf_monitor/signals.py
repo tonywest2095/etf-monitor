@@ -136,8 +136,10 @@ def analyze(meta: dict, d: pd.DataFrame, source: str) -> dict:
     if last.ma_dn_days >= 2 and last.ret_rs > 5:
         r["sell"].append(dict(grade=1, title="三线拐头",
                               why=f"涨后 MA3/MA5/MA7 同步向下第 {int(last.ma_dn_days)} 天"))
-    if 1 <= last.dc_days <= C.GC_EARLY and last.dif > 0:
-        r["sell"].append(dict(grade=1, title="高位死叉", why=f"MACD 0轴上方死叉第 {int(last.dc_days)} 天"))
+    hot_before = d["rsi"].iloc[-10:].max() >= C.RSI_OVERBOUGHT[0] - 5   # 死叉前 10 天内 RSI 到过 65 以上
+    if 1 <= last.dc_days <= C.GC_EARLY and last.dif > 0 and hot_before and last.dd_60 > -8:
+        r["sell"].append(dict(grade=1, title="高位死叉",
+                              why=f"涨热后 MACD 0轴上方死叉第 {int(last.dc_days)} 天"))
     if last.close < last.chandelier and prev.close >= prev.chandelier and last.ma60 > d["ma60"].iloc[-6]:
         r["sell"].append(dict(grade=2, title="破止盈线",
                               why=f"收盘跌破吊灯止盈线 {last.chandelier:.3f}，趋势单离场"))

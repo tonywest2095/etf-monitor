@@ -318,7 +318,8 @@ def ma_tile(r):
             f'<div class="s num">成交 {r["amount_yi"]}亿 · 历史高点 {r["ath_date"]}</div>{tag_html}</article>')
 
 
-SESSION_CN = {"noon": ("午盘快照", "noon"), "tail": ("尾盘快照", "noon"), "close": ("收盘定稿", "")}
+SESSION_CN = {"noon": ("午盘快照", "noon"), "mid": ("盘中快照", "noon"), "tail": ("尾盘快照", "noon"),
+              "close": ("收盘定稿", "")}
 
 
 def render(res: dict, info: dict) -> str:
@@ -454,7 +455,7 @@ def text_summary(res: dict, info: dict, url: str = "") -> str:
     S = [r for r in rows if r["sell"]]
     lines.append("左侧低吸：" + ("、".join(f"{r['name']}(RSI {r['rsi']:.0f})" for r, _ in L) or "无"))
     lines.append("右侧启动：" + ("、".join(f"{r['name']}(量比 {r['vol_ratio']:.1f})" for r, _ in R) or "无"))
-    lines.append("高抛提示：" + ("、".join(f"{r['name']}(RSI {r['rsi']:.0f})" for r in S) or "无"))
+    lines.append("高抛提示：" + ("、".join(f"{r['name']}({'/'.join(x['title'] for x in r['sell'])})" for r in S) or "无"))
     if url:
         lines.append(url)
     return "\n".join(lines)

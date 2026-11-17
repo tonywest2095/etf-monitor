@@ -41,7 +41,7 @@ def write_archive_index(arch: Path):
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description="ETF 低吸高抛日报")
     ap.add_argument("--size", type=int, default=C.DEFAULT_TIER_SIZE, choices=[10, 20, 30])
-    ap.add_argument("--session", default="auto", choices=["auto", "noon", "tail", "close"])
+    ap.add_argument("--session", default="auto", choices=["auto", "noon", "mid", "tail", "close"])
     ap.add_argument("--out", default="docs")
     ap.add_argument("--demo", action="store_true", help="用模拟行情生成演示报告（不联网）")
     ap.add_argument("--force", action="store_true", help="非交易日也照常生成")
@@ -49,9 +49,6 @@ def main(argv=None) -> int:
 
     now = data.now_bj()
     session = a.session
-    if session == "auto":
-        hm = now.hour * 60 + now.minute
-        session = "noon" if hm < 13 * 60 else "tail" if hm < 15 * 60 else "close"
     out = Path(a.out)
     pool = C.pool_for(a.size)
     codes = [p["code"] for p in pool]
@@ -91,7 +88,26 @@ def main(argv=None) -> int:
         if hit:
             problems.append(f"{'、'.join(hit)} {label}")
 
-    vol_scale = 1 / C.SESSION_VOL_SHARE[session] if (a.demo or latest == today) else 1.0
+    # 时段：行情日期不是今天（夜里或次日早上跑）一律算收盘；否则按实际时间。
+    # GitHub 定时任务常晚到，11:45 的任务可能 13 点后才跑，所以不能只看是哪个定时触发的。
+    intraday = a.demo or latest == today
+    if session == "auto":
+        hm = now.hour * 60 + now.minute
+        if not intraday or hm >= 15 * 60:
+            session = "close"
+        elif hm < 13 * 60:
+            session = "noon"
+        else:
+            session = "mid"
+    if a.demo:
+        share = C.SESSION_VOL_SHARE.get(session, 1.0)
+    elif not intraday or session == "close":
+        share = 1.0
+    elif a.session != "auto":
+        share = C.SESSION_VOL_SHARE.get(session, C.vol_share(now.hour * 60 + now.minute))
+    else:
+        share = C.vol_share(now.hour * 60 + now.minute)
+    vol_scale = 1 / share
     frames = {c: indicators.enrich(raw[c], vol_scale) for c in raw if len(raw[c]) >= 30}
     bench = frames.get(C.BENCHMARK["code"])
 

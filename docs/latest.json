@@ -1,8 +1,8 @@
 {
  "info": {
-  "session": "noon",
+  "session": "close",
   "date": "2026-11-17",
-  "generated": "2026-11-18 00:31",
+  "generated": "2026-11-17 16:41",
   "demo": false,
   "problems": []
  },
@@ -211,7 +211,7 @@
      },
      "is_new": true,
      "twins": [],
-     "fresh": false
+     "fresh": true
     }
    ],
    "sell": [],
@@ -571,14 +571,7 @@
    "ret_rs": 0.8,
    "chandelier": 0.371,
    "buy": [],
-   "sell": [
-    {
-     "grade": 1,
-     "title": "高位死叉",
-     "why": "MACD 0轴上方死叉第 2 天",
-     "fresh": false
-    }
-   ],
+   "sell": [],
    "watch": [],
    "rs": 5.0,
    "rs_rank": 4
@@ -963,7 +956,7 @@
      },
      "is_new": false,
      "twins": [],
-     "fresh": false
+     "fresh": true
     }
    ],
    "sell": [],
