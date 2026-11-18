@@ -11,8 +11,8 @@
    "entry": "2026-11-18",
    "took": [],
    "trail": false,
-   "last_px": 3.438,
-   "hh": 3.4187084999999997,
+   "last_px": 3.436,
+   "hh": 3.446,
    "kind": "right",
    "grade": 1,
    "stop": 3.309696628541546,
@@ -27,8 +27,8 @@
    "entry": "2026-11-18",
    "took": [],
    "trail": false,
-   "last_px": 1.29,
-   "hh": 1.324662,
+   "last_px": 1.294,
+   "hh": 1.327,
    "kind": "left",
    "grade": 1,
    "stop": null,
@@ -43,8 +43,8 @@
    "entry": "2026-11-18",
    "took": [],
    "trail": false,
-   "last_px": 1.972,
-   "hh": 1.9999995,
+   "last_px": 1.955,
+   "hh": 2.008,
    "kind": "left",
    "grade": 1,
    "stop": null,
@@ -52,7 +52,22 @@
    "last_add": 1.9999995
   }
  },
- "pending": [],
+ "pending": [
+  {
+   "code": "512660",
+   "side": "buy",
+   "amount": 3742.82,
+   "prio": 1,
+   "date": "2026-11-18",
+   "reason": "左侧·RSI破30（28.8），目标仓位 4%",
+   "meta": {
+    "kind": "left",
+    "grade": 1,
+    "stop": null,
+    "title": "左侧·RSI破30"
+   }
+  }
+ ],
  "trades": [
   {
    "date": "2026-11-18",
@@ -104,12 +119,12 @@
   },
   {
    "date": "2026-11-18",
-   "equity": 99867.72,
+   "equity": 99808.62,
    "cash": 53373.92,
-   "pos": 46.6,
-   "bench": 0.99777,
-   "ew": 0.99025,
-   "intraday": true
+   "pos": 46.5,
+   "bench": 1.00396,
+   "ew": 0.99386,
+   "intraday": false
   }
  ],
  "base": {
@@ -145,5 +160,5 @@
   "159819": 1.308,
   "_bench": 4.042
  },
- "last_decide": "2026-11-17"
+ "last_decide": "2026-11-18"
 }
