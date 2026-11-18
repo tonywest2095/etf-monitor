@@ -1,53 +1,96 @@
 {
  "start": "2026-11-17",
  "cash0": 100000,
- "cash": 100000,
- "positions": {},
- "pending": [
+ "cash": 53373.92197168001,
+ "positions": {
+  "510880": {
+   "shares": 9300,
+   "cost": 31803.527246714995,
+   "invested": 31803.527246714995,
+   "realized": 0.0,
+   "entry": "2026-11-18",
+   "took": [],
+   "trail": false,
+   "last_px": 3.438,
+   "hh": 3.4187084999999997,
+   "kind": "right",
+   "grade": 1,
+   "stop": 3.309696628541546,
+   "title": "右侧·放量拉升",
+   "last_add": 3.4187084999999997
+  },
+  "512400": {
+   "shares": 5600,
+   "cost": 7420.332632160001,
+   "invested": 7420.332632160001,
+   "realized": 0.0,
+   "entry": "2026-11-18",
+   "took": [],
+   "trail": false,
+   "last_px": 1.29,
+   "hh": 1.324662,
+   "kind": "left",
+   "grade": 1,
+   "stop": null,
+   "title": "左侧·RSI破30",
+   "last_add": 1.324662
+  },
+  "159980": {
+   "shares": 3700,
+   "cost": 7402.218149445,
+   "invested": 7402.218149445,
+   "realized": 0.0,
+   "entry": "2026-11-18",
+   "took": [],
+   "trail": false,
+   "last_px": 1.972,
+   "hh": 1.9999995,
+   "kind": "left",
+   "grade": 1,
+   "stop": null,
+   "title": "左侧·RSI破30",
+   "last_add": 1.9999995
+  }
+ },
+ "pending": [],
+ "trades": [
   {
+   "date": "2026-11-18",
    "code": "510880",
-   "side": "buy",
-   "amount": 32134.45,
-   "prio": 1.5,
-   "date": "2026-11-17",
-   "reason": "右侧·放量拉升，量比 1.47，目标仓位 32%",
-   "meta": {
-    "kind": "right",
-    "grade": 1,
-    "stop": 3.309696628541546,
-    "title": "右侧·放量拉升"
-   }
+   "name": "红利ETF",
+   "side": "买入",
+   "px": 3.419,
+   "shares": 9300,
+   "amount": 31793.99,
+   "fee": 9.54,
+   "pnl": null,
+   "reason": "右侧·放量拉升，量比 1.47，目标仓位 32%"
   },
   {
+   "date": "2026-11-18",
    "code": "512400",
-   "side": "buy",
-   "amount": 7500.0,
-   "prio": 1,
-   "date": "2026-11-17",
-   "reason": "左侧·RSI破30（28.8），目标仓位 8%",
-   "meta": {
-    "kind": "left",
-    "grade": 1,
-    "stop": null,
-    "title": "左侧·RSI破30"
-   }
+   "name": "有色金属ETF",
+   "side": "买入",
+   "px": 1.325,
+   "shares": 5600,
+   "amount": 7418.11,
+   "fee": 2.23,
+   "pnl": null,
+   "reason": "左侧·RSI破30（28.8），目标仓位 8%"
   },
   {
+   "date": "2026-11-18",
    "code": "159980",
-   "side": "buy",
-   "amount": 7500.0,
-   "prio": 1,
-   "date": "2026-11-17",
-   "reason": "左侧·RSI破30（29.6），目标仓位 8%",
-   "meta": {
-    "kind": "left",
-    "grade": 1,
-    "stop": null,
-    "title": "左侧·RSI破30"
-   }
+   "name": "有色期货ETF",
+   "side": "买入",
+   "px": 2.0,
+   "shares": 3700,
+   "amount": 7400.0,
+   "fee": 2.22,
+   "pnl": null,
+   "reason": "左侧·RSI破30（29.6），目标仓位 8%"
   }
  ],
- "trades": [],
  "closed": [],
  "nav": [
   {
@@ -58,6 +101,15 @@
    "bench": 1.0,
    "ew": 1.0,
    "intraday": false
+  },
+  {
+   "date": "2026-11-18",
+   "equity": 99867.72,
+   "cash": 53373.92,
+   "pos": 46.6,
+   "bench": 0.99777,
+   "ew": 0.99025,
+   "intraday": true
   }
  ],
  "base": {
