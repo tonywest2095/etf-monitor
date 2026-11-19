@@ -1,7 +1,7 @@
 {
  "start": "2026-11-17",
  "cash0": 100000,
- "cash": 53373.92197168001,
+ "cash": 49701.085501195004,
  "positions": {
   "510880": {
    "shares": 9300,
@@ -11,7 +11,7 @@
    "entry": "2026-11-18",
    "took": [],
    "trail": false,
-   "last_px": 3.436,
+   "last_px": 3.413,
    "hh": 3.446,
    "kind": "right",
    "grade": 1,
@@ -27,7 +27,7 @@
    "entry": "2026-11-18",
    "took": [],
    "trail": false,
-   "last_px": 1.294,
+   "last_px": 1.27,
    "hh": 1.327,
    "kind": "left",
    "grade": 1,
@@ -43,31 +43,32 @@
    "entry": "2026-11-18",
    "took": [],
    "trail": false,
-   "last_px": 1.955,
+   "last_px": 1.902,
    "hh": 2.008,
    "kind": "left",
    "grade": 1,
    "stop": null,
    "title": "左侧·RSI破30",
    "last_add": 1.9999995
+  },
+  "512660": {
+   "shares": 3900,
+   "cost": 3672.8364704849996,
+   "invested": 3672.8364704849996,
+   "realized": 0.0,
+   "entry": "2026-11-19",
+   "took": [],
+   "trail": false,
+   "last_px": 0.938,
+   "hh": 0.9414704999999999,
+   "kind": "left",
+   "grade": 1,
+   "stop": null,
+   "title": "左侧·RSI破30",
+   "last_add": 0.9414704999999999
   }
  },
- "pending": [
-  {
-   "code": "512660",
-   "side": "buy",
-   "amount": 3742.82,
-   "prio": 1,
-   "date": "2026-11-18",
-   "reason": "左侧·RSI破30（28.8），目标仓位 4%",
-   "meta": {
-    "kind": "left",
-    "grade": 1,
-    "stop": null,
-    "title": "左侧·RSI破30"
-   }
-  }
- ],
+ "pending": [],
  "trades": [
   {
    "date": "2026-11-18",
@@ -104,6 +105,18 @@
    "fee": 2.22,
    "pnl": null,
    "reason": "左侧·RSI破30（29.6），目标仓位 8%"
+  },
+  {
+   "date": "2026-11-19",
+   "code": "512660",
+   "name": "军工ETF",
+   "side": "买入",
+   "px": 0.941,
+   "shares": 3900,
+   "amount": 3671.73,
+   "fee": 1.1,
+   "pnl": null,
+   "reason": "左侧·RSI破30（28.8），目标仓位 4%"
   }
  ],
  "closed": [],
@@ -125,6 +138,15 @@
    "bench": 1.00396,
    "ew": 0.99386,
    "intraday": false
+  },
+  {
+   "date": "2026-11-19",
+   "equity": 99249.59,
+   "cash": 49701.09,
+   "pos": 49.9,
+   "bench": 0.99951,
+   "ew": 0.98521,
+   "intraday": true
   }
  ],
  "base": {
