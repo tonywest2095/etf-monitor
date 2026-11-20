@@ -1,21 +1,21 @@
 {
  "info": {
-  "session": "noon",
+  "session": "close",
   "date": "2026-11-20",
-  "generated": "2026-11-20 12:43",
+  "generated": "2026-11-20 16:43",
   "demo": false,
   "problems": []
  },
  "temp": {
-  "score": 21,
+  "score": 22,
   "label": "偏冷",
   "hint": "情绪偏弱，耐心等超卖，右侧信号要求更高",
   "cap": 60,
-  "above20": 10,
-  "avg_rsi": 34.8,
+  "above20": 13,
+  "avg_rsi": 34.6,
   "macd_up": 13,
-  "oversold": 10,
-  "overbought": 0
+  "oversold": 11,
+  "overbought": 1
  },
  "rows": [
   {
@@ -27,10 +27,10 @@
    "date": "2026-11-20",
    "listed": "2011-03",
    "bars": 3754,
-   "close": 0.915,
-   "chg": -1.61,
-   "amount_yi": 6.6,
-   "rsi": 30.8,
+   "close": 0.916,
+   "chg": -1.51,
+   "amount_yi": 11.2,
+   "rsi": 31.2,
    "rsi_prev": 36.6,
    "ma_dirs": [
     false,
@@ -40,7 +40,7 @@
    "ma_up_days": 0,
    "ma_dn_days": 6,
    "ma_aligned": false,
-   "vol_ratio": 1.46,
+   "vol_ratio": 1.38,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -52,31 +52,31 @@
     "mid_golden": false,
     "momentum": "动能减弱"
    },
-   "dif": -0.011,
+   "dif": -0.0109,
    "dea": -0.0096,
    "pattern": "空头排列",
    "above_year": false,
-   "dd_ath": -14.3,
+   "dd_ath": -14.2,
    "ath_date": "2026-05",
-   "dd_60": -10.5,
+   "dd_60": -10.4,
    "ma_fast": [
     0.926,
     0.929,
     0.934
    ],
-   "bias": -3.0,
+   "bias": -2.9,
    "atr_pct": 1.4,
    "high_vol": false,
-   "vol20": 14.5,
-   "ret_rs": -3.9,
+   "vol20": 14.4,
+   "ret_rs": -3.8,
    "chandelier": 0.923,
    "buy": [],
    "sell": [],
    "watch": [
-    "RSI 30.8 接近超卖线 30"
+    "RSI 31.2 接近超卖线 30"
    ],
-   "rs": 0.5,
-   "rs_rank": 7
+   "rs": 0.0,
+   "rs_rank": 8
   },
   {
    "code": "563300",
@@ -87,10 +87,10 @@
    "date": "2026-11-20",
    "listed": "2023-09",
    "bars": 769,
-   "close": 1.123,
-   "chg": -1.4,
-   "amount_yi": 5.8,
-   "rsi": 30.3,
+   "close": 1.082,
+   "chg": -5.0,
+   "amount_yi": 8.3,
+   "rsi": 27.3,
    "rsi_prev": 31.7,
    "ma_dirs": [
     false,
@@ -100,7 +100,7 @@
    "ma_up_days": 0,
    "ma_dn_days": 5,
    "ma_aligned": false,
-   "vol_ratio": 1.49,
+   "vol_ratio": 1.19,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -112,31 +112,62 @@
     "mid_golden": false,
     "momentum": "动能减弱"
    },
-   "dif": -0.0459,
-   "dea": -0.037,
+   "dif": -0.0492,
+   "dea": -0.0376,
    "pattern": "空头排列",
    "above_year": false,
-   "dd_ath": -32.8,
+   "dd_ath": -35.2,
    "ath_date": "2026-05",
-   "dd_60": -25.0,
+   "dd_60": -27.7,
    "ma_fast": [
-    1.146,
-    1.168,
-    1.196
+    1.132,
+    1.16,
+    1.191
    ],
-   "bias": -9.0,
-   "atr_pct": 3.9,
+   "bias": -12.2,
+   "atr_pct": 4.12,
    "high_vol": true,
-   "vol20": 38.5,
-   "ret_rs": -14.1,
-   "chandelier": 1.2,
-   "buy": [],
-   "sell": [],
-   "watch": [
-    "RSI 30.3 接近超卖线 30"
+   "vol20": 41.4,
+   "ret_rs": -17.3,
+   "chandelier": 1.197,
+   "buy": [
+    {
+     "kind": "left",
+     "grade": 1,
+     "title": "左侧·RSI破30",
+     "turning": false,
+     "why": [
+      "RSI14 = 27.3，跌破 30，已连续超卖 1 天",
+      "仍在下探，尚未止跌，只宜小仓试探",
+      "价格在年线下方，趋势偏弱"
+     ],
+     "days": 1,
+     "cuts": [
+      "年线下方减半",
+      "高波动减半"
+     ],
+     "pos": 2.0,
+     "target": 1.232,
+     "target_pct": 13.9,
+     "stop_note": "三档打满后再跌 2×ATR（约 8.2%），或 10 个交易日仍站不回 MA5，认错离场",
+     "stats": {
+      "n": 12,
+      "win": 58.333333333333336,
+      "avg": -0.0817398763710897,
+      "worst": -19.22196796338673,
+      "fwd": 10
+     },
+     "is_new": true,
+     "twins": [
+      "通信ETF515880(相关0.81)"
+     ],
+     "fresh": true
+    }
    ],
-   "rs": -9.7,
-   "rs_rank": 26
+   "sell": [],
+   "watch": [],
+   "rs": -13.5,
+   "rs_rank": 29
   },
   {
    "code": "510880",
@@ -147,20 +178,20 @@
    "date": "2026-11-20",
    "listed": "2007-01",
    "bars": 4768,
-   "close": 3.4,
-   "chg": -0.47,
-   "amount_yi": 2.0,
-   "rsi": 50.1,
+   "close": 3.429,
+   "chg": 0.38,
+   "amount_yi": 4.2,
+   "rsi": 54.1,
    "rsi_prev": 52.4,
    "ma_dirs": [
-    false,
+    true,
     true,
     true
    ],
-   "ma_up_days": 0,
+   "ma_up_days": 1,
    "ma_dn_days": 0,
-   "ma_aligned": false,
-   "vol_ratio": 0.78,
+   "ma_aligned": true,
+   "vol_ratio": 0.89,
    "macd": {
     "pos": "0轴上方",
     "above": true,
@@ -168,32 +199,32 @@
     "golden": true,
     "days": 4,
     "stage": "中期",
-    "stronger": false,
+    "stronger": true,
     "mid_golden": true,
-    "momentum": "动能减弱"
+    "momentum": "动能增强"
    },
-   "dif": 0.0034,
-   "dea": 0.001,
-   "pattern": "均线缠绕",
+   "dif": 0.0057,
+   "dea": 0.0015,
+   "pattern": "震荡偏强",
    "above_year": true,
-   "dd_ath": -8.5,
+   "dd_ath": -7.7,
    "ath_date": "2007-10",
-   "dd_60": -3.8,
+   "dd_60": -3.0,
    "ma_fast": [
-    3.417,
-    3.419,
-    3.404
+    3.427,
+    3.425,
+    3.408
    ],
-   "bias": -0.0,
+   "bias": 0.8,
    "atr_pct": 1.47,
    "high_vol": false,
-   "vol20": 14.8,
-   "ret_rs": 2.7,
-   "chandelier": 3.338,
+   "vol20": 14.7,
+   "ret_rs": 3.6,
+   "chandelier": 3.337,
    "buy": [],
    "sell": [],
    "watch": [],
-   "rs": 7.1,
+   "rs": 7.4,
    "rs_rank": 3
   },
   {
@@ -207,10 +238,10 @@
    "date": "2026-11-20",
    "listed": "2013-07",
    "bars": 3237,
-   "close": 7.209,
-   "chg": -5.29,
-   "amount_yi": 45.0,
-   "rsi": 22.7,
+   "close": 7.282,
+   "chg": -4.34,
+   "amount_yi": 75.6,
+   "rsi": 23.7,
    "rsi_prev": 29.3,
    "ma_dirs": [
     false,
@@ -220,7 +251,7 @@
    "ma_up_days": 0,
    "ma_dn_days": 6,
    "ma_aligned": false,
-   "vol_ratio": 2.08,
+   "vol_ratio": 1.96,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -232,24 +263,24 @@
     "mid_golden": false,
     "momentum": "动能减弱"
    },
-   "dif": -0.2409,
-   "dea": -0.1692,
+   "dif": -0.2351,
+   "dea": -0.1681,
    "pattern": "空头排列",
    "above_year": false,
-   "dd_ath": -39.8,
+   "dd_ath": -39.2,
    "ath_date": "2026-01",
-   "dd_60": -25.1,
+   "dd_60": -24.3,
    "ma_fast": [
-    7.509,
-    7.655,
-    7.759
+    7.534,
+    7.67,
+    7.77
    ],
-   "bias": -10.5,
-   "atr_pct": 2.26,
+   "bias": -9.7,
+   "atr_pct": 2.25,
    "high_vol": true,
-   "vol20": 29.8,
-   "ret_rs": -12.1,
-   "chandelier": 7.965,
+   "vol20": 27.8,
+   "ret_rs": -11.2,
+   "chandelier": 7.962,
    "buy": [
     {
      "kind": "left",
@@ -257,7 +288,7 @@
      "title": "左侧·RSI破30",
      "turning": false,
      "why": [
-      "RSI14 = 22.7，跌破 30，已连续超卖 2 天",
+      "RSI14 = 23.7，跌破 30，已连续超卖 2 天",
       "仍在下探，尚未止跌，只宜小仓试探",
       "价格在年线下方，趋势偏弱"
      ],
@@ -267,8 +298,8 @@
       "高波动减半"
      ],
      "pos": 2.0,
-     "target": 8.056,
-     "target_pct": 11.8,
+     "target": 8.06,
+     "target_pct": 10.7,
      "stop_note": "三档打满后再跌 2×ATR（约 4.5%），或 10 个交易日仍站不回 MA5，认错离场",
      "stats": {
       "n": 39,
@@ -284,8 +315,8 @@
    ],
    "sell": [],
    "watch": [],
-   "rs": -7.7,
-   "rs_rank": 25
+   "rs": -7.4,
+   "rs_rank": 20
   },
   {
    "code": "513100",
@@ -295,14 +326,14 @@
     "qdii",
     "t0"
    ],
-   "source": "eastmoney",
+   "source": "tencent",
    "date": "2026-11-20",
-   "listed": "2013-05",
-   "bars": 3286,
-   "close": 2.094,
-   "chg": -3.72,
-   "amount_yi": 2.6,
-   "rsi": 33.8,
+   "listed": "2024-03",
+   "bars": 641,
+   "close": 2.07,
+   "chg": -4.83,
+   "amount_yi": 5.1,
+   "rsi": 32.0,
    "rsi_prev": 42.0,
    "ma_dirs": [
     false,
@@ -312,7 +343,7 @@
    "ma_up_days": 0,
    "ma_dn_days": 2,
    "ma_aligned": false,
-   "vol_ratio": 1.84,
+   "vol_ratio": 2.1,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -324,30 +355,30 @@
     "mid_golden": false,
     "momentum": "动能减弱"
    },
-   "dif": -0.0343,
-   "dea": -0.0257,
+   "dif": -0.0362,
+   "dea": -0.0261,
    "pattern": "空头排列",
    "above_year": true,
-   "dd_ath": -18.7,
+   "dd_ath": -19.7,
    "ath_date": "2026-06",
-   "dd_60": -14.1,
+   "dd_60": -15.1,
    "ma_fast": [
-    2.145,
-    2.158,
-    2.177
+    2.137,
+    2.153,
+    2.174
    ],
-   "bias": -5.3,
-   "atr_pct": 2.16,
+   "bias": -6.3,
+   "atr_pct": 2.24,
    "high_vol": true,
-   "vol20": 28.5,
-   "ret_rs": -6.6,
-   "chandelier": 2.18,
+   "vol20": 30.5,
+   "ret_rs": -7.7,
+   "chandelier": 2.176,
    "buy": [],
    "sell": [],
    "watch": [
-    "RSI 33.8 接近超卖线 30"
+    "RSI 32.0 接近超卖线 30"
    ],
-   "rs": -2.2,
+   "rs": -3.9,
    "rs_rank": 14
   },
   {
@@ -355,14 +386,14 @@
    "name": "芯片ETF",
    "cat": "行业",
    "flags": [],
-   "source": "eastmoney",
+   "source": "tencent",
    "date": "2026-11-20",
-   "listed": "2020-02",
-   "bars": 1647,
-   "close": 0.821,
-   "chg": -3.3,
-   "amount_yi": 3.6,
-   "rsi": 41.2,
+   "listed": "2024-03",
+   "bars": 641,
+   "close": 0.81,
+   "chg": -4.59,
+   "amount_yi": 5.2,
+   "rsi": 39.9,
    "rsi_prev": 45.0,
    "ma_dirs": [
     false,
@@ -372,7 +403,7 @@
    "ma_up_days": 0,
    "ma_dn_days": 1,
    "ma_aligned": false,
-   "vol_ratio": 1.06,
+   "vol_ratio": 0.88,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -384,43 +415,43 @@
     "mid_golden": false,
     "momentum": "动能减弱"
    },
-   "dif": -0.032,
-   "dea": -0.0405,
+   "dif": -0.0328,
+   "dea": -0.0407,
    "pattern": "空头排列",
    "above_year": false,
-   "dd_ath": -53.1,
+   "dd_ath": -53.7,
    "ath_date": "2026-07",
-   "dd_60": -31.5,
+   "dd_60": -32.4,
    "ma_fast": [
-    0.837,
-    0.829,
-    0.841
+    0.833,
+    0.826,
+    0.839
    ],
-   "bias": -1.7,
-   "atr_pct": 5.37,
-   "high_vol": false,
-   "vol20": 63.3,
-   "ret_rs": -9.7,
+   "bias": -2.9,
+   "atr_pct": 5.45,
+   "high_vol": true,
+   "vol20": 64.3,
+   "ret_rs": -10.9,
    "chandelier": 0.792,
    "buy": [],
    "sell": [],
    "watch": [],
-   "rs": -5.3,
-   "rs_rank": 18
+   "rs": -7.1,
+   "rs_rank": 19
   },
   {
    "code": "512880",
    "name": "证券ETF",
    "cat": "行业",
    "flags": [],
-   "source": "eastmoney",
+   "source": "tencent",
    "date": "2026-11-20",
    "listed": "2016-08",
    "bars": 2497,
-   "close": 0.976,
-   "chg": -1.01,
-   "amount_yi": 6.3,
-   "rsi": 37.2,
+   "close": 0.981,
+   "chg": -0.51,
+   "amount_yi": 11.7,
+   "rsi": 38.9,
    "rsi_prev": 40.7,
    "ma_dirs": [
     false,
@@ -428,9 +459,9 @@
     false
    ],
    "ma_up_days": 0,
-   "ma_dn_days": 1,
+   "ma_dn_days": 0,
    "ma_aligned": false,
-   "vol_ratio": 1.24,
+   "vol_ratio": 1.27,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -442,28 +473,28 @@
     "mid_golden": false,
     "momentum": "动能减弱"
    },
-   "dif": -0.0124,
+   "dif": -0.012,
    "dea": -0.012,
    "pattern": "空头排列",
    "above_year": false,
-   "dd_ath": -30.1,
+   "dd_ath": -29.8,
    "ath_date": "2024-11",
-   "dd_60": -12.6,
+   "dd_60": -12.2,
    "ma_fast": [
-    0.981,
     0.983,
-    0.983
+    0.984,
+    0.984
    ],
-   "bias": -2.0,
+   "bias": -1.5,
    "atr_pct": 1.66,
    "high_vol": false,
-   "vol20": 21.6,
-   "ret_rs": -3.7,
+   "vol20": 21.5,
+   "ret_rs": -3.2,
    "chandelier": 0.978,
    "buy": [],
    "sell": [],
    "watch": [],
-   "rs": 0.7,
+   "rs": 0.6,
    "rs_rank": 6
   },
   {
@@ -471,14 +502,14 @@
    "name": "通信ETF",
    "cat": "行业",
    "flags": [],
-   "source": "eastmoney",
+   "source": "tencent",
    "date": "2026-11-20",
-   "listed": "2019-09",
-   "bars": 1745,
-   "close": 0.37,
-   "chg": -2.63,
-   "amount_yi": 12.1,
-   "rsi": 30.5,
+   "listed": "2024-03",
+   "bars": 641,
+   "close": 0.36,
+   "chg": -5.26,
+   "amount_yi": 17.4,
+   "rsi": 29.3,
    "rsi_prev": 31.9,
    "ma_dirs": [
     false,
@@ -488,42 +519,73 @@
    "ma_up_days": 0,
    "ma_dn_days": 5,
    "ma_aligned": false,
-   "vol_ratio": 0.8,
+   "vol_ratio": 0.66,
    "macd": {
     "pos": "0轴下方",
     "above": false,
-    "cross": "金叉中期·第8天",
-    "golden": true,
-    "days": 8,
-    "stage": "中期",
+    "cross": "死叉初期·第1天",
+    "golden": false,
+    "days": 1,
+    "stage": "初期",
     "stronger": false,
-    "mid_golden": true,
+    "mid_golden": false,
     "momentum": "动能减弱"
    },
-   "dif": -0.0449,
-   "dea": -0.0455,
+   "dif": -0.0457,
+   "dea": -0.0456,
    "pattern": "空头排列",
    "above_year": false,
-   "dd_ath": -60.8,
+   "dd_ath": -61.9,
    "ath_date": "2026-06",
-   "dd_60": -49.2,
+   "dd_60": -50.5,
    "ma_fast": [
+    0.374,
     0.377,
-    0.379,
-    0.394
+    0.392
    ],
-   "bias": -13.2,
-   "atr_pct": 7.29,
+   "bias": -15.5,
+   "atr_pct": 7.57,
    "high_vol": true,
-   "vol20": 78.0,
-   "ret_rs": -28.0,
-   "chandelier": 0.455,
-   "buy": [],
-   "sell": [],
-   "watch": [
-    "RSI 30.5 接近超卖线 30"
+   "vol20": 79.1,
+   "ret_rs": -30.0,
+   "chandelier": 0.454,
+   "buy": [
+    {
+     "kind": "left",
+     "grade": 1,
+     "title": "左侧·RSI破30",
+     "turning": false,
+     "why": [
+      "RSI14 = 29.3，跌破 30，已连续超卖 1 天",
+      "仍在下探，尚未止跌，只宜小仓试探",
+      "价格在年线下方，趋势偏弱"
+     ],
+     "days": 1,
+     "cuts": [
+      "年线下方减半",
+      "高波动减半"
+     ],
+     "pos": 2.0,
+     "target": 0.426,
+     "target_pct": 18.3,
+     "stop_note": "三档打满后再跌 2×ATR（约 15.1%），或 10 个交易日仍站不回 MA5，认错离场",
+     "stats": {
+      "n": 7,
+      "win": 14.285714285714285,
+      "avg": -6.64172834205853,
+      "worst": -14.7117296222664,
+      "fwd": 10
+     },
+     "is_new": true,
+     "twins": [
+      "中证2000ETF563300(相关0.81)"
+     ],
+     "fresh": true
+    }
    ],
-   "rs": -23.6,
+   "sell": [],
+   "watch": [],
+   "rs": -26.2,
    "rs_rank": 30
   },
   {
@@ -531,13 +593,13 @@
    "name": "医药ETF",
    "cat": "行业",
    "flags": [],
-   "source": "eastmoney",
+   "source": "tencent",
    "date": "2026-11-20",
-   "listed": "2013-10",
-   "bars": 3177,
+   "listed": "2024-03",
+   "bars": 641,
    "close": 0.37,
    "chg": -2.37,
-   "amount_yi": 2.3,
+   "amount_yi": 4.4,
    "rsi": 39.8,
    "rsi_prev": 47.8,
    "ma_dirs": [
@@ -548,7 +610,7 @@
    "ma_up_days": 0,
    "ma_dn_days": 6,
    "ma_aligned": false,
-   "vol_ratio": 1.44,
+   "vol_ratio": 1.52,
    "macd": {
     "pos": "穿越0轴",
     "above": false,
@@ -564,8 +626,8 @@
    "dea": 0.0013,
    "pattern": "均线缠绕",
    "above_year": false,
-   "dd_ath": -59.2,
-   "ath_date": "2021-02",
+   "dd_ath": -19.4,
+   "ath_date": "2025-09",
    "dd_60": -7.3,
    "ma_fast": [
     0.376,
@@ -581,7 +643,7 @@
    "buy": [],
    "sell": [],
    "watch": [],
-   "rs": 2.8,
+   "rs": 2.2,
    "rs_rank": 5
   },
   {
@@ -589,14 +651,14 @@
    "name": "消费ETF",
    "cat": "行业",
    "flags": [],
-   "source": "eastmoney",
+   "source": "tencent",
    "date": "2026-11-20",
-   "listed": "2013-09",
-   "bars": 3202,
-   "close": 0.699,
-   "chg": -1.41,
-   "amount_yi": 1.6,
-   "rsi": 55.7,
+   "listed": "2024-03",
+   "bars": 641,
+   "close": 0.7,
+   "chg": -1.27,
+   "amount_yi": 3.3,
+   "rsi": 56.3,
    "rsi_prev": 62.4,
    "ma_dirs": [
     false,
@@ -606,7 +668,7 @@
    "ma_up_days": 0,
    "ma_dn_days": 0,
    "ma_aligned": false,
-   "vol_ratio": 0.76,
+   "vol_ratio": 0.89,
    "macd": {
     "pos": "0轴上方",
     "above": true,
@@ -618,28 +680,28 @@
     "mid_golden": false,
     "momentum": "动能减弱"
    },
-   "dif": 0.0102,
-   "dea": 0.0101,
+   "dif": 0.0103,
+   "dea": 0.0102,
    "pattern": "多头排列",
    "above_year": false,
-   "dd_ath": -54.8,
-   "ath_date": "2021-02",
-   "dd_60": -1.8,
+   "dd_ath": -31.8,
+   "ath_date": "2024-10",
+   "dd_60": -1.7,
    "ma_fast": [
     0.705,
     0.707,
     0.704
    ],
-   "bias": 0.9,
-   "atr_pct": 1.74,
+   "bias": 1.1,
+   "atr_pct": 1.79,
    "high_vol": false,
-   "vol20": 21.5,
-   "ret_rs": 5.4,
-   "chandelier": 0.675,
+   "vol20": 21.4,
+   "ret_rs": 5.6,
+   "chandelier": 0.674,
    "buy": [],
    "sell": [],
    "watch": [],
-   "rs": 9.8,
+   "rs": 9.4,
    "rs_rank": 2
   },
   {
@@ -650,14 +712,14 @@
     "qdii",
     "t0"
    ],
-   "source": "eastmoney",
+   "source": "tencent",
    "date": "2026-11-20",
    "listed": "2019-06",
    "bars": 1798,
-   "close": 1.829,
-   "chg": -4.34,
-   "amount_yi": 1.3,
-   "rsi": 29.7,
+   "close": 1.812,
+   "chg": -5.23,
+   "amount_yi": 2.0,
+   "rsi": 28.6,
    "rsi_prev": 36.7,
    "ma_dirs": [
     false,
@@ -667,7 +729,7 @@
    "ma_up_days": 0,
    "ma_dn_days": 3,
    "ma_aligned": false,
-   "vol_ratio": 1.87,
+   "vol_ratio": 1.66,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -679,24 +741,24 @@
     "mid_golden": false,
     "momentum": "动能减弱"
    },
-   "dif": -0.0572,
-   "dea": -0.0488,
+   "dif": -0.0586,
+   "dea": -0.049,
    "pattern": "空头排列",
    "above_year": false,
-   "dd_ath": -24.6,
+   "dd_ath": -25.3,
    "ath_date": "2026-06",
-   "dd_60": -19.0,
+   "dd_60": -19.8,
    "ma_fast": [
-    1.883,
-    1.895,
-    1.913
+    1.877,
+    1.891,
+    1.911
    ],
-   "bias": -7.5,
-   "atr_pct": 2.51,
+   "bias": -8.3,
+   "atr_pct": 2.59,
    "high_vol": false,
-   "vol20": 31.2,
-   "ret_rs": -11.0,
-   "chandelier": 1.967,
+   "vol20": 32.8,
+   "ret_rs": -11.8,
+   "chandelier": 1.964,
    "buy": [
     {
      "kind": "left",
@@ -704,7 +766,7 @@
      "title": "左侧·RSI破30",
      "turning": false,
      "why": [
-      "RSI14 = 29.7，跌破 30，已连续超卖 1 天",
+      "RSI14 = 28.6，跌破 30，已连续超卖 1 天",
       "仍在下探，尚未止跌，只宜小仓试探",
       "价格在年线下方，趋势偏弱"
      ],
@@ -713,24 +775,24 @@
       "年线下方减半"
      ],
      "pos": 3.0,
-     "target": 1.978,
-     "target_pct": 8.1,
-     "stop_note": "三档打满后再跌 2×ATR（约 5.0%），或 10 个交易日仍站不回 MA5，认错离场",
+     "target": 1.977,
+     "target_pct": 9.1,
+     "stop_note": "三档打满后再跌 2×ATR（约 5.2%），或 10 个交易日仍站不回 MA5，认错离场",
      "stats": {
       "n": 12,
       "win": 66.66666666666666,
-      "avg": 1.7209273195184782,
+      "avg": 1.6460902003073496,
       "worst": -5.910852713178305,
       "fwd": 10
      },
      "is_new": true,
      "twins": [],
-     "fresh": true
+     "fresh": false
     }
    ],
    "sell": [],
    "watch": [],
-   "rs": -6.6,
+   "rs": -8.0,
    "rs_rank": 22
   },
   {
@@ -741,14 +803,14 @@
     "qdii",
     "t0"
    ],
-   "source": "eastmoney",
+   "source": "tencent",
    "date": "2026-11-20",
    "listed": "2014-09",
    "bars": 2964,
-   "close": 1.682,
-   "chg": -2.94,
-   "amount_yi": 1.0,
-   "rsi": 32.6,
+   "close": 1.675,
+   "chg": -3.35,
+   "amount_yi": 1.7,
+   "rsi": 32.0,
    "rsi_prev": 38.3,
    "ma_dirs": [
     false,
@@ -758,7 +820,7 @@
    "ma_up_days": 0,
    "ma_dn_days": 3,
    "ma_aligned": false,
-   "vol_ratio": 1.45,
+   "vol_ratio": 1.34,
    "macd": {
     "pos": "穿越0轴",
     "above": false,
@@ -770,45 +832,45 @@
     "mid_golden": false,
     "momentum": "动能减弱"
    },
-   "dif": -0.0076,
-   "dea": 0.0039,
+   "dif": -0.0081,
+   "dea": 0.0038,
    "pattern": "空头排列",
    "above_year": false,
-   "dd_ath": -19.0,
+   "dd_ath": -19.4,
    "ath_date": "2026-02",
-   "dd_60": -12.8,
+   "dd_60": -13.2,
    "ma_fast": [
-    1.726,
-    1.769,
-    1.798
+    1.724,
+    1.768,
+    1.797
    ],
-   "bias": -6.1,
-   "atr_pct": 2.01,
+   "bias": -6.5,
+   "atr_pct": 2.05,
    "high_vol": true,
-   "vol20": 27.7,
-   "ret_rs": -4.0,
-   "chandelier": 1.779,
+   "vol20": 28.3,
+   "ret_rs": -4.4,
+   "chandelier": 1.777,
    "buy": [],
    "sell": [],
    "watch": [
-    "RSI 32.6 接近超卖线 30"
+    "RSI 32.0 接近超卖线 30"
    ],
-   "rs": 0.4,
-   "rs_rank": 8
+   "rs": -0.6,
+   "rs_rank": 10
   },
   {
    "code": "512660",
    "name": "军工ETF",
    "cat": "行业",
    "flags": [],
-   "source": "eastmoney",
+   "source": "tencent",
    "date": "2026-11-20",
    "listed": "2016-08",
    "bars": 2497,
-   "close": 0.906,
-   "chg": -3.0,
-   "amount_yi": 1.5,
-   "rsi": 24.0,
+   "close": 0.896,
+   "chg": -4.07,
+   "amount_yi": 2.2,
+   "rsi": 23.0,
    "rsi_prev": 27.5,
    "ma_dirs": [
     false,
@@ -818,7 +880,7 @@
    "ma_up_days": 0,
    "ma_dn_days": 6,
    "ma_aligned": false,
-   "vol_ratio": 0.85,
+   "vol_ratio": 0.73,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -830,24 +892,24 @@
     "mid_golden": false,
     "momentum": "动能减弱"
    },
-   "dif": -0.0355,
-   "dea": -0.0272,
+   "dif": -0.0363,
+   "dea": -0.0274,
    "pattern": "空头排列",
    "above_year": false,
-   "dd_ath": -46.2,
+   "dd_ath": -46.8,
    "ath_date": "2026-01",
-   "dd_60": -23.9,
+   "dd_60": -24.7,
    "ma_fast": [
-    0.928,
-    0.941,
-    0.961
+    0.924,
+    0.939,
+    0.96
    ],
-   "bias": -9.5,
-   "atr_pct": 3.43,
+   "bias": -10.4,
+   "atr_pct": 3.51,
    "high_vol": true,
-   "vol20": 30.2,
-   "ret_rs": -14.6,
-   "chandelier": 0.972,
+   "vol20": 31.5,
+   "ret_rs": -15.6,
+   "chandelier": 0.971,
    "buy": [
     {
      "kind": "left",
@@ -855,7 +917,7 @@
      "title": "左侧·RSI破30",
      "turning": false,
      "why": [
-      "RSI14 = 24.0，跌破 30，已连续超卖 3 天",
+      "RSI14 = 23.0，跌破 30，已连续超卖 3 天",
       "仍在下探，尚未止跌，只宜小仓试探",
       "价格在年线下方，趋势偏弱"
      ],
@@ -865,9 +927,9 @@
       "高波动减半"
      ],
      "pos": 2.0,
-     "target": 1.001,
-     "target_pct": 10.4,
-     "stop_note": "三档打满后再跌 2×ATR（约 6.9%），或 10 个交易日仍站不回 MA5，认错离场",
+     "target": 1.0,
+     "target_pct": 11.6,
+     "stop_note": "三档打满后再跌 2×ATR（约 7.0%），或 10 个交易日仍站不回 MA5，认错离场",
      "stats": {
       "n": 31,
       "win": 58.06451612903226,
@@ -882,32 +944,32 @@
    ],
    "sell": [],
    "watch": [],
-   "rs": -10.2,
-   "rs_rank": 27
+   "rs": -11.8,
+   "rs_rank": 26
   },
   {
    "code": "512800",
    "name": "银行ETF",
    "cat": "行业",
    "flags": [],
-   "source": "eastmoney",
+   "source": "tencent",
    "date": "2026-11-20",
-   "listed": "2017-08",
-   "bars": 2257,
-   "close": 0.909,
-   "chg": -0.66,
-   "amount_yi": 6.8,
-   "rsi": 63.9,
+   "listed": "2024-03",
+   "bars": 641,
+   "close": 0.93,
+   "chg": 1.64,
+   "amount_yi": 13.9,
+   "rsi": 73.0,
    "rsi_prev": 68.3,
    "ma_dirs": [
-    false,
+    true,
     true,
     true
    ],
-   "ma_up_days": 0,
+   "ma_up_days": 1,
    "ma_dn_days": 0,
-   "ma_aligned": false,
-   "vol_ratio": 0.96,
+   "ma_aligned": true,
+   "vol_ratio": 1.07,
    "macd": {
     "pos": "0轴上方",
     "above": true,
@@ -915,32 +977,39 @@
     "golden": true,
     "days": 6,
     "stage": "中期",
-    "stronger": false,
+    "stronger": true,
     "mid_golden": true,
-    "momentum": "动能减弱"
+    "momentum": "动能增强"
    },
-   "dif": 0.014,
-   "dea": 0.0121,
+   "dif": 0.0157,
+   "dea": 0.0124,
    "pattern": "多头排列",
    "above_year": true,
-   "dd_ath": -1.1,
+   "dd_ath": 0.0,
    "ath_date": "2026-11",
-   "dd_60": -1.1,
+   "dd_60": 0.0,
    "ma_fast": [
-    0.913,
-    0.914,
-    0.908
+    0.92,
+    0.918,
+    0.911
    ],
-   "bias": 2.2,
-   "atr_pct": 1.65,
-   "high_vol": false,
-   "vol20": 14.9,
-   "ret_rs": 7.1,
-   "chandelier": 0.874,
+   "bias": 4.4,
+   "atr_pct": 1.76,
+   "high_vol": true,
+   "vol20": 15.1,
+   "ret_rs": 9.5,
+   "chandelier": 0.881,
    "buy": [],
-   "sell": [],
+   "sell": [
+    {
+     "grade": 1,
+     "title": "偏热",
+     "why": "RSI14 = 73.0 ≥ 70，不追，持有者收紧止盈",
+     "fresh": true
+    }
+   ],
    "watch": [],
-   "rs": 11.5,
+   "rs": 13.3,
    "rs_rank": 1
   },
   {
@@ -948,14 +1017,14 @@
    "name": "有色金属ETF",
    "cat": "行业",
    "flags": [],
-   "source": "eastmoney",
+   "source": "tencent",
    "date": "2026-11-20",
-   "listed": "2017-09",
-   "bars": 2236,
-   "close": 1.239,
-   "chg": -3.13,
-   "amount_yi": 3.6,
-   "rsi": 22.2,
+   "listed": "2024-03",
+   "bars": 641,
+   "close": 1.24,
+   "chg": -3.05,
+   "amount_yi": 5.4,
+   "rsi": 22.3,
    "rsi_prev": 24.9,
    "ma_dirs": [
     false,
@@ -965,7 +1034,7 @@
    "ma_up_days": 0,
    "ma_dn_days": 6,
    "ma_aligned": false,
-   "vol_ratio": 1.39,
+   "vol_ratio": 1.18,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -977,24 +1046,24 @@
     "mid_golden": false,
     "momentum": "动能减弱"
    },
-   "dif": -0.0731,
+   "dif": -0.073,
    "dea": -0.0624,
    "pattern": "空头排列",
    "above_year": false,
    "dd_ath": -52.2,
    "ath_date": "2026-01",
-   "dd_60": -35.1,
+   "dd_60": -35.0,
    "ma_fast": [
     1.271,
     1.295,
     1.323
    ],
    "bias": -11.4,
-   "atr_pct": 3.82,
+   "atr_pct": 3.83,
    "high_vol": false,
-   "vol20": 34.4,
-   "ret_rs": -16.7,
-   "chandelier": 1.38,
+   "vol20": 34.3,
+   "ret_rs": -16.6,
+   "chandelier": 1.379,
    "buy": [
     {
      "kind": "left",
@@ -1002,7 +1071,7 @@
      "title": "左侧·RSI破30",
      "turning": false,
      "why": [
-      "RSI14 = 22.2，跌破 30，已连续超卖 5 天",
+      "RSI14 = 22.3，跌破 30，已连续超卖 5 天",
       "仍在下探，尚未止跌，只宜小仓试探",
       "价格在年线下方，趋势偏弱"
      ],
@@ -1012,13 +1081,13 @@
      ],
      "pos": 3.0,
      "target": 1.399,
-     "target_pct": 12.9,
-     "stop_note": "三档打满后再跌 2×ATR（约 7.6%），或 10 个交易日仍站不回 MA5，认错离场",
+     "target_pct": 12.8,
+     "stop_note": "三档打满后再跌 2×ATR（约 7.7%），或 10 个交易日仍站不回 MA5，认错离场",
      "stats": {
-      "n": 34,
-      "win": 61.76470588235294,
-      "avg": 2.684034193839335,
-      "worst": -9.039548022598865,
+      "n": 8,
+      "win": 50.0,
+      "avg": 4.054207084712934,
+      "worst": -5.948446794448103,
       "fwd": 10
      },
      "is_new": false,
@@ -1028,22 +1097,22 @@
    ],
    "sell": [],
    "watch": [],
-   "rs": -12.3,
-   "rs_rank": 29
+   "rs": -12.8,
+   "rs_rank": 27
   },
   {
    "code": "562500",
    "name": "机器人ETF",
    "cat": "行业",
    "flags": [],
-   "source": "eastmoney",
+   "source": "tencent",
    "date": "2026-11-20",
    "listed": "2021-12",
    "bars": 1185,
-   "close": 0.782,
-   "chg": -1.76,
-   "amount_yi": 3.0,
-   "rsi": 36.2,
+   "close": 0.764,
+   "chg": -4.02,
+   "amount_yi": 4.9,
+   "rsi": 33.8,
    "rsi_prev": 38.2,
    "ma_dirs": [
     false,
@@ -1053,7 +1122,7 @@
    "ma_up_days": 0,
    "ma_dn_days": 6,
    "ma_aligned": false,
-   "vol_ratio": 1.05,
+   "vol_ratio": 0.98,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -1065,29 +1134,31 @@
     "mid_golden": false,
     "momentum": "动能减弱"
    },
-   "dif": -0.0187,
-   "dea": -0.0109,
+   "dif": -0.0201,
+   "dea": -0.0112,
    "pattern": "空头排列",
    "above_year": false,
-   "dd_ath": -36.6,
+   "dd_ath": -38.0,
    "ath_date": "2026-05",
-   "dd_60": -20.1,
+   "dd_60": -22.0,
    "ma_fast": [
-    0.793,
-    0.803,
-    0.82
+    0.787,
+    0.8,
+    0.817
    ],
-   "bias": -8.1,
-   "atr_pct": 4.06,
+   "bias": -10.1,
+   "atr_pct": 4.19,
    "high_vol": true,
-   "vol20": 43.5,
-   "ret_rs": -11.6,
-   "chandelier": 0.814,
+   "vol20": 45.0,
+   "ret_rs": -13.7,
+   "chandelier": 0.813,
    "buy": [],
    "sell": [],
-   "watch": [],
-   "rs": -7.2,
-   "rs_rank": 24
+   "watch": [
+    "RSI 33.8 接近超卖线 30"
+   ],
+   "rs": -9.9,
+   "rs_rank": 25
   },
   {
    "code": "159985",
@@ -1097,14 +1168,14 @@
     "fut",
     "t0"
    ],
-   "source": "eastmoney",
+   "source": "tencent",
    "date": "2026-11-20",
    "listed": "2019-12",
    "bars": 1687,
-   "close": 2.099,
-   "chg": -0.1,
-   "amount_yi": 1.0,
-   "rsi": 37.8,
+   "close": 2.088,
+   "chg": -0.62,
+   "amount_yi": 1.8,
+   "rsi": 36.4,
    "rsi_prev": 38.0,
    "ma_dirs": [
     false,
@@ -1114,7 +1185,7 @@
    "ma_up_days": 0,
    "ma_dn_days": 2,
    "ma_aligned": false,
-   "vol_ratio": 0.83,
+   "vol_ratio": 0.87,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -1126,28 +1197,28 @@
     "mid_golden": false,
     "momentum": "动能减弱"
    },
-   "dif": -0.0282,
-   "dea": -0.0274,
+   "dif": -0.0291,
+   "dea": -0.0275,
    "pattern": "空头排列",
    "above_year": false,
-   "dd_ath": -15.2,
+   "dd_ath": -15.6,
    "ath_date": "2026-09",
-   "dd_60": -15.2,
+   "dd_60": -15.6,
    "ma_fast": [
-    2.109,
-    2.12,
-    2.14
+    2.105,
+    2.118,
+    2.138
    ],
-   "bias": -2.2,
-   "atr_pct": 1.59,
+   "bias": -2.7,
+   "atr_pct": 1.65,
    "high_vol": false,
    "vol20": 19.0,
-   "ret_rs": -5.8,
-   "chandelier": 2.133,
+   "ret_rs": -6.3,
+   "chandelier": 2.129,
    "buy": [],
    "sell": [],
    "watch": [],
-   "rs": -1.4,
+   "rs": -2.5,
    "rs_rank": 12
   },
   {
@@ -1158,14 +1229,14 @@
     "hk",
     "t0"
    ],
-   "source": "eastmoney",
+   "source": "tencent",
    "date": "2026-11-20",
    "listed": "2021-05",
    "bars": 1333,
-   "close": 0.443,
-   "chg": -2.85,
-   "amount_yi": 22.7,
-   "rsi": 27.0,
+   "close": 0.439,
+   "chg": -3.73,
+   "amount_yi": 38.8,
+   "rsi": 26.0,
    "rsi_prev": 30.5,
    "ma_dirs": [
     false,
@@ -1175,7 +1246,7 @@
    "ma_up_days": 0,
    "ma_dn_days": 6,
    "ma_aligned": false,
-   "vol_ratio": 1.32,
+   "vol_ratio": 1.27,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -1187,23 +1258,23 @@
     "mid_golden": false,
     "momentum": "动能减弱"
    },
-   "dif": -0.0146,
-   "dea": -0.0115,
+   "dif": -0.0149,
+   "dea": -0.0116,
    "pattern": "空头排列",
    "above_year": false,
-   "dd_ath": -57.5,
+   "dd_ath": -57.9,
    "ath_date": "2021-06",
-   "dd_60": -26.0,
+   "dd_60": -26.7,
    "ma_fast": [
-    0.455,
-    0.463,
+    0.454,
+    0.462,
     0.469
    ],
-   "bias": -8.3,
-   "atr_pct": 2.88,
+   "bias": -9.1,
+   "atr_pct": 2.91,
    "high_vol": true,
-   "vol20": 31.2,
-   "ret_rs": -9.0,
+   "vol20": 32.3,
+   "ret_rs": -9.9,
    "chandelier": 0.483,
    "buy": [
     {
@@ -1212,7 +1283,7 @@
      "title": "左侧·RSI破30",
      "turning": false,
      "why": [
-      "RSI14 = 27.0，跌破 30，已连续超卖 1 天",
+      "RSI14 = 26.0，跌破 30，已连续超卖 1 天",
       "仍在下探，尚未止跌，只宜小仓试探",
       "价格在年线下方，趋势偏弱"
      ],
@@ -1223,7 +1294,7 @@
      ],
      "pos": 2.0,
      "target": 0.483,
-     "target_pct": 9.0,
+     "target_pct": 10.0,
      "stop_note": "三档打满后再跌 2×ATR（约 5.8%），或 10 个交易日仍站不回 MA5，认错离场",
      "stats": {
       "n": 25,
@@ -1234,27 +1305,27 @@
      },
      "is_new": true,
      "twins": [],
-     "fresh": true
+     "fresh": false
     }
    ],
    "sell": [],
    "watch": [],
-   "rs": -4.6,
-   "rs_rank": 17
+   "rs": -6.1,
+   "rs_rank": 16
   },
   {
    "code": "515790",
    "name": "光伏ETF",
    "cat": "行业",
    "flags": [],
-   "source": "eastmoney",
+   "source": "tencent",
    "date": "2026-11-20",
    "listed": "2020-12",
    "bars": 1435,
-   "close": 0.642,
-   "chg": -2.13,
-   "amount_yi": 0.7,
-   "rsi": 28.7,
+   "close": 0.635,
+   "chg": -3.2,
+   "amount_yi": 1.3,
+   "rsi": 27.5,
    "rsi_prev": 31.2,
    "ma_dirs": [
     false,
@@ -1276,23 +1347,23 @@
     "mid_golden": false,
     "momentum": "动能减弱"
    },
-   "dif": -0.0229,
-   "dea": -0.0174,
+   "dif": -0.0235,
+   "dea": -0.0175,
    "pattern": "空头排列",
    "above_year": false,
-   "dd_ath": -66.6,
+   "dd_ath": -67.0,
    "ath_date": "2021-08",
-   "dd_60": -25.4,
+   "dd_60": -26.2,
    "ma_fast": [
-    0.653,
-    0.66,
-    0.674
+    0.65,
+    0.659,
+    0.673
    ],
-   "bias": -8.4,
-   "atr_pct": 3.43,
+   "bias": -9.3,
+   "atr_pct": 3.49,
    "high_vol": false,
-   "vol20": 34.8,
-   "ret_rs": -10.5,
+   "vol20": 35.6,
+   "ret_rs": -11.4,
    "chandelier": 0.714,
    "buy": [
     {
@@ -1301,7 +1372,7 @@
      "title": "左侧·RSI破30",
      "turning": false,
      "why": [
-      "RSI14 = 28.7，跌破 30，已连续超卖 1 天",
+      "RSI14 = 27.5，跌破 30，已连续超卖 1 天",
       "仍在下探，尚未止跌，只宜小仓试探",
       "价格在年线下方，趋势偏弱"
      ],
@@ -1310,9 +1381,9 @@
       "年线下方减半"
      ],
      "pos": 3.0,
-     "target": 0.701,
-     "target_pct": 9.1,
-     "stop_note": "三档打满后再跌 2×ATR（约 6.9%），或 10 个交易日仍站不回 MA5，认错离场",
+     "target": 0.7,
+     "target_pct": 10.3,
+     "stop_note": "三档打满后再跌 2×ATR（约 7.0%），或 10 个交易日仍站不回 MA5，认错离场",
      "stats": {
       "n": 26,
       "win": 61.53846153846154,
@@ -1322,27 +1393,27 @@
      },
      "is_new": true,
      "twins": [],
-     "fresh": true
+     "fresh": false
     }
    ],
    "sell": [],
    "watch": [],
-   "rs": -6.1,
-   "rs_rank": 20
+   "rs": -7.6,
+   "rs_rank": 21
   },
   {
    "code": "515220",
    "name": "煤炭ETF",
    "cat": "行业",
    "flags": [],
-   "source": "eastmoney",
+   "source": "tencent",
    "date": "2026-11-20",
-   "listed": "2020-03",
-   "bars": 1632,
-   "close": 1.157,
-   "chg": -0.77,
-   "amount_yi": 2.3,
-   "rsi": 37.7,
+   "listed": "2024-03",
+   "bars": 641,
+   "close": 1.16,
+   "chg": -0.51,
+   "amount_yi": 5.7,
+   "rsi": 38.2,
    "rsi_prev": 39.4,
    "ma_dirs": [
     false,
@@ -1352,7 +1423,7 @@
    "ma_up_days": 0,
    "ma_dn_days": 2,
    "ma_aligned": false,
-   "vol_ratio": 1.0,
+   "vol_ratio": 1.39,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -1364,29 +1435,29 @@
     "mid_golden": false,
     "momentum": "动能减弱"
    },
-   "dif": -0.0208,
-   "dea": -0.0199,
+   "dif": -0.0206,
+   "dea": -0.0198,
    "pattern": "空头排列",
    "above_year": false,
-   "dd_ath": -20.7,
+   "dd_ath": -20.5,
    "ath_date": "2026-06",
-   "dd_60": -17.4,
+   "dd_60": -17.1,
    "ma_fast": [
-    1.168,
+    1.169,
     1.175,
-    1.174
+    1.175
    ],
-   "bias": -3.1,
-   "atr_pct": 2.49,
+   "bias": -2.9,
+   "atr_pct": 2.51,
    "high_vol": false,
    "vol20": 22.6,
-   "ret_rs": -4.0,
+   "ret_rs": -3.7,
    "chandelier": 1.16,
    "buy": [],
    "sell": [],
    "watch": [],
-   "rs": 0.4,
-   "rs_rank": 9
+   "rs": 0.1,
+   "rs_rank": 7
   },
   {
    "code": "510300",
@@ -1397,10 +1468,10 @@
    "date": "2026-11-20",
    "listed": "2012-05",
    "bars": 3520,
-   "close": 3.993,
-   "chg": -1.65,
-   "amount_yi": 69.3,
-   "rsi": 29.0,
+   "close": 4.018,
+   "chg": -1.03,
+   "amount_yi": 181.8,
+   "rsi": 30.8,
    "rsi_prev": 34.5,
    "ma_dirs": [
     false,
@@ -1410,7 +1481,7 @@
    "ma_up_days": 0,
    "ma_dn_days": 1,
    "ma_aligned": false,
-   "vol_ratio": 1.62,
+   "vol_ratio": 2.38,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -1422,59 +1493,31 @@
     "mid_golden": false,
     "momentum": "动能减弱"
    },
-   "dif": -0.072,
-   "dea": -0.0745,
+   "dif": -0.07,
+   "dea": -0.0741,
    "pattern": "空头排列",
    "above_year": false,
-   "dd_ath": -27.6,
+   "dd_ath": -27.1,
    "ath_date": "2021-02",
-   "dd_60": -15.2,
+   "dd_60": -14.6,
    "ma_fast": [
-    4.037,
-    4.041,
-    4.058
+    4.045,
+    4.046,
+    4.061
    ],
-   "bias": -2.8,
-   "atr_pct": 1.62,
+   "bias": -2.2,
+   "atr_pct": 1.61,
    "high_vol": false,
-   "vol20": 14.3,
-   "ret_rs": -4.4,
+   "vol20": 13.7,
+   "ret_rs": -3.8,
    "chandelier": 4.022,
-   "buy": [
-    {
-     "kind": "left",
-     "grade": 1,
-     "title": "左侧·RSI破30",
-     "turning": false,
-     "why": [
-      "RSI14 = 29.0，跌破 30，已连续超卖 1 天",
-      "仍在下探，尚未止跌，只宜小仓试探",
-      "价格在年线下方，趋势偏弱"
-     ],
-     "days": 1,
-     "cuts": [
-      "年线下方减半"
-     ],
-     "pos": 3.0,
-     "target": 4.106,
-     "target_pct": 2.8,
-     "stop_note": "三档打满后再跌 2×ATR（约 3.2%），或 10 个交易日仍站不回 MA5，认错离场",
-     "stats": {
-      "n": 43,
-      "win": 65.11627906976744,
-      "avg": 2.577895197521253,
-      "worst": -14.585987261146505,
-      "fwd": 10
-     },
-     "is_new": true,
-     "twins": [],
-     "fresh": true
-    }
-   ],
+   "buy": [],
    "sell": [],
-   "watch": [],
+   "watch": [
+    "RSI 30.8 接近超卖线 30"
+   ],
    "rs": 0.0,
-   "rs_rank": 10
+   "rs_rank": 9
   },
   {
    "code": "513500",
@@ -1484,14 +1527,14 @@
     "qdii",
     "t0"
    ],
-   "source": "eastmoney",
+   "source": "tencent",
    "date": "2026-11-20",
-   "listed": "2014-01",
-   "bars": 3122,
-   "close": 2.485,
-   "chg": -3.31,
-   "amount_yi": 2.0,
-   "rsi": 31.6,
+   "listed": "2024-03",
+   "bars": 641,
+   "close": 2.47,
+   "chg": -3.89,
+   "amount_yi": 4.4,
+   "rsi": 30.4,
    "rsi_prev": 40.0,
    "ma_dirs": [
     false,
@@ -1501,7 +1544,7 @@
    "ma_up_days": 0,
    "ma_dn_days": 5,
    "ma_aligned": false,
-   "vol_ratio": 1.49,
+   "vol_ratio": 1.85,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -1513,30 +1556,30 @@
     "mid_golden": false,
     "momentum": "动能减弱"
    },
-   "dif": -0.0299,
-   "dea": -0.0181,
+   "dif": -0.0311,
+   "dea": -0.0183,
    "pattern": "空头排列",
    "above_year": false,
-   "dd_ath": -10.5,
+   "dd_ath": -11.1,
    "ath_date": "2026-08",
-   "dd_60": -10.0,
+   "dd_60": -10.5,
    "ma_fast": [
-    2.541,
-    2.56,
-    2.587
+    2.536,
+    2.557,
+    2.585
    ],
-   "bias": -5.2,
-   "atr_pct": 1.8,
+   "bias": -5.8,
+   "atr_pct": 1.85,
    "high_vol": true,
-   "vol20": 23.7,
-   "ret_rs": -4.6,
-   "chandelier": 2.572,
+   "vol20": 24.8,
+   "ret_rs": -5.2,
+   "chandelier": 2.569,
    "buy": [],
    "sell": [],
    "watch": [
-    "RSI 31.6 接近超卖线 30"
+    "RSI 30.4 接近超卖线 30"
    ],
-   "rs": -0.2,
+   "rs": -1.4,
    "rs_rank": 11
   },
   {
@@ -1547,14 +1590,14 @@
     "fut",
     "t0"
    ],
-   "source": "eastmoney",
+   "source": "tencent",
    "date": "2026-11-20",
    "listed": "2019-12",
    "bars": 1674,
-   "close": 1.879,
-   "chg": -1.31,
-   "amount_yi": 4.8,
-   "rsi": 17.7,
+   "close": 1.885,
+   "chg": -1.0,
+   "amount_yi": 9.0,
+   "rsi": 18.1,
    "rsi_prev": 19.5,
    "ma_dirs": [
     false,
@@ -1564,7 +1607,7 @@
    "ma_up_days": 0,
    "ma_dn_days": 7,
    "ma_aligned": false,
-   "vol_ratio": 1.42,
+   "vol_ratio": 1.48,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -1576,24 +1619,24 @@
     "mid_golden": false,
     "momentum": "动能减弱"
    },
-   "dif": -0.0504,
-   "dea": -0.0338,
+   "dif": -0.05,
+   "dea": -0.0337,
    "pattern": "空头排列",
    "above_year": false,
-   "dd_ath": -18.7,
+   "dd_ath": -18.4,
    "ath_date": "2026-01",
-   "dd_60": -15.4,
+   "dd_60": -15.1,
    "ma_fast": [
-    1.913,
-    1.947,
-    1.972
+    1.915,
+    1.948,
+    1.973
    ],
-   "bias": -8.1,
-   "atr_pct": 1.66,
+   "bias": -7.8,
+   "atr_pct": 1.68,
    "high_vol": false,
-   "vol20": 16.4,
-   "ret_rs": -10.8,
-   "chandelier": 2.042,
+   "vol20": 16.2,
+   "ret_rs": -10.5,
+   "chandelier": 2.041,
    "buy": [
     {
      "kind": "left",
@@ -1601,7 +1644,7 @@
      "title": "左侧·RSI破20",
      "turning": false,
      "why": [
-      "RSI14 = 17.7，跌破 20，已连续超卖 5 天",
+      "RSI14 = 18.1，跌破 20，已连续超卖 5 天",
       "仍在下探，尚未止跌，只宜小仓试探",
       "价格在年线下方，趋势偏弱"
      ],
@@ -1610,9 +1653,9 @@
       "年线下方减半"
      ],
      "pos": 6.0,
-     "target": 2.044,
-     "target_pct": 8.8,
-     "stop_note": "三档打满后再跌 2×ATR（约 3.3%），或 10 个交易日仍站不回 MA5，认错离场",
+     "target": 2.045,
+     "target_pct": 8.5,
+     "stop_note": "三档打满后再跌 2×ATR（约 3.4%），或 10 个交易日仍站不回 MA5，认错离场",
      "stats": {
       "n": 3,
       "win": 66.66666666666666,
@@ -1627,8 +1670,8 @@
    ],
    "sell": [],
    "watch": [],
-   "rs": -6.4,
-   "rs_rank": 21
+   "rs": -6.7,
+   "rs_rank": 18
   },
   {
    "code": "159981",
@@ -1638,13 +1681,13 @@
     "fut",
     "t0"
    ],
-   "source": "eastmoney",
+   "source": "tencent",
    "date": "2026-11-20",
    "listed": "2020-01",
    "bars": 1657,
    "close": 1.731,
    "chg": 0.58,
-   "amount_yi": 4.7,
+   "amount_yi": 7.6,
    "rsi": 42.1,
    "rsi_prev": 40.7,
    "ma_dirs": [
@@ -1655,7 +1698,7 @@
    "ma_up_days": 0,
    "ma_dn_days": 3,
    "ma_aligned": false,
-   "vol_ratio": 1.67,
+   "vol_ratio": 1.53,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -1688,7 +1731,7 @@
    "buy": [],
    "sell": [],
    "watch": [],
-   "rs": -1.9,
+   "rs": -2.5,
    "rs_rank": 13
   },
   {
@@ -1696,14 +1739,14 @@
    "name": "房地产ETF",
    "cat": "行业",
    "flags": [],
-   "source": "eastmoney",
+   "source": "tencent",
    "date": "2026-11-20",
-   "listed": "2017-09",
-   "bars": 2220,
-   "close": 1.032,
-   "chg": -2.37,
-   "amount_yi": 1.4,
-   "rsi": 26.8,
+   "listed": "2024-03",
+   "bars": 641,
+   "close": 1.01,
+   "chg": -4.45,
+   "amount_yi": 1.9,
+   "rsi": 24.5,
    "rsi_prev": 30.0,
    "ma_dirs": [
     false,
@@ -1713,7 +1756,7 @@
    "ma_up_days": 0,
    "ma_dn_days": 6,
    "ma_aligned": false,
-   "vol_ratio": 1.42,
+   "vol_ratio": 1.11,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -1725,23 +1768,23 @@
     "mid_golden": false,
     "momentum": "动能减弱"
    },
-   "dif": -0.0347,
-   "dea": -0.0276,
+   "dif": -0.0364,
+   "dea": -0.0279,
    "pattern": "空头排列",
    "above_year": false,
-   "dd_ath": -67.9,
-   "ath_date": "2018-01",
-   "dd_60": -22.5,
+   "dd_ath": -45.8,
+   "ath_date": "2024-11",
+   "dd_60": -24.2,
    "ma_fast": [
-    1.056,
-    1.068,
-    1.083
+    1.048,
+    1.064,
+    1.08
    ],
-   "bias": -8.0,
-   "atr_pct": 2.93,
+   "bias": -9.8,
+   "atr_pct": 3.01,
    "high_vol": true,
-   "vol20": 25.6,
-   "ret_rs": -11.5,
+   "vol20": 28.5,
+   "ret_rs": -13.4,
    "chandelier": 1.115,
    "buy": [
     {
@@ -1750,7 +1793,7 @@
      "title": "左侧·RSI破30",
      "turning": false,
      "why": [
-      "RSI14 = 26.8，跌破 30，已连续超卖 2 天",
+      "RSI14 = 24.5，跌破 30，已连续超卖 2 天",
       "仍在下探，尚未止跌，只宜小仓试探",
       "价格在年线下方，趋势偏弱"
      ],
@@ -1760,39 +1803,39 @@
       "高波动减半"
      ],
      "pos": 2.0,
-     "target": 1.121,
-     "target_pct": 8.6,
-     "stop_note": "三档打满后再跌 2×ATR（约 5.9%），或 10 个交易日仍站不回 MA5，认错离场",
+     "target": 1.12,
+     "target_pct": 10.9,
+     "stop_note": "三档打满后再跌 2×ATR（约 6.0%），或 10 个交易日仍站不回 MA5，认错离场",
      "stats": {
-      "n": 41,
-      "win": 58.536585365853654,
-      "avg": 2.469091347337676,
-      "worst": -8.089500860585186,
+      "n": 10,
+      "win": 40.0,
+      "avg": 1.22844086918653,
+      "worst": -4.263877715205167,
       "fwd": 10
      },
      "is_new": false,
      "twins": [],
-     "fresh": true
+     "fresh": false
     }
    ],
    "sell": [],
    "watch": [],
-   "rs": -7.1,
-   "rs_rank": 23
+   "rs": -9.6,
+   "rs_rank": 24
   },
   {
    "code": "159870",
    "name": "化工ETF",
    "cat": "行业",
    "flags": [],
-   "source": "eastmoney",
+   "source": "tencent",
    "date": "2026-11-20",
    "listed": "2021-03",
    "bars": 1388,
-   "close": 0.635,
-   "chg": -2.76,
-   "amount_yi": 2.7,
-   "rsi": 29.2,
+   "close": 0.632,
+   "chg": -3.22,
+   "amount_yi": 4.8,
+   "rsi": 28.5,
    "rsi_prev": 33.9,
    "ma_dirs": [
     false,
@@ -1802,7 +1845,7 @@
    "ma_up_days": 0,
    "ma_dn_days": 7,
    "ma_aligned": false,
-   "vol_ratio": 1.95,
+   "vol_ratio": 1.94,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -1814,24 +1857,24 @@
     "mid_golden": false,
     "momentum": "动能减弱"
    },
-   "dif": -0.0185,
+   "dif": -0.0187,
    "dea": -0.0166,
    "pattern": "空头排列",
    "above_year": false,
-   "dd_ath": -48.6,
+   "dd_ath": -48.8,
    "ath_date": "2021-09",
-   "dd_60": -24.4,
+   "dd_60": -24.8,
    "ma_fast": [
-    0.648,
-    0.653,
-    0.657
+    0.647,
+    0.652,
+    0.656
    ],
-   "bias": -6.1,
-   "atr_pct": 2.74,
+   "bias": -6.5,
+   "atr_pct": 2.77,
    "high_vol": false,
-   "vol20": 22.6,
-   "ret_rs": -7.6,
-   "chandelier": 0.672,
+   "vol20": 23.3,
+   "ret_rs": -8.0,
+   "chandelier": 0.671,
    "buy": [
     {
      "kind": "left",
@@ -1839,7 +1882,7 @@
      "title": "左侧·RSI破30",
      "turning": false,
      "why": [
-      "RSI14 = 29.2，跌破 30，已连续超卖 1 天",
+      "RSI14 = 28.5，跌破 30，已连续超卖 1 天",
       "仍在下探，尚未止跌，只宜小仓试探",
       "价格在年线下方，趋势偏弱"
      ],
@@ -1849,7 +1892,7 @@
      ],
      "pos": 3.0,
      "target": 0.676,
-     "target_pct": 6.5,
+     "target_pct": 7.0,
      "stop_note": "三档打满后再跌 2×ATR（约 5.5%），或 10 个交易日仍站不回 MA5，认错离场",
      "stats": {
       "n": 30,
@@ -1860,12 +1903,12 @@
      },
      "is_new": true,
      "twins": [],
-     "fresh": true
+     "fresh": false
     }
    ],
    "sell": [],
    "watch": [],
-   "rs": -3.2,
+   "rs": -4.2,
    "rs_rank": 15
   },
   {
@@ -1873,14 +1916,14 @@
    "name": "游戏ETF",
    "cat": "行业",
    "flags": [],
-   "source": "eastmoney",
+   "source": "tencent",
    "date": "2026-11-20",
    "listed": "2021-03",
    "bars": 1386,
-   "close": 0.899,
-   "chg": -2.28,
-   "amount_yi": 3.3,
-   "rsi": 32.1,
+   "close": 0.875,
+   "chg": -4.89,
+   "amount_yi": 4.6,
+   "rsi": 30.0,
    "rsi_prev": 34.2,
    "ma_dirs": [
     false,
@@ -1890,7 +1933,7 @@
    "ma_up_days": 0,
    "ma_dn_days": 7,
    "ma_aligned": false,
-   "vol_ratio": 1.41,
+   "vol_ratio": 1.13,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -1902,45 +1945,74 @@
     "mid_golden": false,
     "momentum": "动能减弱"
    },
-   "dif": -0.0272,
-   "dea": -0.0121,
+   "dif": -0.0291,
+   "dea": -0.0125,
    "pattern": "空头排列",
    "above_year": false,
-   "dd_ath": -48.9,
+   "dd_ath": -50.3,
    "ath_date": "2026-01",
-   "dd_60": -22.8,
+   "dd_60": -24.8,
    "ma_fast": [
-    0.921,
-    0.944,
-    0.969
+    0.913,
+    0.939,
+    0.965
    ],
-   "bias": -11.5,
-   "atr_pct": 4.31,
+   "bias": -13.7,
+   "atr_pct": 4.43,
    "high_vol": true,
-   "vol20": 51.5,
-   "ret_rs": -10.4,
+   "vol20": 53.5,
+   "ret_rs": -12.8,
    "chandelier": 0.996,
-   "buy": [],
-   "sell": [],
-   "watch": [
-    "RSI 32.1 接近超卖线 30"
+   "buy": [
+    {
+     "kind": "left",
+     "grade": 1,
+     "title": "左侧·RSI破30",
+     "turning": false,
+     "why": [
+      "RSI14 = 30.0，跌破 30，已连续超卖 1 天",
+      "仍在下探，尚未止跌，只宜小仓试探",
+      "价格在年线下方，趋势偏弱"
+     ],
+     "days": 1,
+     "cuts": [
+      "年线下方减半",
+      "高波动减半"
+     ],
+     "pos": 2.0,
+     "target": 1.014,
+     "target_pct": 15.9,
+     "stop_note": "三档打满后再跌 2×ATR（约 8.9%），或 10 个交易日仍站不回 MA5，认错离场",
+     "stats": {
+      "n": 27,
+      "win": 59.25925925925925,
+      "avg": 2.1574050594131142,
+      "worst": -7.8189300411522495,
+      "fwd": 10
+     },
+     "is_new": true,
+     "twins": [],
+     "fresh": true
+    }
    ],
-   "rs": -6.0,
-   "rs_rank": 19
+   "sell": [],
+   "watch": [],
+   "rs": -9.0,
+   "rs_rank": 23
   },
   {
    "code": "159611",
    "name": "电力ETF",
    "cat": "行业",
    "flags": [],
-   "source": "eastmoney",
+   "source": "tencent",
    "date": "2026-11-20",
    "listed": "2022-01",
    "bars": 1179,
-   "close": 1.045,
-   "chg": 0.0,
-   "amount_yi": 2.3,
-   "rsi": 54.7,
+   "close": 1.046,
+   "chg": 0.1,
+   "amount_yi": 3.8,
+   "rsi": 55.2,
    "rsi_prev": 54.7,
    "ma_dirs": [
     true,
@@ -1950,7 +2022,7 @@
    "ma_up_days": 3,
    "ma_dn_days": 0,
    "ma_aligned": true,
-   "vol_ratio": 1.08,
+   "vol_ratio": 0.99,
    "macd": {
     "pos": "0轴上方",
     "above": true,
@@ -1962,20 +2034,20 @@
     "mid_golden": false,
     "momentum": "动能减弱"
    },
-   "dif": 0.0018,
-   "dea": 0.0,
+   "dif": 0.0019,
+   "dea": 0.0001,
    "pattern": "震荡偏强",
    "above_year": false,
-   "dd_ath": -17.3,
+   "dd_ath": -17.2,
    "ath_date": "2026-06",
-   "dd_60": -2.2,
+   "dd_60": -2.1,
    "ma_fast": [
     1.047,
     1.044,
     1.04
    ],
-   "bias": 1.0,
-   "atr_pct": 1.27,
+   "bias": 1.1,
+   "atr_pct": 1.29,
    "high_vol": false,
    "vol20": 10.1,
    "ret_rs": 2.5,
@@ -1983,9 +2055,9 @@
    "buy": [],
    "sell": [],
    "watch": [
-    "三线已同步向上 3 天，量比仅 1.08，等放量确认"
+    "三线已同步向上 3 天，量比仅 0.99，等放量确认"
    ],
-   "rs": 6.9,
+   "rs": 6.3,
    "rs_rank": 4
   },
   {
@@ -1996,14 +2068,14 @@
     "hk",
     "t0"
    ],
-   "source": "eastmoney",
+   "source": "tencent",
    "date": "2026-11-20",
    "listed": "2022-07",
    "bars": 1058,
-   "close": 1.106,
-   "chg": -3.07,
-   "amount_yi": 34.3,
-   "rsi": 34.6,
+   "close": 1.083,
+   "chg": -5.08,
+   "amount_yi": 54.7,
+   "rsi": 32.5,
    "rsi_prev": 38.4,
    "ma_dirs": [
     false,
@@ -2013,7 +2085,7 @@
    "ma_up_days": 0,
    "ma_dn_days": 5,
    "ma_aligned": false,
-   "vol_ratio": 1.13,
+   "vol_ratio": 1.03,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -2025,45 +2097,45 @@
     "mid_golden": false,
     "momentum": "动能减弱"
    },
-   "dif": -0.0251,
-   "dea": -0.0161,
+   "dif": -0.0269,
+   "dea": -0.0165,
    "pattern": "空头排列",
    "above_year": false,
-   "dd_ath": -32.1,
+   "dd_ath": -33.5,
    "ath_date": "2025-09",
-   "dd_60": -20.6,
+   "dd_60": -22.3,
    "ma_fast": [
-    1.132,
-    1.152,
-    1.175
+    1.124,
+    1.147,
+    1.172
    ],
-   "bias": -7.4,
-   "atr_pct": 4.01,
+   "bias": -9.2,
+   "atr_pct": 4.17,
    "high_vol": true,
-   "vol20": 47.2,
-   "ret_rs": -8.3,
-   "chandelier": 1.162,
+   "vol20": 49.3,
+   "ret_rs": -10.2,
+   "chandelier": 1.159,
    "buy": [],
    "sell": [],
    "watch": [
-    "RSI 34.6 接近超卖线 30"
+    "RSI 32.5 接近超卖线 30"
    ],
-   "rs": -3.9,
-   "rs_rank": 16
+   "rs": -6.4,
+   "rs_rank": 17
   },
   {
    "code": "159819",
    "name": "人工智能ETF",
    "cat": "行业",
    "flags": [],
-   "source": "eastmoney",
+   "source": "tencent",
    "date": "2026-11-20",
    "listed": "2020-09",
    "bars": 1491,
-   "close": 1.259,
-   "chg": -3.0,
-   "amount_yi": 1.5,
-   "rsi": 33.7,
+   "close": 1.241,
+   "chg": -4.39,
+   "amount_yi": 2.4,
+   "rsi": 32.6,
    "rsi_prev": 36.5,
    "ma_dirs": [
     false,
@@ -2073,7 +2145,7 @@
    "ma_up_days": 0,
    "ma_dn_days": 5,
    "ma_aligned": false,
-   "vol_ratio": 0.85,
+   "vol_ratio": 0.75,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -2085,30 +2157,30 @@
     "mid_golden": false,
     "momentum": "动能减弱"
    },
-   "dif": -0.062,
-   "dea": -0.0598,
+   "dif": -0.0634,
+   "dea": -0.0601,
    "pattern": "空头排列",
    "above_year": false,
-   "dd_ath": -44.4,
+   "dd_ath": -45.2,
    "ath_date": "2026-07",
-   "dd_60": -31.8,
+   "dd_60": -32.7,
    "ma_fast": [
-    1.295,
-    1.304,
-    1.335
+    1.289,
+    1.3,
+    1.333
    ],
-   "bias": -8.4,
-   "atr_pct": 4.77,
+   "bias": -9.7,
+   "atr_pct": 4.87,
    "high_vol": true,
-   "vol20": 53.3,
-   "ret_rs": -15.9,
-   "chandelier": 1.327,
+   "vol20": 54.3,
+   "ret_rs": -17.1,
+   "chandelier": 1.326,
    "buy": [],
    "sell": [],
    "watch": [
-    "RSI 33.7 接近超卖线 30"
+    "RSI 32.6 接近超卖线 30"
    ],
-   "rs": -11.5,
+   "rs": -13.3,
    "rs_rank": 28
   }
  ]
