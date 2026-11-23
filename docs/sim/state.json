@@ -1,7 +1,7 @@
 {
  "start": "2026-11-17",
  "cash0": 100000,
- "cash": 34531.95762764501,
+ "cash": 290.4812155300101,
  "positions": {
   "510880": {
    "shares": 9300,
@@ -11,7 +11,7 @@
    "entry": "2026-11-18",
    "took": [],
    "trail": false,
-   "last_px": 3.429,
+   "last_px": 3.397,
    "hh": 3.446,
    "kind": "right",
    "grade": 1,
@@ -27,7 +27,7 @@
    "entry": "2026-11-18",
    "took": [],
    "trail": false,
-   "last_px": 1.24,
+   "last_px": 1.262,
    "hh": 1.327,
    "kind": "left",
    "grade": 1,
@@ -43,7 +43,7 @@
    "entry": "2026-11-18",
    "took": [],
    "trail": false,
-   "last_px": 1.885,
+   "last_px": 1.886,
    "hh": 2.008,
    "kind": "left",
    "grade": 2,
@@ -59,7 +59,7 @@
    "entry": "2026-11-19",
    "took": [],
    "trail": false,
-   "last_px": 0.896,
+   "last_px": 0.891,
    "hh": 0.944,
    "kind": "left",
    "grade": 1,
@@ -75,115 +75,128 @@
    "entry": "2026-11-20",
    "took": [],
    "trail": false,
-   "last_px": 7.282,
+   "last_px": 7.362,
    "hh": 7.339,
    "kind": "left",
    "grade": 1,
    "stop": null,
    "title": "左侧·RSI破30",
    "last_add": 7.327661999999999
+  },
+  "563300": {
+   "shares": 3500,
+   "cost": 3712.9685565,
+   "invested": 3712.9685565,
+   "realized": 0.0,
+   "entry": "2026-11-23",
+   "took": [],
+   "trail": false,
+   "last_px": 1.084,
+   "hh": 1.06053,
+   "kind": "left",
+   "grade": 1,
+   "stop": null,
+   "title": "左侧·RSI破30",
+   "last_add": 1.06053
+  },
+  "515880": {
+   "shares": 10400,
+   "cost": 3705.3624753599993,
+   "invested": 3705.3624753599993,
+   "realized": 0.0,
+   "entry": "2026-11-23",
+   "took": [],
+   "trail": false,
+   "last_px": 0.372,
+   "hh": 0.35617799999999994,
+   "kind": "left",
+   "grade": 1,
+   "stop": null,
+   "title": "左侧·RSI破30",
+   "last_add": 0.35617799999999994
+  },
+  "513880": {
+   "shares": 4100,
+   "cost": 7307.942775314999,
+   "invested": 7307.942775314999,
+   "realized": 0.0,
+   "entry": "2026-11-23",
+   "took": [],
+   "trail": false,
+   "last_px": 1.788,
+   "hh": 1.7818904999999998,
+   "kind": "left",
+   "grade": 1,
+   "stop": null,
+   "title": "左侧·RSI破30",
+   "last_add": 1.7818904999999998
+  },
+  "513180": {
+   "shares": 8500,
+   "cost": 3674.9381507999997,
+   "invested": 3674.9381507999997,
+   "realized": 0.0,
+   "entry": "2026-11-23",
+   "took": [],
+   "trail": false,
+   "last_px": 0.435,
+   "hh": 0.432216,
+   "kind": "left",
+   "grade": 1,
+   "stop": null,
+   "title": "左侧·RSI破30",
+   "last_add": 0.432216
+  },
+  "515790": {
+   "shares": 11800,
+   "cost": 7428.13887333,
+   "invested": 7428.13887333,
+   "realized": 0.0,
+   "entry": "2026-11-23",
+   "took": [],
+   "trail": false,
+   "last_px": 0.632,
+   "hh": 0.6293145,
+   "kind": "left",
+   "grade": 1,
+   "stop": null,
+   "title": "左侧·RSI破30",
+   "last_add": 0.6293145
+  },
+  "159870": {
+   "shares": 11700,
+   "cost": 7376.897905649999,
+   "invested": 7376.897905649999,
+   "realized": 0.0,
+   "entry": "2026-11-23",
+   "took": [],
+   "trail": false,
+   "last_px": 0.634,
+   "hh": 0.630315,
+   "kind": "left",
+   "grade": 1,
+   "stop": null,
+   "title": "左侧·RSI破30",
+   "last_add": 0.630315
+  },
+  "159869": {
+   "shares": 1200,
+   "cost": 1035.2276751599998,
+   "invested": 1035.2276751599998,
+   "realized": 0.0,
+   "entry": "2026-11-23",
+   "took": [],
+   "trail": false,
+   "last_px": 0.883,
+   "hh": 0.862431,
+   "kind": "left",
+   "grade": 1,
+   "stop": null,
+   "title": "左侧·RSI破30",
+   "last_add": 0.862431
   }
  },
- "pending": [
-  {
-   "code": "563300",
-   "side": "buy",
-   "amount": 3713.76,
-   "prio": 1,
-   "date": "2026-11-20",
-   "reason": "左侧·RSI破30（27.3），目标仓位 4%",
-   "meta": {
-    "kind": "left",
-    "grade": 1,
-    "stop": null,
-    "title": "左侧·RSI破30"
-   }
-  },
-  {
-   "code": "515880",
-   "side": "buy",
-   "amount": 3713.76,
-   "prio": 1,
-   "date": "2026-11-20",
-   "reason": "左侧·RSI破30（29.3），目标仓位 4%",
-   "meta": {
-    "kind": "left",
-    "grade": 1,
-    "stop": null,
-    "title": "左侧·RSI破30"
-   }
-  },
-  {
-   "code": "513880",
-   "side": "buy",
-   "amount": 7427.52,
-   "prio": 1,
-   "date": "2026-11-20",
-   "reason": "左侧·RSI破30（28.6），目标仓位 8%",
-   "meta": {
-    "kind": "left",
-    "grade": 1,
-    "stop": null,
-    "title": "左侧·RSI破30"
-   }
-  },
-  {
-   "code": "513180",
-   "side": "buy",
-   "amount": 3713.76,
-   "prio": 1,
-   "date": "2026-11-20",
-   "reason": "左侧·RSI破30（26.0），目标仓位 4%",
-   "meta": {
-    "kind": "left",
-    "grade": 1,
-    "stop": null,
-    "title": "左侧·RSI破30"
-   }
-  },
-  {
-   "code": "515790",
-   "side": "buy",
-   "amount": 7427.52,
-   "prio": 1,
-   "date": "2026-11-20",
-   "reason": "左侧·RSI破30（27.5），目标仓位 8%",
-   "meta": {
-    "kind": "left",
-    "grade": 1,
-    "stop": null,
-    "title": "左侧·RSI破30"
-   }
-  },
-  {
-   "code": "159870",
-   "side": "buy",
-   "amount": 7427.52,
-   "prio": 1,
-   "date": "2026-11-20",
-   "reason": "左侧·RSI破30（28.5），目标仓位 8%",
-   "meta": {
-    "kind": "left",
-    "grade": 1,
-    "stop": null,
-    "title": "左侧·RSI破30"
-   }
-  },
-  {
-   "code": "159869",
-   "side": "buy",
-   "amount": 1108.12,
-   "prio": 1,
-   "date": "2026-11-20",
-   "reason": "左侧·RSI破30（30.0），目标仓位 4%",
-   "meta": {
-    "kind": "left",
-    "grade": 1,
-    "stop": null,
-    "title": "左侧·RSI破30"
-   }
-  }
- ],
+ "pending": [],
  "trades": [
   {
    "date": "2026-11-18",
@@ -256,6 +269,90 @@
    "fee": 2.2,
    "pnl": null,
    "reason": "左侧·RSI破30（29.3），目标仓位 8%"
+  },
+  {
+   "date": "2026-11-23",
+   "code": "563300",
+   "name": "中证2000ETF",
+   "side": "买入",
+   "px": 1.061,
+   "shares": 3500,
+   "amount": 3711.86,
+   "fee": 1.11,
+   "pnl": null,
+   "reason": "左侧·RSI破30（27.3），目标仓位 4%"
+  },
+  {
+   "date": "2026-11-23",
+   "code": "515880",
+   "name": "通信ETF",
+   "side": "买入",
+   "px": 0.356,
+   "shares": 10400,
+   "amount": 3704.25,
+   "fee": 1.11,
+   "pnl": null,
+   "reason": "左侧·RSI破30（29.3），目标仓位 4%"
+  },
+  {
+   "date": "2026-11-23",
+   "code": "513880",
+   "name": "日经225ETF",
+   "side": "买入",
+   "px": 1.782,
+   "shares": 4100,
+   "amount": 7305.75,
+   "fee": 2.19,
+   "pnl": null,
+   "reason": "左侧·RSI破30（28.6），目标仓位 8%"
+  },
+  {
+   "date": "2026-11-23",
+   "code": "513180",
+   "name": "恒生科技ETF",
+   "side": "买入",
+   "px": 0.432,
+   "shares": 8500,
+   "amount": 3673.84,
+   "fee": 1.1,
+   "pnl": null,
+   "reason": "左侧·RSI破30（26.0），目标仓位 4%"
+  },
+  {
+   "date": "2026-11-23",
+   "code": "515790",
+   "name": "光伏ETF",
+   "side": "买入",
+   "px": 0.629,
+   "shares": 11800,
+   "amount": 7425.91,
+   "fee": 2.23,
+   "pnl": null,
+   "reason": "左侧·RSI破30（27.5），目标仓位 8%"
+  },
+  {
+   "date": "2026-11-23",
+   "code": "159870",
+   "name": "化工ETF",
+   "side": "买入",
+   "px": 0.63,
+   "shares": 11700,
+   "amount": 7374.69,
+   "fee": 2.21,
+   "pnl": null,
+   "reason": "左侧·RSI破30（28.5），目标仓位 8%"
+  },
+  {
+   "date": "2026-11-23",
+   "code": "159869",
+   "name": "游戏ETF",
+   "side": "买入",
+   "px": 0.862,
+   "shares": 1200,
+   "amount": 1034.92,
+   "fee": 0.31,
+   "pnl": null,
+   "reason": "左侧·RSI破30（30.0），目标仓位 4%"
   }
  ],
  "closed": [],
@@ -295,6 +392,15 @@
    "bench": 0.99406,
    "ew": 0.95925,
    "intraday": false
+  },
+  {
+   "date": "2026-11-23",
+   "equity": 99312.18,
+   "cash": 290.48,
+   "pos": 99.7,
+   "bench": 0.98986,
+   "ew": 0.9572,
+   "intraday": true
   }
  ],
  "base": {
