@@ -102,6 +102,11 @@ def fill(st, bars: dict, names: dict, today: str):
                                               took=[], trail=False, last_px=px, hh=px, **o["meta"])
             else:
                 p.update({k: v for k, v in o["meta"].items() if k in ("grade", "stop", "title")})
+            tb = p.get("today_buy")
+            if not tb or tb[0] != b["date"]:
+                tb = p["today_buy"] = [b["date"], 0, 0.0]
+            tb[1] += sh
+            tb[2] += amt + fee
             p["shares"] += sh
             p["cost"] += amt + fee
             p["invested"] += amt + fee
@@ -113,10 +118,19 @@ def fill(st, bars: dict, names: dict, today: str):
 
 
 # ============================================================================ 记账
-def mark(st, px: dict, today: str, intraday: bool, bench_code: str):
+def mark(st, px: dict, today: str, intraday: bool, bench_code: str, prev: dict | None = None):
+    prev = prev or {}
     for c, p in st["positions"].items():
         if c in px:
             p["last_px"] = px[c]
+        tb = p.get("today_buy") or [None, 0, 0.0]
+        sh_b, amt_b = (tb[1], tb[2]) if tb[0] == today else (0, 0.0)
+        ref = prev.get(c)
+        old = p["shares"] - sh_b
+        # 当日盈亏 = 昨天就有的份额 ×（现价 − 昨收）+ 今天新买的份额按成交成本算
+        p["day_pnl"] = round((old * (p["last_px"] - ref) if ref and old > 0 else 0.0)
+                             + (sh_b * p["last_px"] - amt_b), 2)
+        p["float_pnl"] = round(p["shares"] * p["last_px"] - p["cost"], 2)
     eq = equity(st, px)
     base = st["base"]
     ew = [px[c] / base[c] for c in base if c in px and c != "_bench"]
@@ -276,7 +290,7 @@ def backtest(frames: dict, names: dict, bench_code: str, years: int = C.SIM_BACK
             st["base"] = {c: v for c, v in px.items() if c in names}
             st["base"]["_bench"] = px[bench_code]
         fill(st, bars, names, today)
-        mark(st, px, today, False, bench_code)
+        mark(st, px, today, False, bench_code, {c: float(r[1].close) for c, r in rows.items()})
         decide(st, {c: r for c, r in rows.items() if c in names}, names, today)
     st["pending"] = []
     return st
@@ -299,7 +313,7 @@ def run_live(out: Path, pool: list, frames: dict, session: str, latest: str, gen
         st["base"] = {c: v for c, v in px.items() if c in names}
         st["base"]["_bench"] = px[bench_code]
     fill(st, bars, names, latest)
-    mark(st, px, latest, not close, bench_code)
+    mark(st, px, latest, not close, bench_code, {c: float(r[1].close) for c, r in rows.items()})
     if close and st["last_decide"] != latest:
         decide(st, {c: r for c, r in rows.items() if c in names}, names, latest)
     sf.write_text(json.dumps(st, ensure_ascii=False, indent=1), encoding="utf-8")
@@ -399,6 +413,24 @@ SIM_CSS = """
 @media (max-width:600px){.tiles{grid-template-columns:repeat(2,1fr)}}
 .wrap{overflow-x:hidden}
 """
+
+
+def _pnl_td(v):
+    if v is None:
+        return '<td class="mute">—</td>'
+    return f'<td class="num {"up" if v > 0 else "down" if v < 0 else ""}">{_money(v, True)}</td>'
+
+
+def _hold_total(st, eq):
+    ps = st["positions"].values()
+    mv = sum(q["shares"] * q["last_px"] for q in ps)
+    cost = sum(q["cost"] for q in ps)
+    day = sum(q.get("day_pnl") or 0 for q in ps)
+    fl = sum(q.get("float_pnl") or 0 for q in ps)
+    return (f'<tfoot><tr><td><b>合计</b></td><td></td><td></td><td></td>'
+            f'<td class="num"><b>{_money(mv)}</b></td><td class="num">{mv / eq * 100:.0f}%</td>'
+            f'{_pnl_td(day)}{_pnl_td(fl)}<td>{_pct((mv / cost - 1) * 100 if cost else None, 2)}</td>'
+            f'<td></td><td></td><td></td></tr></tfoot>')
 
 
 def _sh(o):
@@ -537,13 +569,14 @@ def render(st, bt, px: dict, names: dict, session: str, generated: str) -> str:
             trs.append(f'<tr><td class="sg {kind}"><a>{E(names.get(c, c))}<span class="cd">{c}</span></a></td>'
                        f'<td class="num">{q["shares"]:,}</td><td class="num">{avg:.3f}</td><td class="num">{q["last_px"]:.3f}</td>'
                        f'<td class="num">{_money(mv)}</td><td class="num">{mv / eq * 100:.0f}%</td>'
+                       f'{_pnl_td(q.get("day_pnl"))}{_pnl_td(q.get("float_pnl"))}'
                        f'<td>{_pct((q["last_px"] / avg - 1) * 100, 2)}</td>'
                        f'<td class="num">{stop}</td>'
                        f'<td>{E(q["title"])}{" · 已减半" if q["took"] else ""}</td>'
                        f'<td class="num">{q["entry"][5:]}</td></tr>')
         h.append('<div class="tblwrap"><table><thead><tr><th>ETF</th><th>份额</th><th>成本价</th><th>现价</th>'
-                 '<th>市值</th><th>占比</th><th>浮动盈亏</th><th>止损/止盈线</th><th>入场信号</th><th>建仓</th>'
-                 f'</tr></thead><tbody>{"".join(trs)}</tbody></table></div>')
+                 '<th>市值</th><th>占比</th><th>当日盈亏值</th><th>浮动盈亏值</th><th>浮动盈亏%</th><th>止损/止盈线</th><th>入场信号</th><th>建仓</th>'
+                 f'</tr></thead><tbody>{"".join(trs)}</tbody>{_hold_total(st, eq)}</table></div>')
     else:
         h.append('<div class="empty">空仓。没有信号就不动，现金也是一种仓位。</div>')
     h.append("</section>")

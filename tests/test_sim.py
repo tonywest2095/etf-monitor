@@ -102,3 +102,18 @@ def test_backtest_accounting_is_consistent():
                sum(p["realized"] for p in bt["positions"].values())) < 1
     html = sim.render(bt, bt, last, names, "close", "2026-11-17 15:45")
     assert "历史回测" in html and "当前持仓" in html
+
+
+def test_day_and_float_pnl():
+    st = sim.new_state("2026-01-05")
+    st["base"] = {"_bench": 1.0}
+    st["positions"]["A"] = dict(shares=1000, cost=1000.0, invested=1000.0, realized=0.0, entry="2026-01-02",
+                                took=[], trail=False, last_px=1.0, kind="left", grade=1, stop=None, title="t")
+    st["pending"] = [dict(code="A", side="buy", amount=1100, prio=1, date="2026-01-05", reason="t",
+                          meta=dict(kind="left", grade=2, stop=None, title="t"))]
+    sim.fill(st, {"A": dict(date="2026-01-06", open=1.05, prev_close=1.0)}, {}, "2026-01-06")
+    p = st["positions"]["A"]
+    nb, cb = p["today_buy"][1], p["today_buy"][2]
+    sim.mark(st, {"A": 1.2}, "2026-01-06", False, "X", {"A": 1.0})
+    assert abs(p["day_pnl"] - (1000 * 0.2 + nb * 1.2 - cb)) < 0.01
+    assert abs(p["float_pnl"] - (p["shares"] * 1.2 - p["cost"])) < 0.01
