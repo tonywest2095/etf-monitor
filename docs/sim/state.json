@@ -31,15 +31,15 @@
    "entry": "2026-11-18",
    "took": [],
    "trail": false,
-   "last_px": 1.24,
+   "last_px": 1.21,
    "hh": 1.327,
    "kind": "left",
    "grade": 1,
    "stop": null,
    "title": "左侧·RSI破30",
    "last_add": 1.324662,
-   "day_pnl": -33.6,
-   "float_pnl": -476.33
+   "day_pnl": -201.6,
+   "float_pnl": -644.33
   },
   "159980": {
    "shares": 7900,
@@ -49,15 +49,15 @@
    "entry": "2026-11-18",
    "took": [],
    "trail": false,
-   "last_px": 1.831,
+   "last_px": 1.802,
    "hh": 2.008,
    "kind": "left",
    "grade": 2,
    "stop": null,
    "title": "左侧·RSI破20",
    "last_add": 1.8659325,
-   "day_pnl": -395.0,
-   "float_pnl": -776.59
+   "day_pnl": -624.1,
+   "float_pnl": -1005.69
   },
   "512660": {
    "shares": 3900,
@@ -67,15 +67,15 @@
    "entry": "2026-11-19",
    "took": [],
    "trail": false,
-   "last_px": 0.914,
+   "last_px": 0.89,
    "hh": 0.944,
    "kind": "left",
    "grade": 1,
    "stop": null,
    "title": "左侧·RSI破30",
    "last_add": 0.9414704999999999,
-   "day_pnl": -31.2,
-   "float_pnl": -108.24
+   "day_pnl": -124.8,
+   "float_pnl": -201.84
   },
   "518880": {
    "shares": 1000,
@@ -85,15 +85,15 @@
    "entry": "2026-11-20",
    "took": [],
    "trail": false,
-   "last_px": 7.25,
+   "last_px": 7.17,
    "hh": 7.51,
    "kind": "left",
    "grade": 1,
    "stop": null,
    "title": "左侧·RSI破30",
    "last_add": 7.327661999999999,
-   "day_pnl": -141.0,
-   "float_pnl": -79.86
+   "day_pnl": -221.0,
+   "float_pnl": -159.86
   },
   "563300": {
    "shares": 3500,
@@ -103,7 +103,7 @@
    "entry": "2026-11-23",
    "took": [],
    "trail": false,
-   "last_px": 1.126,
+   "last_px": 1.077,
    "hh": 1.17,
    "kind": "left",
    "grade": 1,
@@ -115,8 +115,8 @@
     3500,
     3712.9700000000003
    ],
-   "day_pnl": 7.0,
-   "float_pnl": 228.03
+   "day_pnl": -164.5,
+   "float_pnl": 56.53
   },
   "515880": {
    "shares": 10400,
@@ -126,7 +126,7 @@
    "entry": "2026-11-23",
    "took": [],
    "trail": false,
-   "last_px": 0.39,
+   "last_px": 0.37,
    "hh": 0.41,
    "kind": "left",
    "grade": 1,
@@ -138,8 +138,8 @@
     10400,
     3705.36
    ],
-   "day_pnl": 62.4,
-   "float_pnl": 350.64
+   "day_pnl": -145.6,
+   "float_pnl": 142.64
   },
   "513880": {
    "shares": 4100,
@@ -149,7 +149,7 @@
    "entry": "2026-11-23",
    "took": [],
    "trail": false,
-   "last_px": 1.813,
+   "last_px": 1.809,
    "hh": 1.894,
    "kind": "left",
    "grade": 1,
@@ -161,8 +161,8 @@
     4100,
     7307.94
    ],
-   "day_pnl": -270.6,
-   "float_pnl": 125.36
+   "day_pnl": -287.0,
+   "float_pnl": 108.96
   },
   "513180": {
    "shares": 8500,
@@ -172,7 +172,7 @@
    "entry": "2026-11-23",
    "took": [],
    "trail": false,
-   "last_px": 0.437,
+   "last_px": 0.424,
    "hh": 0.452,
    "kind": "left",
    "grade": 1,
@@ -184,8 +184,8 @@
     8500,
     3674.94
    ],
-   "day_pnl": 42.5,
-   "float_pnl": 39.56
+   "day_pnl": -68.0,
+   "float_pnl": -70.94
   },
   "515790": {
    "shares": 11800,
@@ -195,7 +195,7 @@
    "entry": "2026-11-23",
    "took": [],
    "trail": false,
-   "last_px": 0.639,
+   "last_px": 0.624,
    "hh": 0.666,
    "kind": "left",
    "grade": 1,
@@ -207,8 +207,8 @@
     11800,
     7428.139999999999
    ],
-   "day_pnl": -47.2,
-   "float_pnl": 112.06
+   "day_pnl": -224.2,
+   "float_pnl": -64.94
   },
   "159870": {
    "shares": 11700,
@@ -218,7 +218,7 @@
    "entry": "2026-11-23",
    "took": [],
    "trail": false,
-   "last_px": 0.627,
+   "last_px": 0.617,
    "hh": 0.652,
    "kind": "left",
    "grade": 1,
@@ -230,8 +230,8 @@
     11700,
     7376.9
    ],
-   "day_pnl": -58.5,
-   "float_pnl": -41.0
+   "day_pnl": -175.5,
+   "float_pnl": -158.0
   },
   "159869": {
    "shares": 1200,
@@ -241,7 +241,7 @@
    "entry": "2026-11-23",
    "took": [],
    "trail": false,
-   "last_px": 0.897,
+   "last_px": 0.878,
    "hh": 0.94,
    "kind": "left",
    "grade": 1,
@@ -253,11 +253,40 @@
     1200,
     1035.23
    ],
-   "day_pnl": -7.2,
-   "float_pnl": 41.17
+   "day_pnl": -30.0,
+   "float_pnl": 18.37
   }
  },
- "pending": [],
+ "pending": [
+  {
+   "code": "510300",
+   "side": "buy",
+   "amount": 7319.4,
+   "prio": 1,
+   "date": "2026-11-25",
+   "reason": "左侧·RSI破30（28.3），目标仓位 8%",
+   "meta": {
+    "kind": "left",
+    "grade": 1,
+    "stop": null,
+    "title": "左侧·RSI破30"
+   }
+  },
+  {
+   "code": "510210",
+   "side": "buy",
+   "amount": 3659.7,
+   "prio": 1,
+   "date": "2026-11-25",
+   "reason": "左侧·RSI破30（29.3），目标仓位 4%",
+   "meta": {
+    "kind": "left",
+    "grade": 1,
+    "stop": null,
+    "title": "左侧·RSI破30"
+   }
+  }
+ ],
  "trades": [
   {
    "date": "2026-11-18",
@@ -486,12 +515,12 @@
   },
   {
    "date": "2026-11-25",
-   "equity": 98985.85,
+   "equity": 97591.95,
    "cash": 15826.05,
-   "pos": 84.0,
-   "bench": 0.98961,
-   "ew": 0.96404,
-   "intraday": true
+   "pos": 83.8,
+   "bench": 0.98219,
+   "ew": 0.94935,
+   "intraday": false
   }
  ],
  "base": {
@@ -527,5 +556,5 @@
   "159819": 1.308,
   "_bench": 4.042
  },
- "last_decide": "2026-11-24"
+ "last_decide": "2026-11-25"
 }

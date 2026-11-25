@@ -1,20 +1,20 @@
 {
  "info": {
-  "session": "noon",
+  "session": "close",
   "date": "2026-11-25",
-  "generated": "2026-11-25 12:49",
+  "generated": "2026-11-25 16:51",
   "demo": false,
   "problems": []
  },
  "temp": {
-  "score": 19,
+  "score": 18,
   "label": "冰点",
   "hint": "恐慌区，左侧机会最有价值，分批不要一把梭",
   "cap": 80,
   "above20": 7,
-  "avg_rsi": 36.6,
+  "avg_rsi": 34.6,
   "macd_up": 7,
-  "oversold": 6,
+  "oversold": 10,
   "overbought": 0
  },
  "rows": [
@@ -23,14 +23,14 @@
    "name": "上证指数ETF",
    "cat": "宽基",
    "flags": [],
-   "source": "tencent",
+   "source": "eastmoney",
    "date": "2026-11-25",
-   "listed": "2024-04",
-   "bars": 641,
-   "close": 0.91,
-   "chg": -1.19,
-   "amount_yi": 4.6,
-   "rsi": 30.9,
+   "listed": "2011-03",
+   "bars": 3757,
+   "close": 0.905,
+   "chg": -1.74,
+   "amount_yi": 11.5,
+   "rsi": 29.3,
    "rsi_prev": 35.1,
    "ma_dirs": [
     false,
@@ -40,7 +40,7 @@
    "ma_up_days": 0,
    "ma_dn_days": 9,
    "ma_aligned": false,
-   "vol_ratio": 0.79,
+   "vol_ratio": 1.12,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -52,55 +52,87 @@
     "mid_golden": false,
     "momentum": "动能减弱"
    },
-   "dif": -0.0128,
-   "dea": -0.0109,
+   "dif": -0.0132,
+   "dea": -0.011,
    "pattern": "空头排列",
    "above_year": false,
-   "dd_ath": -14.8,
+   "dd_ath": -15.3,
    "ath_date": "2026-05",
-   "dd_60": -11.0,
+   "dd_60": -11.4,
    "ma_fast": [
-    0.916,
-    0.919,
+    0.914,
+    0.918,
     0.922
    ],
-   "bias": -3.0,
-   "atr_pct": 1.43,
+   "bias": -3.5,
+   "atr_pct": 1.5,
    "high_vol": true,
-   "vol20": 14.1,
-   "ret_rs": -4.5,
-   "chandelier": 0.922,
-   "buy": [],
-   "sell": [],
-   "watch": [
-    "RSI 30.9 接近超卖线 30"
+   "vol20": 14.7,
+   "ret_rs": -5.0,
+   "chandelier": 0.92,
+   "buy": [
+    {
+     "kind": "left",
+     "grade": 1,
+     "title": "左侧·RSI破30",
+     "turning": false,
+     "why": [
+      "RSI14 = 29.3，跌破 30，已连续超卖 1 天",
+      "仍在下探，尚未止跌，只宜小仓试探",
+      "价格在年线下方，趋势偏弱"
+     ],
+     "days": 1,
+     "cuts": [
+      "年线下方减半",
+      "高波动减半"
+     ],
+     "pos": 2.0,
+     "target": 0.938,
+     "target_pct": 3.6,
+     "stop_note": "三档打满后再跌 2×ATR（约 3.0%），或 10 个交易日仍站不回 MA5，认错离场",
+     "stats": {
+      "n": 41,
+      "win": 51.21951219512195,
+      "avg": 1.7906499014267911,
+      "worst": -8.24295010845988,
+      "fwd": 10
+     },
+     "is_new": true,
+     "twins": [
+      "军工ETF512660(相关0.84)",
+      "沪深300ETF510300(相关0.89)"
+     ],
+     "fresh": true
+    }
    ],
-   "rs": -0.8,
-   "rs_rank": 9
+   "sell": [],
+   "watch": [],
+   "rs": -0.6,
+   "rs_rank": 10
   },
   {
    "code": "563300",
    "name": "中证2000ETF",
    "cat": "微盘",
    "flags": [],
-   "source": "tencent",
+   "source": "eastmoney",
    "date": "2026-11-25",
    "listed": "2023-09",
    "bars": 772,
-   "close": 1.126,
-   "chg": 0.18,
-   "amount_yi": 4.4,
-   "rsi": 35.0,
+   "close": 1.077,
+   "chg": -4.18,
+   "amount_yi": 9.2,
+   "rsi": 30.7,
    "rsi_prev": 34.6,
    "ma_dirs": [
-    true,
+    false,
     false,
     false
    ],
    "ma_up_days": 0,
-   "ma_dn_days": 0,
+   "ma_dn_days": 8,
    "ma_aligned": false,
-   "vol_ratio": 0.73,
+   "vol_ratio": 0.87,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -108,35 +140,35 @@
     "golden": false,
     "days": 6,
     "stage": "中期",
-    "stronger": true,
+    "stronger": false,
     "mid_golden": false,
-    "momentum": "动能增强"
+    "momentum": "动能减弱"
    },
-   "dif": -0.0535,
-   "dea": -0.0451,
+   "dif": -0.0574,
+   "dea": -0.0459,
    "pattern": "空头排列",
    "above_year": false,
-   "dd_ath": -32.6,
+   "dd_ath": -35.5,
    "ath_date": "2026-05",
-   "dd_60": -24.8,
+   "dd_60": -28.1,
    "ma_fast": [
-    1.125,
-    1.119,
-    1.138
+    1.109,
+    1.109,
+    1.131
    ],
-   "bias": -7.0,
-   "atr_pct": 4.08,
+   "bias": -10.8,
+   "atr_pct": 4.46,
    "high_vol": true,
-   "vol20": 41.7,
-   "ret_rs": -12.2,
-   "chandelier": 1.181,
+   "vol20": 43.5,
+   "ret_rs": -16.1,
+   "chandelier": 1.175,
    "buy": [],
    "sell": [],
    "watch": [
-    "RSI 35.0 接近超卖线 30"
+    "RSI 30.7 接近超卖线 30"
    ],
-   "rs": -8.5,
-   "rs_rank": 25
+   "rs": -11.7,
+   "rs_rank": 27
   },
   {
    "code": "510880",
@@ -149,7 +181,7 @@
    "bars": 641,
    "close": 3.37,
    "chg": -0.3,
-   "amount_yi": 2.1,
+   "amount_yi": 4.1,
    "rsi": 45.7,
    "rsi_prev": 47.1,
    "ma_dirs": [
@@ -160,7 +192,7 @@
    "ma_up_days": 0,
    "ma_dn_days": 1,
    "ma_aligned": false,
-   "vol_ratio": 0.89,
+   "vol_ratio": 0.97,
    "macd": {
     "pos": "穿越0轴",
     "above": false,
@@ -193,8 +225,8 @@
    "buy": [],
    "sell": [],
    "watch": [],
-   "rs": 3.3,
-   "rs_rank": 5
+   "rs": 4.0,
+   "rs_rank": 4
   },
   {
    "code": "518880",
@@ -207,10 +239,10 @@
    "date": "2026-11-25",
    "listed": "2024-04",
    "bars": 641,
-   "close": 7.25,
-   "chg": -1.91,
-   "amount_yi": 18.8,
-   "rsi": 26.2,
+   "close": 7.17,
+   "chg": -2.99,
+   "amount_yi": 37.9,
+   "rsi": 25.0,
    "rsi_prev": 28.7,
    "ma_dirs": [
     false,
@@ -220,7 +252,7 @@
    "ma_up_days": 0,
    "ma_dn_days": 9,
    "ma_aligned": false,
-   "vol_ratio": 0.69,
+   "vol_ratio": 0.79,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -232,24 +264,24 @@
     "mid_golden": false,
     "momentum": "动能减弱"
    },
-   "dif": -0.2889,
-   "dea": -0.2198,
+   "dif": -0.2953,
+   "dea": -0.2211,
    "pattern": "空头排列",
    "above_year": false,
-   "dd_ath": -39.5,
+   "dd_ath": -40.1,
    "ath_date": "2026-01",
-   "dd_60": -24.4,
+   "dd_60": -25.2,
    "ma_fast": [
-    7.346,
-    7.386,
-    7.505
+    7.319,
+    7.37,
+    7.494
    ],
-   "bias": -8.6,
-   "atr_pct": 2.23,
+   "bias": -9.6,
+   "atr_pct": 2.28,
    "high_vol": true,
-   "vol20": 28.9,
-   "ret_rs": -11.9,
-   "chandelier": 7.969,
+   "vol20": 29.8,
+   "ret_rs": -12.8,
+   "chandelier": 7.962,
    "buy": [
     {
      "kind": "left",
@@ -257,7 +289,7 @@
      "title": "左侧·RSI破30",
      "turning": false,
      "why": [
-      "RSI14 = 26.2，跌破 30，已连续超卖 5 天",
+      "RSI14 = 25.0，跌破 30，已连续超卖 5 天",
       "仍在下探，尚未止跌，只宜小仓试探",
       "价格在年线下方，趋势偏弱"
      ],
@@ -267,9 +299,9 @@
       "高波动减半"
      ],
      "pos": 2.0,
-     "target": 7.933,
-     "target_pct": 9.4,
-     "stop_note": "三档打满后再跌 2×ATR（约 4.5%），或 10 个交易日仍站不回 MA5，认错离场",
+     "target": 7.929,
+     "target_pct": 10.6,
+     "stop_note": "三档打满后再跌 2×ATR（约 4.6%），或 10 个交易日仍站不回 MA5，认错离场",
      "stats": {
       "n": 6,
       "win": 50.0,
@@ -284,8 +316,8 @@
    ],
    "sell": [],
    "watch": [],
-   "rs": -8.2,
-   "rs_rank": 23
+   "rs": -8.4,
+   "rs_rank": 20
   },
   {
    "code": "513100",
@@ -299,20 +331,20 @@
    "date": "2026-11-25",
    "listed": "2024-04",
    "bars": 641,
-   "close": 2.08,
-   "chg": -2.39,
-   "amount_yi": 1.3,
-   "rsi": 37.9,
+   "close": 2.05,
+   "chg": -3.8,
+   "amount_yi": 2.9,
+   "rsi": 35.7,
    "rsi_prev": 42.2,
    "ma_dirs": [
-    true,
+    false,
     false,
     false
    ],
    "ma_up_days": 0,
-   "ma_dn_days": 0,
+   "ma_dn_days": 5,
    "ma_aligned": false,
-   "vol_ratio": 0.56,
+   "vol_ratio": 0.72,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -324,28 +356,28 @@
     "mid_golden": false,
     "momentum": "动能减弱"
    },
-   "dif": -0.0457,
-   "dea": -0.0349,
+   "dif": -0.0481,
+   "dea": -0.0354,
    "pattern": "空头排列",
-   "above_year": true,
-   "dd_ath": -19.3,
+   "above_year": false,
+   "dd_ath": -20.5,
    "ath_date": "2026-06",
-   "dd_60": -14.7,
+   "dd_60": -15.9,
    "ma_fast": [
-    2.087,
-    2.102,
-    2.12
+    2.077,
+    2.096,
+    2.116
    ],
-   "bias": -4.7,
-   "atr_pct": 2.52,
+   "bias": -6.0,
+   "atr_pct": 2.62,
    "high_vol": true,
-   "vol20": 32.4,
-   "ret_rs": -10.2,
-   "chandelier": 2.158,
+   "vol20": 33.8,
+   "ret_rs": -11.4,
+   "chandelier": 2.154,
    "buy": [],
    "sell": [],
    "watch": [],
-   "rs": -6.5,
+   "rs": -7.0,
    "rs_rank": 18
   },
   {
@@ -357,10 +389,10 @@
    "date": "2026-11-25",
    "listed": "2024-04",
    "bars": 641,
-   "close": 0.8,
-   "chg": -2.79,
-   "amount_yi": 3.0,
-   "rsi": 39.0,
+   "close": 0.77,
+   "chg": -6.44,
+   "amount_yi": 5.9,
+   "rsi": 35.5,
    "rsi_prev": 42.2,
    "ma_dirs": [
     false,
@@ -370,7 +402,7 @@
    "ma_up_days": 0,
    "ma_dn_days": 1,
    "ma_aligned": false,
-   "vol_ratio": 0.96,
+   "vol_ratio": 1.07,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -382,29 +414,29 @@
     "mid_golden": false,
     "momentum": "动能减弱"
    },
-   "dif": -0.0313,
-   "dea": -0.0361,
+   "dif": -0.0336,
+   "dea": -0.0366,
    "pattern": "空头排列",
    "above_year": false,
-   "dd_ath": -54.3,
+   "dd_ath": -56.0,
    "ath_date": "2026-07",
-   "dd_60": -33.2,
+   "dd_60": -35.7,
    "ma_fast": [
-    0.812,
-    0.82,
-    0.823
+    0.802,
+    0.814,
+    0.819
    ],
-   "bias": -3.3,
-   "atr_pct": 5.41,
-   "high_vol": false,
-   "vol20": 59.6,
-   "ret_rs": -7.8,
-   "chandelier": 0.794,
+   "bias": -6.8,
+   "atr_pct": 5.81,
+   "high_vol": true,
+   "vol20": 63.0,
+   "ret_rs": -11.3,
+   "chandelier": 0.79,
    "buy": [],
    "sell": [],
    "watch": [],
-   "rs": -4.1,
-   "rs_rank": 14
+   "rs": -6.9,
+   "rs_rank": 17
   },
   {
    "code": "512880",
@@ -415,10 +447,10 @@
    "date": "2026-11-25",
    "listed": "2016-08",
    "bars": 2500,
-   "close": 0.963,
-   "chg": -0.62,
-   "amount_yi": 5.1,
-   "rsi": 33.3,
+   "close": 0.955,
+   "chg": -1.44,
+   "amount_yi": 12.0,
+   "rsi": 31.0,
    "rsi_prev": 35.2,
    "ma_dirs": [
     false,
@@ -428,7 +460,7 @@
    "ma_up_days": 0,
    "ma_dn_days": 2,
    "ma_aligned": false,
-   "vol_ratio": 0.88,
+   "vol_ratio": 1.17,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -440,30 +472,30 @@
     "mid_golden": false,
     "momentum": "动能减弱"
    },
-   "dif": -0.0134,
-   "dea": -0.0123,
+   "dif": -0.014,
+   "dea": -0.0124,
    "pattern": "空头排列",
    "above_year": false,
-   "dd_ath": -31.1,
+   "dd_ath": -31.6,
    "ath_date": "2024-11",
-   "dd_60": -13.8,
+   "dd_60": -14.5,
    "ma_fast": [
-    0.972,
-    0.977,
-    0.979
+    0.969,
+    0.975,
+    0.978
    ],
-   "bias": -2.8,
-   "atr_pct": 1.65,
+   "bias": -3.6,
+   "atr_pct": 1.7,
    "high_vol": false,
-   "vol20": 20.6,
-   "ret_rs": -2.9,
-   "chandelier": 0.979,
+   "vol20": 21.1,
+   "ret_rs": -3.7,
+   "chandelier": 0.978,
    "buy": [],
    "sell": [],
    "watch": [
-    "RSI 33.3 接近超卖线 30"
+    "RSI 31.0 接近超卖线 30"
    ],
-   "rs": 0.8,
+   "rs": 0.7,
    "rs_rank": 7
   },
   {
@@ -475,20 +507,20 @@
    "date": "2026-11-25",
    "listed": "2024-04",
    "bars": 641,
-   "close": 0.39,
-   "chg": 1.56,
-   "amount_yi": 16.2,
-   "rsi": 37.7,
+   "close": 0.37,
+   "chg": -3.65,
+   "amount_yi": 26.9,
+   "rsi": 33.7,
    "rsi_prev": 35.9,
    "ma_dirs": [
     true,
-    true,
-    true
+    false,
+    false
    ],
-   "ma_up_days": 1,
+   "ma_up_days": 0,
    "ma_dn_days": 0,
    "ma_aligned": false,
-   "vol_ratio": 0.99,
+   "vol_ratio": 0.97,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -500,28 +532,30 @@
     "mid_golden": false,
     "momentum": "动能增强"
    },
-   "dif": -0.0397,
-   "dea": -0.0437,
+   "dif": -0.0413,
+   "dea": -0.044,
    "pattern": "空头排列",
    "above_year": false,
-   "dd_ath": -58.7,
+   "dd_ath": -60.8,
    "ath_date": "2026-06",
-   "dd_60": -46.4,
+   "dd_60": -49.2,
    "ma_fast": [
-    0.385,
-    0.379,
-    0.379
+    0.378,
+    0.375,
+    0.377
    ],
-   "bias": -4.9,
-   "atr_pct": 6.93,
+   "bias": -9.6,
+   "atr_pct": 7.31,
    "high_vol": true,
-   "vol20": 78.9,
-   "ret_rs": -22.5,
+   "vol20": 78.7,
+   "ret_rs": -26.4,
    "chandelier": 0.427,
    "buy": [],
    "sell": [],
-   "watch": [],
-   "rs": -18.8,
+   "watch": [
+    "RSI 33.7 接近超卖线 30"
+   ],
+   "rs": -22.0,
    "rs_rank": 30
   },
   {
@@ -535,7 +569,7 @@
    "bars": 641,
    "close": 0.38,
    "chg": 1.6,
-   "amount_yi": 1.1,
+   "amount_yi": 2.8,
    "rsi": 50.1,
    "rsi_prev": 44.0,
    "ma_dirs": [
@@ -546,7 +580,7 @@
    "ma_up_days": 0,
    "ma_dn_days": 0,
    "ma_aligned": false,
-   "vol_ratio": 0.61,
+   "vol_ratio": 0.84,
    "macd": {
     "pos": "穿越0轴",
     "above": false,
@@ -579,7 +613,7 @@
    "buy": [],
    "sell": [],
    "watch": [],
-   "rs": 5.3,
+   "rs": 6.0,
    "rs_rank": 3
   },
   {
@@ -593,7 +627,7 @@
    "bars": 641,
    "close": 0.7,
    "chg": -0.43,
-   "amount_yi": 1.4,
+   "amount_yi": 2.8,
    "rsi": 55.7,
    "rsi_prev": 58.0,
    "ma_dirs": [
@@ -604,7 +638,7 @@
    "ma_up_days": 0,
    "ma_dn_days": 1,
    "ma_aligned": false,
-   "vol_ratio": 0.85,
+   "vol_ratio": 0.98,
    "macd": {
     "pos": "0轴上方",
     "above": true,
@@ -637,7 +671,7 @@
    "buy": [],
    "sell": [],
    "watch": [],
-   "rs": 10.7,
+   "rs": 11.4,
    "rs_rank": 1
   },
   {
@@ -652,20 +686,20 @@
    "date": "2026-11-25",
    "listed": "2019-06",
    "bars": 1801,
-   "close": 1.813,
-   "chg": -3.51,
-   "amount_yi": 0.9,
-   "rsi": 34.2,
+   "close": 1.809,
+   "chg": -3.73,
+   "amount_yi": 1.5,
+   "rsi": 33.9,
    "rsi_prev": 39.4,
    "ma_dirs": [
-    true,
+    false,
     false,
     false
    ],
    "ma_up_days": 0,
-   "ma_dn_days": 0,
+   "ma_dn_days": 6,
    "ma_aligned": false,
-   "vol_ratio": 1.06,
+   "vol_ratio": 0.95,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -677,31 +711,31 @@
     "mid_golden": false,
     "momentum": "动能减弱"
    },
-   "dif": -0.0647,
-   "dea": -0.0561,
+   "dif": -0.065,
+   "dea": -0.0562,
    "pattern": "空头排列",
    "above_year": false,
-   "dd_ath": -25.2,
+   "dd_ath": -25.4,
    "ath_date": "2026-06",
-   "dd_60": -19.7,
+   "dd_60": -19.9,
    "ma_fast": [
-    1.833,
+    1.831,
     1.844,
-    1.862
+    1.861
    ],
-   "bias": -6.7,
-   "atr_pct": 2.78,
+   "bias": -6.9,
+   "atr_pct": 2.8,
    "high_vol": false,
-   "vol20": 36.3,
-   "ret_rs": -13.5,
-   "chandelier": 1.954,
+   "vol20": 36.5,
+   "ret_rs": -13.7,
+   "chandelier": 1.953,
    "buy": [],
    "sell": [],
    "watch": [
-    "RSI 34.2 接近超卖线 30"
+    "RSI 33.9 接近超卖线 30"
    ],
-   "rs": -9.8,
-   "rs_rank": 26
+   "rs": -9.3,
+   "rs_rank": 24
   },
   {
    "code": "513030",
@@ -715,10 +749,10 @@
    "date": "2026-11-25",
    "listed": "2014-09",
    "bars": 2967,
-   "close": 1.669,
-   "chg": -0.95,
-   "amount_yi": 0.7,
-   "rsi": 32.9,
+   "close": 1.665,
+   "chg": -1.19,
+   "amount_yi": 0.9,
+   "rsi": 32.5,
    "rsi_prev": 34.7,
    "ma_dirs": [
     false,
@@ -728,7 +762,7 @@
    "ma_up_days": 0,
    "ma_dn_days": 6,
    "ma_aligned": false,
-   "vol_ratio": 0.73,
+   "vol_ratio": 0.58,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -740,31 +774,31 @@
     "mid_golden": false,
     "momentum": "动能减弱"
    },
-   "dif": -0.0269,
-   "dea": -0.009,
+   "dif": -0.0272,
+   "dea": -0.0091,
    "pattern": "空头排列",
    "above_year": false,
-   "dd_ath": -19.6,
+   "dd_ath": -19.8,
    "ath_date": "2026-02",
-   "dd_60": -13.5,
+   "dd_60": -13.7,
    "ma_fast": [
-    1.675,
+    1.673,
     1.686,
     1.718
    ],
-   "bias": -6.3,
-   "atr_pct": 1.95,
+   "bias": -6.5,
+   "atr_pct": 1.96,
    "high_vol": true,
-   "vol20": 28.4,
-   "ret_rs": -4.6,
-   "chandelier": 1.783,
+   "vol20": 28.5,
+   "ret_rs": -4.8,
+   "chandelier": 1.782,
    "buy": [],
    "sell": [],
    "watch": [
-    "RSI 32.9 接近超卖线 30"
+    "RSI 32.5 接近超卖线 30"
    ],
-   "rs": -0.9,
-   "rs_rank": 10
+   "rs": -0.4,
+   "rs_rank": 9
   },
   {
    "code": "512660",
@@ -775,18 +809,18 @@
    "date": "2026-11-25",
    "listed": "2016-08",
    "bars": 2500,
-   "close": 0.914,
-   "chg": -0.87,
-   "amount_yi": 1.2,
-   "rsi": 30.4,
+   "close": 0.89,
+   "chg": -3.47,
+   "amount_yi": 2.1,
+   "rsi": 27.4,
    "rsi_prev": 31.6,
    "ma_dirs": [
-    true,
+    false,
     false,
     false
    ],
    "ma_up_days": 0,
-   "ma_dn_days": 0,
+   "ma_dn_days": 9,
    "ma_aligned": false,
    "vol_ratio": 0.94,
    "macd": {
@@ -796,35 +830,66 @@
     "golden": false,
     "days": 8,
     "stage": "中期",
-    "stronger": true,
+    "stronger": false,
     "mid_golden": false,
-    "momentum": "动能增强"
+    "momentum": "动能减弱"
    },
-   "dif": -0.0396,
-   "dea": -0.0332,
+   "dif": -0.0415,
+   "dea": -0.0335,
    "pattern": "空头排列",
    "above_year": false,
-   "dd_ath": -45.7,
+   "dd_ath": -47.1,
    "ath_date": "2026-01",
-   "dd_60": -23.2,
+   "dd_60": -25.2,
    "ma_fast": [
-    0.915,
-    0.915,
-    0.925
+    0.907,
+    0.91,
+    0.922
    ],
-   "bias": -7.0,
-   "atr_pct": 3.31,
-   "high_vol": false,
-   "vol20": 30.5,
-   "ret_rs": -10.5,
-   "chandelier": 0.972,
-   "buy": [],
+   "bias": -9.4,
+   "atr_pct": 3.55,
+   "high_vol": true,
+   "vol20": 32.2,
+   "ret_rs": -12.8,
+   "chandelier": 0.968,
+   "buy": [
+    {
+     "kind": "left",
+     "grade": 1,
+     "title": "左侧·RSI破30",
+     "turning": false,
+     "why": [
+      "RSI14 = 27.4，跌破 30，已连续超卖 1 天",
+      "仍在下探，尚未止跌，只宜小仓试探",
+      "价格在年线下方，趋势偏弱"
+     ],
+     "days": 1,
+     "cuts": [
+      "年线下方减半",
+      "高波动减半"
+     ],
+     "pos": 2.0,
+     "target": 0.982,
+     "target_pct": 10.3,
+     "stop_note": "三档打满后再跌 2×ATR（约 7.1%），或 10 个交易日仍站不回 MA5，认错离场",
+     "stats": {
+      "n": 31,
+      "win": 58.06451612903226,
+      "avg": -0.28159670795033315,
+      "worst": -11.925708699902238,
+      "fwd": 10
+     },
+     "is_new": true,
+     "twins": [
+      "上证指数ETF510210(相关0.84)"
+     ],
+     "fresh": true
+    }
+   ],
    "sell": [],
-   "watch": [
-    "RSI 30.4 接近超卖线 30"
-   ],
-   "rs": -6.8,
-   "rs_rank": 20
+   "watch": [],
+   "rs": -8.4,
+   "rs_rank": 21
   },
   {
    "code": "512800",
@@ -837,7 +902,7 @@
    "bars": 641,
    "close": 0.92,
    "chg": -0.33,
-   "amount_yi": 6.1,
+   "amount_yi": 10.5,
    "rsi": 65.1,
    "rsi_prev": 67.2,
    "ma_dirs": [
@@ -848,7 +913,7 @@
    "ma_up_days": 0,
    "ma_dn_days": 0,
    "ma_aligned": false,
-   "vol_ratio": 0.91,
+   "vol_ratio": 0.87,
    "macd": {
     "pos": "0轴上方",
     "above": true,
@@ -864,24 +929,24 @@
    "dea": 0.0139,
    "pattern": "多头排列",
    "above_year": true,
-   "dd_ath": -0.9,
+   "dd_ath": -1.1,
    "ath_date": "2026-11",
-   "dd_60": -0.9,
+   "dd_60": -1.1,
    "ma_fast": [
     0.92,
     0.92,
     0.919
    ],
    "bias": 2.5,
-   "atr_pct": 1.74,
+   "atr_pct": 1.79,
    "high_vol": true,
    "vol20": 14.3,
    "ret_rs": 5.5,
-   "chandelier": 0.88,
+   "chandelier": 0.881,
    "buy": [],
    "sell": [],
    "watch": [],
-   "rs": 9.2,
+   "rs": 9.9,
    "rs_rank": 2
   },
   {
@@ -893,10 +958,10 @@
    "date": "2026-11-25",
    "listed": "2024-04",
    "bars": 641,
-   "close": 1.24,
-   "chg": -0.48,
-   "amount_yi": 1.9,
-   "rsi": 27.2,
+   "close": 1.21,
+   "chg": -2.89,
+   "amount_yi": 3.5,
+   "rsi": 25.2,
    "rsi_prev": 27.7,
    "ma_dirs": [
     false,
@@ -906,7 +971,7 @@
    "ma_up_days": 0,
    "ma_dn_days": 9,
    "ma_aligned": false,
-   "vol_ratio": 0.68,
+   "vol_ratio": 0.74,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -914,28 +979,28 @@
     "golden": false,
     "days": 7,
     "stage": "中期",
-    "stronger": true,
+    "stronger": false,
     "mid_golden": false,
-    "momentum": "动能增强"
+    "momentum": "动能减弱"
    },
-   "dif": -0.0768,
-   "dea": -0.0687,
+   "dif": -0.0792,
+   "dea": -0.0692,
    "pattern": "空头排列",
    "above_year": false,
-   "dd_ath": -52.2,
+   "dd_ath": -53.4,
    "ath_date": "2026-01",
-   "dd_60": -35.0,
+   "dd_60": -36.6,
    "ma_fast": [
-    1.256,
-    1.258,
-    1.273
+    1.246,
+    1.252,
+    1.269
    ],
-   "bias": -9.5,
-   "atr_pct": 3.86,
+   "bias": -11.6,
+   "atr_pct": 4.02,
    "high_vol": false,
-   "vol20": 36.9,
-   "ret_rs": -14.8,
-   "chandelier": 1.378,
+   "vol20": 37.6,
+   "ret_rs": -16.8,
+   "chandelier": 1.376,
    "buy": [
     {
      "kind": "left",
@@ -943,7 +1008,7 @@
      "title": "左侧·RSI破30",
      "turning": false,
      "why": [
-      "RSI14 = 27.2，跌破 30，已连续超卖 2 天",
+      "RSI14 = 25.2，跌破 30，已连续超卖 2 天",
       "仍在下探，尚未止跌，只宜小仓试探",
       "价格在年线下方，趋势偏弱"
      ],
@@ -952,9 +1017,9 @@
       "年线下方减半"
      ],
      "pos": 3.0,
-     "target": 1.37,
-     "target_pct": 10.5,
-     "stop_note": "三档打满后再跌 2×ATR（约 7.7%），或 10 个交易日仍站不回 MA5，认错离场",
+     "target": 1.369,
+     "target_pct": 13.1,
+     "stop_note": "三档打满后再跌 2×ATR（约 8.0%），或 10 个交易日仍站不回 MA5，认错离场",
      "stats": {
       "n": 8,
       "win": 50.0,
@@ -963,13 +1028,15 @@
       "fwd": 10
      },
      "is_new": false,
-     "twins": [],
+     "twins": [
+      "化工ETF159870(相关0.80)"
+     ],
      "fresh": false
     }
    ],
    "sell": [],
    "watch": [],
-   "rs": -11.1,
+   "rs": -12.4,
    "rs_rank": 29
   },
   {
@@ -981,10 +1048,10 @@
    "date": "2026-11-25",
    "listed": "2021-12",
    "bars": 1188,
-   "close": 0.798,
-   "chg": -2.21,
-   "amount_yi": 2.7,
-   "rsi": 42.0,
+   "close": 0.776,
+   "chg": -4.9,
+   "amount_yi": 4.9,
+   "rsi": 39.1,
    "rsi_prev": 44.9,
    "ma_dirs": [
     true,
@@ -994,7 +1061,7 @@
    "ma_up_days": 0,
    "ma_dn_days": 0,
    "ma_aligned": false,
-   "vol_ratio": 0.82,
+   "vol_ratio": 0.86,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -1002,33 +1069,33 @@
     "golden": false,
     "days": 7,
     "stage": "中期",
-    "stronger": true,
+    "stronger": false,
     "mid_golden": false,
-    "momentum": "动能增强"
+    "momentum": "动能减弱"
    },
-   "dif": -0.0195,
-   "dea": -0.0152,
+   "dif": -0.0213,
+   "dea": -0.0155,
    "pattern": "空头排列",
    "above_year": false,
-   "dd_ath": -35.3,
+   "dd_ath": -37.1,
    "ath_date": "2026-05",
-   "dd_60": -18.5,
+   "dd_60": -20.7,
    "ma_fast": [
-    0.81,
-    0.798,
-    0.8
+    0.802,
+    0.793,
+    0.797
    ],
-   "bias": -5.1,
-   "atr_pct": 4.17,
+   "bias": -7.6,
+   "atr_pct": 4.47,
    "high_vol": true,
-   "vol20": 47.9,
-   "ret_rs": -10.3,
-   "chandelier": 0.809,
+   "vol20": 50.1,
+   "ret_rs": -12.8,
+   "chandelier": 0.805,
    "buy": [],
    "sell": [],
    "watch": [],
-   "rs": -6.6,
-   "rs_rank": 19
+   "rs": -8.4,
+   "rs_rank": 22
   },
   {
    "code": "159985",
@@ -1042,20 +1109,20 @@
    "date": "2026-11-25",
    "listed": "2019-12",
    "bars": 1690,
-   "close": 2.131,
-   "chg": -1.34,
-   "amount_yi": 1.0,
-   "rsi": 45.4,
+   "close": 2.115,
+   "chg": -2.08,
+   "amount_yi": 2.3,
+   "rsi": 43.3,
    "rsi_prev": 49.6,
    "ma_dirs": [
     true,
-    true,
+    false,
     false
    ],
    "ma_up_days": 0,
    "ma_dn_days": 0,
-   "ma_aligned": true,
-   "vol_ratio": 0.7,
+   "ma_aligned": false,
+   "vol_ratio": 0.91,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -1063,34 +1130,34 @@
     "golden": true,
     "days": 2,
     "stage": "初期",
-    "stronger": true,
+    "stronger": false,
     "mid_golden": false,
-    "momentum": "动能增强"
+    "momentum": "动能减弱"
    },
-   "dif": -0.0223,
-   "dea": -0.0259,
+   "dif": -0.0236,
+   "dea": -0.0261,
    "pattern": "空头排列",
    "above_year": true,
-   "dd_ath": -13.9,
+   "dd_ath": -14.5,
    "ath_date": "2026-09",
-   "dd_60": -13.9,
+   "dd_60": -14.5,
    "ma_fast": [
-    2.139,
-    2.121,
-    2.12
+    2.133,
+    2.118,
+    2.118
    ],
-   "bias": -0.4,
-   "atr_pct": 1.63,
+   "bias": -1.1,
+   "atr_pct": 1.72,
    "high_vol": false,
-   "vol20": 20.5,
-   "ret_rs": -2.0,
-   "chandelier": 2.098,
+   "vol20": 21.3,
+   "ret_rs": -2.8,
+   "chandelier": 2.094,
    "buy": [],
    "sell": [],
    "watch": [
     "MACD 低位金叉初期·第2天"
    ],
-   "rs": 1.7,
+   "rs": 1.6,
    "rs_rank": 6
   },
   {
@@ -1105,10 +1172,10 @@
    "date": "2026-11-25",
    "listed": "2021-05",
    "bars": 1336,
-   "close": 0.437,
-   "chg": 1.16,
-   "amount_yi": 22.5,
-   "rsi": 28.3,
+   "close": 0.424,
+   "chg": -1.85,
+   "amount_yi": 36.6,
+   "rsi": 22.9,
    "rsi_prev": 24.7,
    "ma_dirs": [
     false,
@@ -1118,7 +1185,7 @@
    "ma_up_days": 0,
    "ma_dn_days": 9,
    "ma_aligned": false,
-   "vol_ratio": 0.98,
+   "vol_ratio": 0.92,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -1126,37 +1193,37 @@
     "golden": false,
     "days": 6,
     "stage": "中期",
-    "stronger": true,
+    "stronger": false,
     "mid_golden": false,
-    "momentum": "动能增强"
+    "momentum": "动能减弱"
    },
-   "dif": -0.0191,
-   "dea": -0.0148,
+   "dif": -0.0201,
+   "dea": -0.015,
    "pattern": "空头排列",
    "above_year": false,
-   "dd_ath": -58.1,
+   "dd_ath": -59.3,
    "ath_date": "2021-06",
-   "dd_60": -25.7,
+   "dd_60": -27.9,
    "ma_fast": [
-    0.436,
-    0.441,
-    0.449
+    0.432,
+    0.438,
+    0.447
    ],
-   "bias": -8.3,
-   "atr_pct": 3.13,
+   "bias": -10.9,
+   "atr_pct": 3.31,
    "high_vol": true,
-   "vol20": 32.5,
-   "ret_rs": -9.0,
-   "chandelier": 0.48,
+   "vol20": 32.3,
+   "ret_rs": -11.7,
+   "chandelier": 0.479,
    "buy": [
     {
      "kind": "left",
      "grade": 1,
      "title": "左侧·RSI破30",
-     "turning": true,
+     "turning": false,
      "why": [
-      "RSI14 = 28.3，跌破 30，已连续超卖 4 天",
-      "今日 RSI 与价格同步回升，出现止跌迹象",
+      "RSI14 = 22.9，跌破 30，已连续超卖 4 天",
+      "仍在下探，尚未止跌，只宜小仓试探",
       "价格在年线下方，趋势偏弱"
      ],
      "days": 4,
@@ -1166,8 +1233,8 @@
      ],
      "pos": 2.0,
      "target": 0.476,
-     "target_pct": 9.0,
-     "stop_note": "三档打满后再跌 2×ATR（约 6.3%），或 10 个交易日仍站不回 MA5，认错离场",
+     "target_pct": 12.2,
+     "stop_note": "三档打满后再跌 2×ATR（约 6.6%），或 10 个交易日仍站不回 MA5，认错离场",
      "stats": {
       "n": 25,
       "win": 32.0,
@@ -1182,8 +1249,8 @@
    ],
    "sell": [],
    "watch": [],
-   "rs": -5.3,
-   "rs_rank": 16
+   "rs": -7.3,
+   "rs_rank": 19
   },
   {
    "code": "515790",
@@ -1194,20 +1261,20 @@
    "date": "2026-11-25",
    "listed": "2020-12",
    "bars": 1438,
-   "close": 0.639,
-   "chg": -0.62,
-   "amount_yi": 0.6,
-   "rsi": 30.1,
+   "close": 0.624,
+   "chg": -2.95,
+   "amount_yi": 1.8,
+   "rsi": 27.4,
    "rsi_prev": 30.9,
    "ma_dirs": [
-    true,
+    false,
     false,
     false
    ],
    "ma_up_days": 0,
-   "ma_dn_days": 0,
+   "ma_dn_days": 9,
    "ma_aligned": false,
-   "vol_ratio": 0.66,
+   "vol_ratio": 1.2,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -1215,35 +1282,64 @@
     "golden": false,
     "days": 7,
     "stage": "中期",
-    "stronger": true,
+    "stronger": false,
     "mid_golden": false,
-    "momentum": "动能增强"
+    "momentum": "动能减弱"
    },
-   "dif": -0.0267,
-   "dea": -0.0217,
+   "dif": -0.0279,
+   "dea": -0.0219,
    "pattern": "空头排列",
    "above_year": false,
-   "dd_ath": -66.8,
+   "dd_ath": -67.6,
    "ath_date": "2021-08",
-   "dd_60": -25.4,
+   "dd_60": -27.2,
    "ma_fast": [
-    0.642,
-    0.643,
-    0.649
+    0.637,
+    0.64,
+    0.647
    ],
-   "bias": -7.5,
-   "atr_pct": 3.4,
-   "high_vol": false,
-   "vol20": 35.7,
-   "ret_rs": -9.1,
-   "chandelier": 0.715,
-   "buy": [],
+   "bias": -9.6,
+   "atr_pct": 3.58,
+   "high_vol": true,
+   "vol20": 36.7,
+   "ret_rs": -11.2,
+   "chandelier": 0.713,
+   "buy": [
+    {
+     "kind": "left",
+     "grade": 1,
+     "title": "左侧·RSI破30",
+     "turning": false,
+     "why": [
+      "RSI14 = 27.4，跌破 30，已连续超卖 1 天",
+      "仍在下探，尚未止跌，只宜小仓试探",
+      "价格在年线下方，趋势偏弱"
+     ],
+     "days": 1,
+     "cuts": [
+      "年线下方减半",
+      "高波动减半"
+     ],
+     "pos": 2.0,
+     "target": 0.69,
+     "target_pct": 10.6,
+     "stop_note": "三档打满后再跌 2×ATR（约 7.2%），或 10 个交易日仍站不回 MA5，认错离场",
+     "stats": {
+      "n": 26,
+      "win": 61.53846153846154,
+      "avg": 0.8713397210013525,
+      "worst": -14.365079365079369,
+      "fwd": 10
+     },
+     "is_new": true,
+     "twins": [],
+     "fresh": true
+    }
+   ],
    "sell": [],
-   "watch": [
-    "RSI 30.1 接近超卖线 30"
-   ],
-   "rs": -5.4,
-   "rs_rank": 17
+   "watch": [],
+   "rs": -6.8,
+   "rs_rank": 16
   },
   {
    "code": "515220",
@@ -1256,7 +1352,7 @@
    "bars": 641,
    "close": 1.13,
    "chg": -0.26,
-   "amount_yi": 1.5,
+   "amount_yi": 3.1,
    "rsi": 32.7,
    "rsi_prev": 33.2,
    "ma_dirs": [
@@ -1267,7 +1363,7 @@
    "ma_up_days": 0,
    "ma_dn_days": 5,
    "ma_aligned": false,
-   "vol_ratio": 0.72,
+   "vol_ratio": 0.84,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -1302,7 +1398,7 @@
    "watch": [
     "RSI 32.7 接近超卖线 30"
    ],
-   "rs": -2.8,
+   "rs": -2.1,
    "rs_rank": 11
   },
   {
@@ -1310,14 +1406,14 @@
    "name": "沪深300ETF",
    "cat": "宽基",
    "flags": [],
-   "source": "tencent",
+   "source": "eastmoney",
    "date": "2026-11-25",
-   "listed": "2024-04",
-   "bars": 641,
-   "close": 4.0,
-   "chg": -0.82,
-   "amount_yi": 15.8,
-   "rsi": 30.6,
+   "listed": "2012-05",
+   "bars": 3523,
+   "close": 3.97,
+   "chg": -1.56,
+   "amount_yi": 79.1,
+   "rsi": 28.3,
    "rsi_prev": 33.6,
    "ma_dirs": [
     false,
@@ -1327,7 +1423,7 @@
    "ma_up_days": 0,
    "ma_dn_days": 4,
    "ma_aligned": false,
-   "vol_ratio": 0.29,
+   "vol_ratio": 0.83,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -1339,29 +1435,59 @@
     "mid_golden": false,
     "momentum": "动能减弱"
    },
-   "dif": -0.0682,
-   "dea": -0.0714,
+   "dif": -0.0706,
+   "dea": -0.0718,
    "pattern": "空头排列",
    "above_year": false,
-   "dd_ath": -21.5,
-   "ath_date": "2026-06",
-   "dd_60": -15.0,
+   "dd_ath": -28.0,
+   "ath_date": "2021-02",
+   "dd_60": -15.6,
    "ma_fast": [
-    4.019,
-    4.027,
-    4.033
+    4.009,
+    4.021,
+    4.029
    ],
-   "bias": -2.1,
-   "atr_pct": 1.58,
+   "bias": -2.8,
+   "atr_pct": 1.64,
    "high_vol": false,
-   "vol20": 13.0,
-   "ret_rs": -3.7,
-   "chandelier": 4.027,
-   "buy": [],
-   "sell": [],
-   "watch": [
-    "RSI 30.6 接近超卖线 30"
+   "vol20": 13.7,
+   "ret_rs": -4.4,
+   "chandelier": 4.021,
+   "buy": [
+    {
+     "kind": "left",
+     "grade": 1,
+     "title": "左侧·RSI破30",
+     "turning": false,
+     "why": [
+      "RSI14 = 28.3，跌破 30，已连续超卖 1 天",
+      "仍在下探，尚未止跌，只宜小仓试探",
+      "价格在年线下方，趋势偏弱"
+     ],
+     "days": 1,
+     "cuts": [
+      "年线下方减半"
+     ],
+     "pos": 3.0,
+     "target": 4.086,
+     "target_pct": 2.9,
+     "stop_note": "三档打满后再跌 2×ATR（约 3.3%），或 10 个交易日仍站不回 MA5，认错离场",
+     "stats": {
+      "n": 43,
+      "win": 65.11627906976744,
+      "avg": 2.577895197521253,
+      "worst": -14.585987261146505,
+      "fwd": 10
+     },
+     "is_new": true,
+     "twins": [
+      "上证指数ETF510210(相关0.89)"
+     ],
+     "fresh": true
+    }
    ],
+   "sell": [],
+   "watch": [],
    "rs": -0.0,
    "rs_rank": 8
   },
@@ -1377,10 +1503,10 @@
    "date": "2026-11-25",
    "listed": "2024-04",
    "bars": 641,
-   "close": 2.5,
-   "chg": -1.11,
-   "amount_yi": 0.7,
-   "rsi": 38.2,
+   "close": 2.48,
+   "chg": -1.9,
+   "amount_yi": 1.6,
+   "rsi": 36.6,
    "rsi_prev": 40.8,
    "ma_dirs": [
     true,
@@ -1390,7 +1516,7 @@
    "ma_up_days": 0,
    "ma_dn_days": 0,
    "ma_aligned": false,
-   "vol_ratio": 0.39,
+   "vol_ratio": 0.5,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -1398,28 +1524,28 @@
     "golden": false,
     "days": 7,
     "stage": "中期",
-    "stronger": true,
+    "stronger": false,
     "mid_golden": false,
-    "momentum": "动能增强"
+    "momentum": "动能减弱"
    },
-   "dif": -0.0417,
-   "dea": -0.029,
+   "dif": -0.0433,
+   "dea": -0.0294,
    "pattern": "空头排列",
-   "above_year": true,
-   "dd_ath": -10.0,
+   "above_year": false,
+   "dd_ath": -10.7,
    "ath_date": "2026-08",
-   "dd_60": -9.5,
+   "dd_60": -10.2,
    "ma_fast": [
-    2.494,
-    2.505,
-    2.524
+    2.488,
+    2.501,
+    2.521
    ],
-   "bias": -3.7,
-   "atr_pct": 1.98,
+   "bias": -4.5,
+   "atr_pct": 2.05,
    "high_vol": true,
-   "vol20": 24.8,
-   "ret_rs": -7.5,
-   "chandelier": 2.558,
+   "vol20": 25.3,
+   "ret_rs": -8.2,
+   "chandelier": 2.553,
    "buy": [],
    "sell": [],
    "watch": [],
@@ -1438,10 +1564,10 @@
    "date": "2026-11-25",
    "listed": "2019-12",
    "bars": 1677,
-   "close": 1.831,
-   "chg": -2.66,
-   "amount_yi": 3.5,
-   "rsi": 14.5,
+   "close": 1.802,
+   "chg": -4.2,
+   "amount_yi": 6.4,
+   "rsi": 13.1,
    "rsi_prev": 17.8,
    "ma_dirs": [
     false,
@@ -1451,7 +1577,7 @@
    "ma_up_days": 0,
    "ma_dn_days": 10,
    "ma_aligned": false,
-   "vol_ratio": 0.93,
+   "vol_ratio": 0.97,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -1463,24 +1589,24 @@
     "mid_golden": false,
     "momentum": "动能减弱"
    },
-   "dif": -0.0643,
-   "dea": -0.0465,
+   "dif": -0.0667,
+   "dea": -0.047,
    "pattern": "空头排列",
    "above_year": false,
-   "dd_ath": -20.8,
+   "dd_ath": -22.0,
    "ath_date": "2026-01",
-   "dd_60": -17.5,
+   "dd_60": -18.8,
    "ma_fast": [
-    1.865,
-    1.877,
-    1.906
+    1.856,
+    1.871,
+    1.901
    ],
-   "bias": -8.7,
-   "atr_pct": 1.85,
+   "bias": -10.1,
+   "atr_pct": 1.96,
    "high_vol": false,
-   "vol20": 16.6,
-   "ret_rs": -14.2,
-   "chandelier": 2.034,
+   "vol20": 19.7,
+   "ret_rs": -15.6,
+   "chandelier": 2.03,
    "buy": [
     {
      "kind": "left",
@@ -1488,7 +1614,7 @@
      "title": "左侧·RSI破20",
      "turning": false,
      "why": [
-      "RSI14 = 14.5，跌破 20，已连续超卖 8 天",
+      "RSI14 = 13.1，跌破 20，已连续超卖 8 天",
       "仍在下探，尚未止跌，只宜小仓试探",
       "价格在年线下方，趋势偏弱"
      ],
@@ -1497,9 +1623,9 @@
       "年线下方减半"
      ],
      "pos": 6.0,
-     "target": 2.006,
-     "target_pct": 9.6,
-     "stop_note": "三档打满后再跌 2×ATR（约 3.7%），或 10 个交易日仍站不回 MA5，认错离场",
+     "target": 2.005,
+     "target_pct": 11.3,
+     "stop_note": "三档打满后再跌 2×ATR（约 3.9%），或 10 个交易日仍站不回 MA5，认错离场",
      "stats": {
       "n": 3,
       "win": 66.66666666666666,
@@ -1514,8 +1640,8 @@
    ],
    "sell": [],
    "watch": [],
-   "rs": -10.5,
-   "rs_rank": 27
+   "rs": -11.2,
+   "rs_rank": 26
   },
   {
    "code": "159981",
@@ -1529,10 +1655,10 @@
    "date": "2026-11-25",
    "listed": "2020-01",
    "bars": 1660,
-   "close": 1.717,
-   "chg": 0.23,
-   "amount_yi": 3.0,
-   "rsi": 41.6,
+   "close": 1.727,
+   "chg": 0.82,
+   "amount_yi": 6.9,
+   "rsi": 43.1,
    "rsi_prev": 40.9,
    "ma_dirs": [
     false,
@@ -1542,7 +1668,7 @@
    "ma_up_days": 0,
    "ma_dn_days": 0,
    "ma_aligned": false,
-   "vol_ratio": 1.12,
+   "vol_ratio": 1.42,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -1554,29 +1680,29 @@
     "mid_golden": false,
     "momentum": "动能增强"
    },
-   "dif": -0.0293,
-   "dea": -0.0184,
+   "dif": -0.0285,
+   "dea": -0.0182,
    "pattern": "震荡偏弱",
    "above_year": true,
-   "dd_ath": -25.7,
+   "dd_ath": -25.3,
    "ath_date": "2021-10",
-   "dd_60": -13.2,
+   "dd_60": -12.6,
    "ma_fast": [
-    1.71,
-    1.717,
-    1.72
+    1.714,
+    1.719,
+    1.721
    ],
-   "bias": -4.1,
-   "atr_pct": 2.47,
+   "bias": -3.6,
+   "atr_pct": 2.52,
    "high_vol": false,
-   "vol20": 32.6,
-   "ret_rs": -11.1,
-   "chandelier": 1.85,
+   "vol20": 32.8,
+   "ret_rs": -10.6,
+   "chandelier": 1.846,
    "buy": [],
    "sell": [],
    "watch": [],
-   "rs": -7.4,
-   "rs_rank": 21
+   "rs": -6.2,
+   "rs_rank": 15
   },
   {
    "code": "512200",
@@ -1587,20 +1713,20 @@
    "date": "2026-11-25",
    "listed": "2024-04",
    "bars": 641,
-   "close": 1.02,
-   "chg": 1.39,
-   "amount_yi": 0.7,
-   "rsi": 29.8,
+   "close": 0.98,
+   "chg": -2.58,
+   "amount_yi": 1.3,
+   "rsi": 22.7,
    "rsi_prev": 25.4,
    "ma_dirs": [
-    true,
+    false,
     false,
     false
    ],
    "ma_up_days": 0,
-   "ma_dn_days": 0,
+   "ma_dn_days": 9,
    "ma_aligned": false,
-   "vol_ratio": 0.77,
+   "vol_ratio": 0.87,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -1608,37 +1734,37 @@
     "golden": false,
     "days": 8,
     "stage": "中期",
-    "stronger": true,
+    "stronger": false,
     "mid_golden": false,
-    "momentum": "动能增强"
+    "momentum": "动能减弱"
    },
-   "dif": -0.0435,
-   "dea": -0.0349,
+   "dif": -0.0467,
+   "dea": -0.0355,
    "pattern": "空头排列",
    "above_year": false,
-   "dd_ath": -45.3,
+   "dd_ath": -47.5,
    "ath_date": "2024-11",
-   "dd_60": -23.4,
+   "dd_60": -26.4,
    "ma_fast": [
-    1.015,
-    1.022,
-    1.039
+    1.001,
+    1.014,
+    1.033
    ],
-   "bias": -7.0,
-   "atr_pct": 2.97,
+   "bias": -10.5,
+   "atr_pct": 3.23,
    "high_vol": true,
-   "vol20": 25.5,
-   "ret_rs": -11.9,
-   "chandelier": 1.111,
+   "vol20": 25.2,
+   "ret_rs": -15.4,
+   "chandelier": 1.107,
    "buy": [
     {
      "kind": "left",
      "grade": 1,
      "title": "左侧·RSI破30",
-     "turning": true,
+     "turning": false,
      "why": [
-      "RSI14 = 29.8，跌破 30，已连续超卖 5 天",
-      "今日 RSI 与价格同步回升，出现止跌迹象",
+      "RSI14 = 22.7，跌破 30，已连续超卖 5 天",
+      "仍在下探，尚未止跌，只宜小仓试探",
       "价格在年线下方，趋势偏弱"
      ],
      "days": 5,
@@ -1647,9 +1773,9 @@
       "高波动减半"
      ],
      "pos": 2.0,
-     "target": 1.097,
-     "target_pct": 7.6,
-     "stop_note": "三档打满后再跌 2×ATR（约 5.9%），或 10 个交易日仍站不回 MA5，认错离场",
+     "target": 1.095,
+     "target_pct": 11.7,
+     "stop_note": "三档打满后再跌 2×ATR（约 6.5%），或 10 个交易日仍站不回 MA5，认错离场",
      "stats": {
       "n": 11,
       "win": 45.45454545454545,
@@ -1664,8 +1790,8 @@
    ],
    "sell": [],
    "watch": [],
-   "rs": -8.2,
-   "rs_rank": 24
+   "rs": -11.0,
+   "rs_rank": 25
   },
   {
    "code": "159870",
@@ -1676,10 +1802,10 @@
    "date": "2026-11-25",
    "listed": "2021-03",
    "bars": 1391,
-   "close": 0.627,
-   "chg": -0.79,
-   "amount_yi": 1.0,
-   "rsi": 29.6,
+   "close": 0.617,
+   "chg": -2.37,
+   "amount_yi": 2.3,
+   "rsi": 27.4,
    "rsi_prev": 30.9,
    "ma_dirs": [
     false,
@@ -1689,7 +1815,7 @@
    "ma_up_days": 0,
    "ma_dn_days": 10,
    "ma_aligned": false,
-   "vol_ratio": 0.66,
+   "vol_ratio": 0.9,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -1701,24 +1827,24 @@
     "mid_golden": false,
     "momentum": "动能减弱"
    },
-   "dif": -0.0211,
-   "dea": -0.0185,
+   "dif": -0.0219,
+   "dea": -0.0186,
    "pattern": "空头排列",
    "above_year": false,
-   "dd_ath": -49.2,
+   "dd_ath": -50.0,
    "ath_date": "2021-09",
-   "dd_60": -25.4,
+   "dd_60": -26.5,
    "ma_fast": [
-    0.633,
-    0.637,
-    0.643
+    0.63,
+    0.635,
+    0.642
    ],
-   "bias": -6.3,
-   "atr_pct": 2.74,
+   "bias": -7.7,
+   "atr_pct": 2.9,
    "high_vol": false,
-   "vol20": 23.9,
-   "ret_rs": -8.3,
-   "chandelier": 0.672,
+   "vol20": 24.8,
+   "ret_rs": -9.8,
+   "chandelier": 0.67,
    "buy": [
     {
      "kind": "left",
@@ -1726,7 +1852,7 @@
      "title": "左侧·RSI破30",
      "turning": false,
      "why": [
-      "RSI14 = 29.6，跌破 30，已连续超卖 1 天",
+      "RSI14 = 27.4，跌破 30，已连续超卖 1 天",
       "仍在下探，尚未止跌，只宜小仓试探",
       "价格在年线下方，趋势偏弱"
      ],
@@ -1735,9 +1861,9 @@
       "年线下方减半"
      ],
      "pos": 3.0,
-     "target": 0.669,
-     "target_pct": 6.7,
-     "stop_note": "三档打满后再跌 2×ATR（约 5.5%），或 10 个交易日仍站不回 MA5，认错离场",
+     "target": 0.668,
+     "target_pct": 8.3,
+     "stop_note": "三档打满后再跌 2×ATR（约 5.8%），或 10 个交易日仍站不回 MA5，认错离场",
      "stats": {
       "n": 30,
       "win": 53.333333333333336,
@@ -1746,14 +1872,16 @@
       "fwd": 10
      },
      "is_new": true,
-     "twins": [],
-     "fresh": true
+     "twins": [
+      "有色金属ETF512400(相关0.80)"
+     ],
+     "fresh": false
     }
    ],
    "sell": [],
    "watch": [],
-   "rs": -4.6,
-   "rs_rank": 15
+   "rs": -5.4,
+   "rs_rank": 14
   },
   {
    "code": "159869",
@@ -1764,10 +1892,10 @@
    "date": "2026-11-25",
    "listed": "2021-03",
    "bars": 1389,
-   "close": 0.897,
-   "chg": -0.66,
-   "amount_yi": 2.0,
-   "rsi": 35.4,
+   "close": 0.878,
+   "chg": -2.77,
+   "amount_yi": 3.7,
+   "rsi": 33.5,
    "rsi_prev": 36.0,
    "ma_dirs": [
     true,
@@ -1777,7 +1905,7 @@
    "ma_up_days": 0,
    "ma_dn_days": 0,
    "ma_aligned": false,
-   "vol_ratio": 0.82,
+   "vol_ratio": 0.87,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -1785,33 +1913,35 @@
     "golden": false,
     "days": 8,
     "stage": "中期",
-    "stronger": true,
+    "stronger": false,
     "mid_golden": false,
-    "momentum": "动能增强"
+    "momentum": "动能减弱"
    },
-   "dif": -0.0377,
-   "dea": -0.0237,
+   "dif": -0.0392,
+   "dea": -0.024,
    "pattern": "空头排列",
    "above_year": false,
-   "dd_ath": -49.0,
+   "dd_ath": -50.1,
    "ath_date": "2026-01",
-   "dd_60": -22.9,
+   "dd_60": -24.6,
    "ma_fast": [
-    0.904,
-    0.902,
-    0.916
+    0.898,
+    0.898,
+    0.914
    ],
-   "bias": -10.1,
-   "atr_pct": 4.32,
+   "bias": -11.9,
+   "atr_pct": 4.52,
    "high_vol": true,
-   "vol20": 53.5,
-   "ret_rs": -11.6,
-   "chandelier": 0.996,
+   "vol20": 54.1,
+   "ret_rs": -13.5,
+   "chandelier": 0.993,
    "buy": [],
    "sell": [],
-   "watch": [],
-   "rs": -7.9,
-   "rs_rank": 22
+   "watch": [
+    "RSI 33.5 接近超卖线 30"
+   ],
+   "rs": -9.1,
+   "rs_rank": 23
   },
   {
    "code": "159611",
@@ -1822,10 +1952,10 @@
    "date": "2026-11-25",
    "listed": "2022-01",
    "bars": 1182,
-   "close": 1.025,
-   "chg": -0.29,
-   "amount_yi": 1.0,
-   "rsi": 42.9,
+   "close": 1.018,
+   "chg": -0.97,
+   "amount_yi": 2.6,
+   "rsi": 39.5,
    "rsi_prev": 44.4,
    "ma_dirs": [
     false,
@@ -1835,9 +1965,9 @@
    "ma_up_days": 0,
    "ma_dn_days": 2,
    "ma_aligned": false,
-   "vol_ratio": 0.49,
+   "vol_ratio": 0.73,
    "macd": {
-    "pos": "穿越0轴",
+    "pos": "0轴下方",
     "above": false,
     "cross": "死叉初期·第2天",
     "golden": false,
@@ -1847,29 +1977,29 @@
     "mid_golden": false,
     "momentum": "动能减弱"
    },
-   "dif": -0.0009,
-   "dea": 0.0,
+   "dif": -0.0014,
+   "dea": -0.0001,
    "pattern": "均线缠绕",
    "above_year": false,
-   "dd_ath": -18.8,
+   "dd_ath": -19.4,
    "ath_date": "2026-06",
-   "dd_60": -4.0,
+   "dd_60": -4.7,
    "ma_fast": [
-    1.028,
-    1.035,
-    1.038
+    1.026,
+    1.034,
+    1.037
    ],
-   "bias": -1.0,
-   "atr_pct": 1.33,
+   "bias": -1.7,
+   "atr_pct": 1.38,
    "high_vol": false,
-   "vol20": 10.6,
-   "ret_rs": 0.0,
-   "chandelier": 1.016,
+   "vol20": 11.1,
+   "ret_rs": -0.7,
+   "chandelier": 1.015,
    "buy": [],
    "sell": [],
    "watch": [],
    "rs": 3.7,
-   "rs_rank": 4
+   "rs_rank": 5
   },
   {
    "code": "513120",
@@ -1883,10 +2013,10 @@
    "date": "2026-11-25",
    "listed": "2022-07",
    "bars": 1061,
-   "close": 1.108,
-   "chg": 0.54,
-   "amount_yi": 41.0,
-   "rsi": 38.3,
+   "close": 1.095,
+   "chg": -0.64,
+   "amount_yi": 58.8,
+   "rsi": 36.5,
    "rsi_prev": 37.2,
    "ma_dirs": [
     true,
@@ -1896,7 +2026,7 @@
    "ma_up_days": 0,
    "ma_dn_days": 0,
    "ma_aligned": false,
-   "vol_ratio": 1.19,
+   "vol_ratio": 0.97,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -1904,32 +2034,32 @@
     "golden": false,
     "days": 6,
     "stage": "中期",
-    "stronger": true,
+    "stronger": false,
     "mid_golden": false,
-    "momentum": "动能增强"
+    "momentum": "动能减弱"
    },
-   "dif": -0.0343,
-   "dea": -0.0243,
+   "dif": -0.0353,
+   "dea": -0.0245,
    "pattern": "空头排列",
    "above_year": false,
-   "dd_ath": -32.0,
+   "dd_ath": -32.8,
    "ath_date": "2025-09",
-   "dd_60": -20.5,
+   "dd_60": -21.4,
    "ma_fast": [
-    1.111,
-    1.111,
-    1.126
+    1.107,
+    1.109,
+    1.125
    ],
-   "bias": -6.3,
-   "atr_pct": 4.12,
+   "bias": -7.4,
+   "atr_pct": 4.21,
    "high_vol": true,
-   "vol20": 49.2,
-   "ret_rs": -6.7,
-   "chandelier": 1.158,
+   "vol20": 49.1,
+   "ret_rs": -7.8,
+   "chandelier": 1.157,
    "buy": [],
    "sell": [],
    "watch": [],
-   "rs": -3.0,
+   "rs": -3.4,
    "rs_rank": 12
   },
   {
@@ -1941,20 +2071,20 @@
    "date": "2026-11-25",
    "listed": "2020-09",
    "bars": 1494,
-   "close": 1.258,
-   "chg": -1.87,
-   "amount_yi": 1.5,
-   "rsi": 36.0,
+   "close": 1.229,
+   "chg": -4.13,
+   "amount_yi": 3.1,
+   "rsi": 34.0,
    "rsi_prev": 37.9,
    "ma_dirs": [
-    true,
+    false,
     false,
     false
    ],
    "ma_up_days": 0,
-   "ma_dn_days": 0,
+   "ma_dn_days": 8,
    "ma_aligned": false,
-   "vol_ratio": 0.8,
+   "vol_ratio": 0.99,
    "macd": {
     "pos": "0轴下方",
     "above": false,
@@ -1966,28 +2096,30 @@
     "mid_golden": false,
     "momentum": "动能减弱"
    },
-   "dif": -0.0643,
-   "dea": -0.0621,
+   "dif": -0.0666,
+   "dea": -0.0625,
    "pattern": "空头排列",
    "above_year": false,
-   "dd_ath": -44.5,
+   "dd_ath": -45.8,
    "ath_date": "2026-07",
-   "dd_60": -31.8,
+   "dd_60": -33.4,
    "ma_fast": [
-    1.271,
-    1.27,
-    1.284
+    1.261,
+    1.264,
+    1.28
    ],
-   "bias": -6.5,
-   "atr_pct": 4.7,
+   "bias": -8.6,
+   "atr_pct": 4.96,
    "high_vol": true,
-   "vol20": 53.3,
-   "ret_rs": -14.6,
-   "chandelier": 1.32,
+   "vol20": 54.5,
+   "ret_rs": -16.6,
+   "chandelier": 1.314,
    "buy": [],
    "sell": [],
-   "watch": [],
-   "rs": -10.9,
+   "watch": [
+    "RSI 34.0 接近超卖线 30"
+   ],
+   "rs": -12.2,
    "rs_rank": 28
   }
  ]
