@@ -17,13 +17,38 @@ def _js(o):
 
 
 def notify(text: str):
-    """可选推送：设置环境变量 FEISHU_WEBHOOK（飞书群自定义机器人地址）即生效。"""
-    hook = os.environ.get("FEISHU_WEBHOOK")
+    """推送到飞书群自定义机器人。
+
+    FEISHU_WEBHOOK：机器人地址（必填，不填就不推送）
+    FEISHU_SECRET ：机器人开了"签名校验"时填它给的密钥（可选）
+    机器人开了"自定义关键词"时，关键词要出现在消息里，例如填 ETF。
+    """
+    hook = os.environ.get("FEISHU_WEBHOOK", "").strip()
     if not hook:
+        print("[info] 未设置 FEISHU_WEBHOOK，跳过飞书推送")
         return
+    payload = {"msg_type": "text", "content": {"text": text}}
+    secret = os.environ.get("FEISHU_SECRET", "").strip()
+    if secret:
+        import base64
+        import hashlib
+        import hmac
+        import time
+        ts = str(int(time.time()))
+        sign = hmac.new(f"{ts}\n{secret}".encode(), digestmod=hashlib.sha256).digest()
+        payload.update(timestamp=ts, sign=base64.b64encode(sign).decode())
     try:
         import requests
-        requests.post(hook, json={"msg_type": "text", "content": {"text": text}}, timeout=10)
+        r = requests.post(hook, json=payload, timeout=10)
+        body = r.json() if r.headers.get("content-type", "").startswith("application/json") else {}
+        code = body.get("code", body.get("StatusCode", -1 if r.status_code != 200 else 0))
+        if r.status_code == 200 and code == 0:
+            print("[info] 飞书推送成功")
+        else:
+            hint = {19021: "签名校验失败：请在 Secrets 里添加 FEISHU_SECRET，或关掉机器人的签名校验",
+                    19022: "IP 不在白名单：GitHub 的服务器 IP 不固定，请关掉机器人的 IP 白名单",
+                    19024: "关键词不匹配：机器人的自定义关键词请设为 ETF"}.get(code, "")
+            print(f"[warn] 飞书推送失败 HTTP {r.status_code} code={code} {body.get('msg', '')} {hint}")
     except Exception as e:  # noqa: BLE001
         print(f"[warn] 飞书推送失败: {e}")
 
