@@ -13,15 +13,15 @@
     "dc"
    ],
    "trail": false,
-   "last_px": 3.36,
+   "last_px": 3.395,
    "hh": 3.446,
    "kind": "right",
    "grade": 1,
    "stop": 3.309696628541546,
    "title": "右侧·放量拉升",
    "last_add": 3.4187084999999997,
-   "day_pnl": -220.9,
-   "float_pnl": -280.75
+   "day_pnl": -56.4,
+   "float_pnl": -116.25
   },
   "512400": {
    "shares": 5600,
@@ -31,15 +31,15 @@
    "entry": "2026-11-18",
    "took": [],
    "trail": false,
-   "last_px": 1.26,
+   "last_px": 1.31,
    "hh": 1.327,
    "kind": "left",
    "grade": 1,
    "stop": null,
    "title": "左侧·RSI破30",
    "last_add": 1.324662,
-   "day_pnl": 151.2,
-   "float_pnl": -364.33
+   "day_pnl": 431.2,
+   "float_pnl": -84.33
   },
   "159980": {
    "shares": 7900,
@@ -49,15 +49,15 @@
    "entry": "2026-11-18",
    "took": [],
    "trail": false,
-   "last_px": 1.893,
+   "last_px": 1.906,
    "hh": 2.008,
    "kind": "left",
    "grade": 2,
    "stop": null,
    "title": "左侧·RSI破20",
    "last_add": 1.8659325,
-   "day_pnl": 505.6,
-   "float_pnl": -286.79
+   "day_pnl": 608.3,
+   "float_pnl": -184.09
   },
   "512660": {
    "shares": 3900,
@@ -67,15 +67,15 @@
    "entry": "2026-11-19",
    "took": [],
    "trail": false,
-   "last_px": 0.903,
-   "hh": 0.944,
+   "last_px": 0.949,
+   "hh": 0.95,
    "kind": "left",
    "grade": 1,
    "stop": null,
    "title": "左侧·RSI破30",
    "last_add": 0.9414704999999999,
-   "day_pnl": 85.8,
-   "float_pnl": -151.14
+   "day_pnl": 265.2,
+   "float_pnl": 28.26
   },
   "518880": {
    "shares": 1000,
@@ -85,15 +85,15 @@
    "entry": "2026-11-20",
    "took": [],
    "trail": false,
-   "last_px": 7.39,
+   "last_px": 7.441,
    "hh": 7.51,
    "kind": "left",
    "grade": 1,
    "stop": null,
    "title": "左侧·RSI破30",
    "last_add": 7.327661999999999,
-   "day_pnl": 120.0,
-   "float_pnl": 60.14
+   "day_pnl": 171.0,
+   "float_pnl": 111.14
   },
   "563300": {
    "shares": 3500,
@@ -103,8 +103,8 @@
    "entry": "2026-11-23",
    "took": [],
    "trail": false,
-   "last_px": 1.113,
-   "hh": 1.17,
+   "last_px": 1.175,
+   "hh": 1.175,
    "kind": "left",
    "grade": 1,
    "stop": null,
@@ -115,8 +115,8 @@
     3500,
     3712.9700000000003
    ],
-   "day_pnl": 105.0,
-   "float_pnl": 182.53
+   "day_pnl": 322.0,
+   "float_pnl": 399.53
   },
   "515880": {
    "shares": 10400,
@@ -124,13 +124,15 @@
    "invested": 3705.3624753599993,
    "realized": 0.0,
    "entry": "2026-11-23",
-   "took": [],
-   "trail": false,
-   "last_px": 0.4,
-   "hh": 0.41,
+   "took": [
+    "tp1"
+   ],
+   "trail": true,
+   "last_px": 0.421,
+   "hh": 0.421,
    "kind": "left",
    "grade": 1,
-   "stop": null,
+   "stop": 0.35628485339999993,
    "title": "左侧·RSI破30",
    "last_add": 0.35617799999999994,
    "today_buy": [
@@ -138,8 +140,8 @@
     10400,
     3705.36
    ],
-   "day_pnl": 176.8,
-   "float_pnl": 454.64
+   "day_pnl": 395.2,
+   "float_pnl": 673.04
   },
   "513880": {
    "shares": 4100,
@@ -149,7 +151,7 @@
    "entry": "2026-11-23",
    "took": [],
    "trail": false,
-   "last_px": 1.847,
+   "last_px": 1.873,
    "hh": 1.894,
    "kind": "left",
    "grade": 1,
@@ -161,8 +163,8 @@
     4100,
     7307.94
    ],
-   "day_pnl": 135.3,
-   "float_pnl": 264.76
+   "day_pnl": 241.9,
+   "float_pnl": 371.36
   },
   "513180": {
    "shares": 8500,
@@ -172,8 +174,8 @@
    "entry": "2026-11-23",
    "took": [],
    "trail": false,
-   "last_px": 0.439,
-   "hh": 0.452,
+   "last_px": 0.454,
+   "hh": 0.455,
    "kind": "left",
    "grade": 1,
    "stop": null,
@@ -184,8 +186,8 @@
     8500,
     3674.94
    ],
-   "day_pnl": 76.5,
-   "float_pnl": 56.56
+   "day_pnl": 204.0,
+   "float_pnl": 184.06
   },
   "515790": {
    "shares": 11800,
@@ -195,7 +197,7 @@
    "entry": "2026-11-23",
    "took": [],
    "trail": false,
-   "last_px": 0.628,
+   "last_px": 0.661,
    "hh": 0.666,
    "kind": "left",
    "grade": 1,
@@ -207,8 +209,8 @@
     11800,
     7428.139999999999
    ],
-   "day_pnl": 106.2,
-   "float_pnl": -17.74
+   "day_pnl": 495.6,
+   "float_pnl": 371.66
   },
   "159870": {
    "shares": 11700,
@@ -218,7 +220,7 @@
    "entry": "2026-11-23",
    "took": [],
    "trail": false,
-   "last_px": 0.616,
+   "last_px": 0.644,
    "hh": 0.652,
    "kind": "left",
    "grade": 1,
@@ -230,8 +232,8 @@
     11700,
     7376.9
    ],
-   "day_pnl": 23.4,
-   "float_pnl": -169.7
+   "day_pnl": 351.0,
+   "float_pnl": 157.9
   },
   "159869": {
    "shares": 1200,
@@ -241,7 +243,7 @@
    "entry": "2026-11-23",
    "took": [],
    "trail": false,
-   "last_px": 0.881,
+   "last_px": 0.923,
    "hh": 0.94,
    "kind": "left",
    "grade": 1,
@@ -253,8 +255,8 @@
     1200,
     1035.23
    ],
-   "day_pnl": 13.2,
-   "float_pnl": 21.97
+   "day_pnl": 63.6,
+   "float_pnl": 72.37
   },
   "510300": {
    "shares": 1800,
@@ -262,13 +264,15 @@
    "invested": 7182.3423564899995,
    "realized": 0.0,
    "entry": "2026-11-26",
-   "took": [],
-   "trail": false,
-   "last_px": 3.98,
-   "hh": 3.995,
+   "took": [
+    "tp1"
+   ],
+   "trail": true,
+   "last_px": 4.162,
+   "hh": 4.162,
    "kind": "left",
    "grade": 1,
-   "stop": null,
+   "stop": 3.9901901980499996,
    "title": "左侧·RSI破30",
    "today_buy": [
     "2026-11-26",
@@ -276,8 +280,8 @@
     7182.3423564899995
    ],
    "last_add": 3.9889935,
-   "day_pnl": 37.8,
-   "float_pnl": -18.34
+   "day_pnl": 365.4,
+   "float_pnl": 309.26
   },
   "510210": {
    "shares": 4000,
@@ -285,13 +289,15 @@
    "invested": 3634.9061447999998,
    "realized": 0.0,
    "entry": "2026-11-26",
-   "took": [],
-   "trail": false,
-   "last_px": 0.91,
-   "hh": 0.909,
+   "took": [
+    "tp1"
+   ],
+   "trail": true,
+   "last_px": 0.941,
+   "hh": 0.942,
    "kind": "left",
    "grade": 1,
-   "stop": null,
+   "stop": 0.9087265362,
    "title": "左侧·RSI破30",
    "today_buy": [
     "2026-11-26",
@@ -299,8 +305,8 @@
     3634.9061447999998
    ],
    "last_add": 0.908454,
-   "day_pnl": 32.0,
-   "float_pnl": 5.09
+   "day_pnl": 156.0,
+   "float_pnl": 129.09
   },
   "512880": {
    "shares": 5300,
@@ -308,13 +314,15 @@
    "invested": 4996.59482889,
    "realized": 0.0,
    "entry": "2026-11-27",
-   "took": [],
-   "trail": false,
-   "last_px": 0.949,
-   "hh": 0.942471,
+   "took": [
+    "tp1"
+   ],
+   "trail": true,
+   "last_px": 1.006,
+   "hh": 1.006,
    "kind": "left",
    "grade": 1,
-   "stop": null,
+   "stop": 0.9463804184110866,
    "title": "左侧·RSI破30",
    "today_buy": [
     "2026-11-27",
@@ -322,11 +330,54 @@
     4996.59482889
    ],
    "last_add": 0.942471,
-   "day_pnl": 33.11,
-   "float_pnl": 33.11
+   "day_pnl": 335.21,
+   "float_pnl": 335.21
   }
  },
- "pending": [],
+ "pending": [
+  {
+   "code": "515880",
+   "side": "sell",
+   "shares": "all",
+   "reason": "反抽到 MA20，先卖一半",
+   "date": "2026-11-27"
+  },
+  {
+   "code": "510300",
+   "side": "sell",
+   "shares": 900,
+   "reason": "反抽到 MA20，先卖一半",
+   "date": "2026-11-27"
+  },
+  {
+   "code": "510210",
+   "side": "sell",
+   "shares": "all",
+   "reason": "反抽到 MA20，先卖一半",
+   "date": "2026-11-27"
+  },
+  {
+   "code": "512880",
+   "side": "sell",
+   "shares": "all",
+   "reason": "反抽到 MA20，先卖一半",
+   "date": "2026-11-27"
+  },
+  {
+   "code": "159985",
+   "side": "buy",
+   "amount": 17232.2,
+   "prio": 1.5,
+   "date": "2026-11-27",
+   "reason": "右侧·放量拉升，量比 1.44，目标仓位 29%",
+   "meta": {
+    "kind": "right",
+    "grade": 1,
+    "stop": 2.1155708998280334,
+    "title": "右侧·放量拉升"
+   }
+  }
+ ],
  "trades": [
   {
    "date": "2026-11-18",
@@ -609,12 +660,12 @@
   },
   {
    "date": "2026-11-27",
-   "equity": 99594.8,
+   "equity": 102563.0,
    "cash": 12.2,
    "pos": 100.0,
-   "bench": 0.98466,
-   "ew": 0.96551,
-   "intraday": true
+   "bench": 1.02969,
+   "ew": 0.99445,
+   "intraday": false
   }
  ],
  "base": {
@@ -650,5 +701,5 @@
   "159819": 1.308,
   "_bench": 4.042
  },
- "last_decide": "2026-11-26"
+ "last_decide": "2026-11-27"
 }
